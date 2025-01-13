@@ -1,0 +1,4288 @@
+# ======================================
+# 안녕하세요. 서미누기입니다.
+# 모든 코드는 제가 직접 작성해서 만들고 있습니다.
+
+# 아이템 필터는 https://poe2db.tw/kr/ 사이트를 참고하고 있습니다.
+
+# 다른 아이템 필터 퀄리티에 뒤지지 않을 정도의 수준으로
+# 아이템 필터를 만드려 노력하고 있습니다.
+
+# 필터와 관련된 피드백은 아래의 채널 중 마음에 드시는 곳으로 해주시면 감사합니다.
+# 유튜브 - https://www.youtube.com/@minugi
+# 네이버 카페 - https://cafe.naver.com/seominugi
+# 디스코드 - https://discord.gg/kEm2G2qcZQ
+
+# 점프 테이블 만드는 중^^;;
+
+##### 골드
+##### =================================
+# 중첩 가능한 화폐
+##### 0티어 화폐
+##### 1티어 화폐
+##### 2티어 화폐
+##### 3티어 화폐
+##### 4티어 화폐
+##### 5티어 화폐
+# ======================================
+# 에센스
+# 의식
+# 환영
+# 균열
+# 탐험
+# ======================================
+# 고유 아이템
+# ======================================
+##### 크래프팅 방패
+##### 크래프팅 장갑
+##### 크래프팅 투구
+##### 크래프팅 장화
+##### 크래프팅 갑옷
+# ======================================
+# 커스텀 영역?
+# 
+# ======================================
+
+# 조율된 마법봉(Attuned Wand)
+# 착취 마법봉(Siphoning Wand)
+# 덜컹대는 셉터(Rattling Sceptre)
+# 자수정 반지(Amethyst Ring)
+# 특수 허리띠 (Utility Belt)
+# 분광 반지 (Prismatic Ring)
+# 황금 반지 (Gold Ring)
+# TFT에서 잘 거래되는 아이템
+Show #uber
+    ItemLevel >= 81
+    BaseType == "Attuned Wand" "Siphoning Wand" "Rattling Sceptre"
+    Rarity == Normal
+    SetFontSize 38
+    SetTextColor 236 233 182 255 #ECE9B6
+    SetBorderColor 236 233 182 255 #ECE9B6
+    SetBackgroundColor 51 51 51 240 #333333
+    PlayEffect Grey Temp
+
+Show #highEnd
+    BaseType == "Amethyst Ring" "Utility Belt" "Prismatic Ring" "Gold Ring"
+    Rarity == Normal
+    SetFontSize 38
+    SetTextColor 236 233 182 255 #ECE9B6
+    SetBorderColor 236 233 182 255 #ECE9B6
+    SetBackgroundColor 51 51 51 240 #333333
+    PlayEffect Grey Temp #highEnd
+
+##### ======================================
+##### 골드
+##### ======================================
+
+# 골드 2000 이상
+Show #uber
+    StackSize >= 2000
+    Class == "Stackable Currency"
+    BaseType == "Gold"
+    SetFontSize 28
+    SetTextColor 212 175 55 255 #D4AF37
+    # SetBorderColor 212 175 55 255 #D4AF37
+    SetBackgroundColor 16 16 16 240 #000000
+    PlayEffect Yellow Temp
+    MinimapIcon 2 Yellow Diamond #highEnd
+
+# 골드 1000 이상
+Show #highEnd
+    StackSize >= 1000
+    Class == "Stackable Currency"
+    BaseType == "Gold"
+    SetFontSize 28
+    SetTextColor 212 175 55 255 #D4AF37
+    # SetBorderColor 212 175 55 255 #D4AF37
+    SetBackgroundColor 16 16 16 240 #000000
+    PlayEffect Yellow Temp #highEnd
+
+# 골드 500 이상
+Show #end
+    StackSize >= 500
+    Class == "Stackable Currency"
+    BaseType == "Gold"
+    SetFontSize 28
+    SetTextColor 212 175 55 255 #D4AF37
+    # SetBorderColor 212 175 55 255 #D4AF37
+    SetBackgroundColor 16 16 16 240 #000000
+    PlayEffect Yellow Temp #end
+
+# 골드 300 이상
+Show #mid
+    StackSize >= 300
+    Class == "Stackable Currency"
+    BaseType == "Gold"
+    SetFontSize 28
+    SetTextColor 212 175 55 255 #D4AF37
+    # SetBorderColor 212 175 55 255 #D4AF37
+    SetBackgroundColor 16 16 16 240 #000000
+
+# 골드 100 이상
+Show #early
+    StackSize >= 100
+    Class == "Stackable Currency"
+    BaseType == "Gold"
+    SetFontSize 28
+    SetTextColor 212 175 55 255 #D4AF37
+    # SetBorderColor 212 175 55 255 #D4AF37
+    SetBackgroundColor 16 16 16 240 #000000
+
+# 골드
+Show #starter
+    Class == "Stackable Currency"
+    BaseType == "Gold"
+    SetFontSize 28
+    SetTextColor 212 175 55 255 #D4AF37
+    # SetBorderColor 212 175 55 255 #D4AF37
+    SetBackgroundColor 16 16 16 240 #000000
+
+##### ======================================
+##### 퀘스트 아이템
+##### ======================================
+
+Show #default
+    Class == "Quest Items"
+    SetFontSize 45
+    SetTextColor 73 230 58 255 #49E63A
+    SetBorderColor 73 230 58 255 #49E63A
+    SetBackgroundColor 5 34 2 245 #052202
+    PlayEffect Green
+    PlayAlertSound 3 300
+    MinimapIcon 1 Green Circle
+
+
+
+
+
+
+# ======================================
+# 중첩 가능한 화폐
+# 화폐의 티어는 EA 기간에 지속해서 변경될 가능성이 있습니다.
+# ======================================
+
+##### ======================================
+##### 0티어 화폐
+##### ======================================
+
+# 칼란드라의 거울
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Mirror of Kalandra"
+    SetFontSize 45
+    SetTextColor 244 0 161 255 #F400A1
+    SetBorderColor 244 0 161 255 #F400A1
+    SetBackgroundColor 255 236 249 240 #FFECF9
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+    CustomAlertSoundOptional "./CustomSound/currency-mirror.wav" 300
+    
+# 디바인 오브(신성한 오브)
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Divine Orb" 
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 240 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+    CustomAlertSoundOptional "./CustomSound/currency-divine1.wav" 300
+
+# 완벽한 쥬얼러 오브
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Perfect Jeweller's Orb"
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 240 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+    CustomAlertSoundOptional "./CustomSound/currency-t0.wav" 300
+
+##### ======================================
+##### 1티어 화폐
+##### ======================================
+
+# 상위 쥬얼러 오브(약 30ex up)
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Greater Jeweller's Orb"
+    SetFontSize 45
+    SetTextColor 0 0 0 255 #000000
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 248 107 159 240 #F86B9F
+    PlayAlertSound 1 300
+    PlayEffect Red
+    MinimapIcon 0 Red Cross
+    CustomAlertSoundOptional "./CustomSound/currency-t1.wav" 300
+
+##### ======================================
+##### 2티어 화폐
+##### ======================================
+
+# 기회의 오브
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Orb of Chance"
+    SetFontSize 45
+    SetTextColor 0 0 0 255 #000000
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 233 144 80 240 #E99050
+    PlayAlertSound 2 300
+    PlayEffect Yellow Temp
+    MinimapIcon 1 Yellow Cross
+    CustomAlertSoundOptional "./CustomSound/currency-t2.wav" 300
+
+# 기회의 파편
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Chance Shard"
+    SetFontSize 40
+    SetTextColor 0 0 0 255 #000000
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 233 144 80 240 #E99050
+    MinimapIcon 2 Yellow Kite
+
+# 카오스 오브
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Chaos Orb"
+    SetFontSize 45
+    SetTextColor 0 0 0 255 #000000
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 233 144 80 240 #E99050
+    PlayAlertSound 2 300
+    PlayEffect Yellow Temp
+    MinimapIcon 1 Yellow Cross
+    CustomAlertSoundOptional "./CustomSound/currency-t2.wav" 300
+
+# 소멸의 오브
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Orb of Annulment"
+    SetFontSize 45
+    SetTextColor 0 0 0 255 #000000
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 233 144 80 240 #E99050
+    PlayAlertSound 2 300
+    PlayEffect Yellow Temp
+    MinimapIcon 1 Yellow Cross
+    CustomAlertSoundOptional "./CustomSound/currency-t2.wav" 300
+
+# 세공사의 프리즘
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Gemcutter's Prism"
+    SetFontSize 45
+    SetTextColor 0 0 0 255 #000000
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 233 144 80 240 #E99050
+    PlayAlertSound 2 300
+    PlayEffect Yellow Temp
+    MinimapIcon 1 Yellow Cross
+    CustomAlertSoundOptional "./CustomSound/currency-t2.wav" 300
+
+##### ======================================
+##### 3티어 화폐
+##### 나름 기준 점
+##### ======================================
+
+# 엑잘티드 오브
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Exalted Orb"
+    SetFontSize 45
+    SetTextColor 0 0 0 255 #000000
+    SetBorderColor 233 144 80 255 #E99050
+    SetBackgroundColor 217 181 0 240 #D9B500
+    PlayAlertSound 2 300
+    PlayEffect Yellow Temp
+    MinimapIcon 1 Yellow Circle
+    CustomAlertSoundOptional "./CustomSound/currency-exal.wav" 300
+
+##### ======================================
+##### 4티어 화폐
+##### ======================================
+
+# 연금술의 오브
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Orb of Alchemy"
+    SetFontSize 40
+    SetTextColor 17 17 17 255 #111111
+    SetBorderColor 17 17 17 255 #111111
+    SetBackgroundColor 102 153 204 240 #6699CC
+    PlayAlertSound 2 300
+    MinimapIcon 1 White Circle
+
+# 유리직공의 방울
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Glassblower's Bauble"
+    SetFontSize 40
+    SetTextColor 17 17 17 255 #111111
+    SetBorderColor 17 17 17 255 #111111
+    SetBackgroundColor 102 153 204 240 #6699CC
+    PlayAlertSound 2 300
+    MinimapIcon 1 Yellow Circle
+
+# 하위 쥬얼러 오브
+Show #end
+    Class == "Stackable Currency"
+    BaseType == "Lesser Jeweller's Orb"
+    SetFontSize 40
+    SetTextColor 17 17 17 255 #111111
+    SetBorderColor 17 17 17 255 #111111
+    SetBackgroundColor 102 153 204 240 #6699CC
+    PlayAlertSound 2 300 #end
+    MinimapIcon 2 Yellow Circle #end
+
+# 바알 오브
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Vaal Orb"
+    SetFontSize 40
+    SetTextColor 17 17 17 255 #111111
+    SetBorderColor 17 17 17 255 #111111
+    SetBackgroundColor 102 153 204 240 #6699CC
+    PlayAlertSound 2 300
+    MinimapIcon 2 Yellow Circle
+
+# 제왕의 오브
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Regal Orb"
+    SetFontSize 40
+    SetTextColor 17 17 17 255 #111111
+    SetBorderColor 17 17 17 255 #111111
+    SetBackgroundColor 102 153 204 240 #6699CC
+    PlayAlertSound 2 300
+    MinimapIcon 2 Yellow Circle
+
+# 제왕의 파편
+Show #mid
+    Class == "Stackable Currency"
+    BaseType == "Regal Shard"
+    SetFontSize 35
+    SetTextColor 17 17 17 255 #111111
+    SetBorderColor 17 17 17 255 #111111
+    SetBackgroundColor 102 153 204 240 #6699CC
+    MinimapIcon 2 Yellow Kite #mid
+
+# 숙련공의 오브
+Show #end
+    Class == "Stackable Currency"
+    BaseType == "Artificer's Orb"
+    SetFontSize 40
+    SetTextColor 17 17 17 255 #111111
+    SetBorderColor 17 17 17 255 #111111
+    SetBackgroundColor 102 153 204 240 #6699CC
+    PlayAlertSound 2 300 #end
+    MinimapIcon 2 Yellow Circle #end
+
+# 숙련공의 파편
+Show #mid
+    Class == "Stackable Currency"
+    BaseType == "Artificer's Shard"
+    SetFontSize 35
+    SetTextColor 17 17 17 255 #111111
+    SetBorderColor 17 17 17 255 #111111
+    SetBackgroundColor 102 153 204 240 #6699CC
+    MinimapIcon 2 Yellow Kite #mid
+
+# 대장장이의 숫돌
+Show #end
+    Class == "Stackable Currency"
+    BaseType == "Blacksmith's Whetstone"
+    SetFontSize 40
+    SetTextColor 170 158 130 255 #AA9E82
+    SetBorderColor 255 248 231 255 #FFF8E7
+    SetBackgroundColor 40 15 1 240 #280F01
+    PlayAlertSound 2 300 #end
+    MinimapIcon 2 Yellow Circle #end
+
+# 방어구 장인의 고철
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Armourer's Scrap"
+    SetFontSize 40
+    SetTextColor 170 158 130 255 #AA9E82
+    SetBorderColor 255 248 231 255 #FFF8E7
+    SetBackgroundColor 40 15 1 240 #280F01
+    PlayAlertSound 2 300
+    MinimapIcon 2 Yellow Circle
+
+# 신비학자의 식각기
+Show #end
+    Class == "Stackable Currency"
+    BaseType == "Arcanist's Etcher"
+    SetFontSize 40
+    SetTextColor 170 158 130 255 #AA9E82
+    SetBorderColor 255 248 231 255 #FFF8E7
+    SetBackgroundColor 40 15 1 240 #280F01
+    PlayAlertSound 2 300 #end
+    MinimapIcon 2 Yellow Circle #end
+
+##### ======================================
+##### 5티어 화폐
+##### ======================================
+
+# 진화, 확장의 오브가 스택으로 떨어지는 것을 보진 못했지만 혹시나 해서 작성
+# 2개 이상 진화의 오브, 확장의 오브
+Show #default
+    StackSize >= 2
+    Class == "Stackable Currency"
+    BaseType == "Orb of Transmutation" "Orb of Augmentation"
+    SetFontSize 42
+    SetTextColor 170 158 130 255 #AA9E82
+    SetBorderColor 255 239 213 255 #FFEFD5
+    SetBackgroundColor 0 0 0 240 #000000
+
+# 진화의 오브
+Show #end
+    Class == "Stackable Currency"
+    BaseType == "Orb of Transmutation"
+    SetFontSize 40
+    SetTextColor 170 158 130 255 #AA9E82
+    SetBorderColor 255 239 213 255 #FFEFD5
+    SetBackgroundColor 0 0 0 240 #000000
+
+# 확장의 오브
+Show #end
+    Class == "Stackable Currency"
+    BaseType == "Orb of Augmentation"
+    SetFontSize 40
+    SetTextColor 170 158 130 255 #AA9E82
+    SetBorderColor 255 239 213 255 #FFEFD5
+    SetBackgroundColor 0 0 0 240 #000000
+
+# 진화의 파편
+Show #starter
+    Class == "Stackable Currency"
+    BaseType == "Transmutation Shard"
+    SetFontSize 35
+    SetTextColor 170 158 130 255 #AA9E82
+    # SetBorderColor 255 239 213 255 #FFEFD5
+    SetBackgroundColor 0 0 0 240 #000000
+
+# 우선 아틀라스 진입 후에는 감정 주문서 보이지 않도록 설정
+# 감정 주문서
+Show #default
+    AreaLevel < 65
+    Class == "Stackable Currency"
+    BaseType == "Scroll of Wisdom"
+    SetFontSize 40
+    SetTextColor 170 158 130 255 #AA9E82
+    SetBorderColor 200 100 60 255 #C8643C
+    SetBackgroundColor 30 5 5 240 #1E0505
+
+# 감정 주문서
+Hide #default
+    AreaLevel >= 65
+    Class == "Stackable Currency"
+    BaseType == "Scroll of Wisdom"
+    SetFontSize 40
+    SetTextColor 170 158 130 255 #AA9E82
+    SetBorderColor 200 100 60 255 #C8643C
+    SetBackgroundColor 30 5 5 240 #1E0505
+
+
+# ======================================
+# 에센스
+# ======================================
+
+# 1티어 에센스(45ex 이상)
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Greater Essence of Haste" "Greater Essence of Sorcery" "Greater Essence of Torment" "Greater Essence of Electricity"
+    SetFontSize 45
+    SetTextColor 4 14 21 255 #040E15
+    SetBorderColor 4 14 21 255 #040E15
+    SetBackgroundColor 170 210 238 240 #AAD2EE
+    PlayAlertSound 12 300
+    PlayEffect Cyan
+    MinimapIcon 0 Cyan Raindrop
+
+# 2티어 에센스(3~28ex)
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Greater Essence of the Infinite" "Greater Essence of the Mind" "Greater Essence of Ruin" "Greater Essence of Battle" "Greater Essence of Enhancement" "Greater Essence of Ice" "Greater Essence of Flames" "Greater Essence of the Body"
+    SetFontSize 45
+    SetTextColor 173 212 239 255 #ADD4EF
+    SetBorderColor 173 212 239 255 #ADD4EF
+    SetBackgroundColor 0 52 102 240 #003466
+    PlayAlertSound 3 300
+    PlayEffect Cyan
+    MinimapIcon 1 Cyan Cross
+
+# 3티어 에센스(1ex 아래)
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Essence of Haste" "Essence of Electricity" "Essence of Torment" "Essence of Ruin" "Essence of the Mind" "Essence of Sorcery" "Essence of Battle" "Essence of Ice" "Essence of the Body" "Essence of the Infinite" "Essence of Flames" "Essence of Enhancement"
+    SetFontSize 45
+    SetTextColor 255 250 240 255 #FFFAF0
+    SetBorderColor 255 250 240 255 #FFFAF0
+    SetBackgroundColor 0 26 51 240 #001A33
+    PlayAlertSound 2 300
+    PlayEffect Cyan
+    MinimapIcon 1 Cyan Circle
+
+# 에센스 방어 코드(필터링 되지 않은)
+Show #default
+    Class == "Stackable Currency"
+    BaseType "Essence of"
+    SetFontSize 45
+    SetTextColor 114 0 0 255 #720000
+    SetBorderColor 114 0 0 255 #720000
+    SetBackgroundColor 255 255 255 240 #FFFFFF
+    PlayEffect Cyan Temp
+    MinimapIcon 1 Cyan Circle
+    
+# ======================================
+# 의식
+# ======================================
+
+# 징조는 상황봐서 티어 나누기
+Show #default
+    Class == "Omen"
+    SetFontSize 45
+    SetTextColor 252 240 197 255 #FCF0C5
+    SetBorderColor 252 240 197 255 #FCF0C5
+    SetBackgroundColor 49 29 13 240 #311D0D
+    PlayEffect Yellow Temp
+
+# 왕 알현
+Show #default
+    Class == "Map Fragments"
+    BaseType == "An Audience with the King"
+    SetFontSize 45
+    SetTextColor 112 41 99 255 #702963
+    SetBorderColor 112 41 99 255 #702963
+    SetBackgroundColor 250 230 250 240 #FAE6FA
+    PlayAlertSound 6 300
+    PlayEffect Purple
+    MinimapIcon 0 Purple Star
+
+# ======================================
+# 환영
+# ======================================
+
+# 복제된 파편
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Simulacrum Splinter"
+    SetFontSize 45
+    SetTextColor 30 51 82 255 #1E3352
+    SetBorderColor 30 51 82 255 #1E3352
+    SetBackgroundColor 168 221 224 240 #A8DDE0
+    PlayAlertSound 3 300
+    PlayEffect Cyan Temp
+    MinimapIcon 1 Cyan Circle
+
+# 복제된 영토
+Show #default
+    Class == "Map Fragments"
+    BaseType == "Simulacrum"
+    SetFontSize 45
+    SetTextColor 112 41 99 255 #702963
+    SetBorderColor 112 41 99 255 #702963
+    SetBackgroundColor 250 230 250 240 #FAE6FA
+    PlayAlertSound 6 300
+    PlayEffect Purple
+    MinimapIcon 0 Purple Star
+
+# 0티어 정제된 고립
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Distilled Isolation"
+    SetFontSize 45
+    SetTextColor 51 37 0 255 #332500
+    SetBorderColor 51 37 0 255 #332500
+    SetBackgroundColor 184 134 11 240 #B8860B
+    PlayAlertSound 6 300
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+
+# 1티어 정제된 고통
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Distilled Suffering"
+    SetFontSize 45
+    SetTextColor 26 26 26 255 #1A1A1A
+    SetBorderColor 26 26 26 255 #1A1A1A
+    SetBackgroundColor 192 192 192 240 #C0C0C0
+    PlayAlertSound 6 300
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+
+# 2티어 정제된 두려움
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Distilled Fear"
+    SetFontSize 45
+    SetTextColor 50 23 77 255 #32174D
+    SetBorderColor 50 23 77 255 #32174D
+    SetBackgroundColor 122 197 204 240 #7AC5CC
+    PlayAlertSound 1 300
+    PlayEffect Yellow
+    MinimapIcon 1 Yellow Star
+
+# 3티어 정제된 절망, 정제된 혐오
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Distilled Despair" "Distilled Disgust"
+    SetFontSize 45
+    SetTextColor 255 248 231 255 #FFF8E7
+    SetBorderColor 255 248 231 255 #FFF8E7
+    SetBackgroundColor 132 28 49 240 #841C31
+    PlayAlertSound 1 300
+    PlayEffect Yellow
+    MinimapIcon 1 Yellow Star
+
+# 4티어 정제된 선망, 정제된 집착
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Distilled Envy" "Distilled Paranoia"
+    SetFontSize 45
+    SetTextColor 250 218 94 255 #FADA5E
+    SetBorderColor 250 218 94 255 #FADA5E
+    SetBackgroundColor 1 11 19 240 #010B13
+    PlayAlertSound 2 300
+    PlayEffect Yellow 
+    MinimapIcon 1 Yellow Circle
+
+# 5티어 정제된 탐욕, 정제된 죄책감, 정제된 진노
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Distilled Greed" "Distilled Guilt" "Distilled Ire"
+    SetFontSize 45
+    # SetTextColor 224 216 210 255 #E0D8D2
+    SetBorderColor 255 239 213 255 #FFEFD5
+    SetBackgroundColor 0 0 0 240 #000000
+
+# 필터링되지 않은 모든 정제된 아이템
+Show #default
+    Class == "Stackable Currency"
+    BaseType "Distilled"
+    SetFontSize 45
+    SetTextColor 30 51 82 255 #1E3352
+    SetBorderColor 30 51 82 255 #1E3352
+    SetBackgroundColor 168 221 224 240 #A8DDE0
+    PlayAlertSound 3 300
+    PlayEffect Cyan Temp
+    MinimapIcon 1 Cyan Circle
+
+# ======================================
+# 균열
+# ======================================
+
+# 적응형, 에쉬의, 강탈자
+# 1티어 기폭제
+Show #uber
+    Class == "Stackable Currency"
+    BaseType == "Adaptive Catalyst" "Esh's Catalyst" "Reaver Catalyst"
+    SetFontSize 45
+    SetTextColor 35 49 45 255 #23312D
+    SetBorderColor 35 49 45 255 #23312D
+    SetBackgroundColor 112 153 142 240 #70998E
+    PlayAlertSound 3 300
+    PlayEffect White
+    MinimapIcon 2 White Circle
+
+# 툴의, 신경, 차율라
+# 2티어 기폭제
+Show #highEnd
+    Class == "Stackable Currency"
+    BaseType == "Tul's Catalyst" "Neural Catalyst" "Chayula's Catalyst"
+    SetFontSize 45
+    SetTextColor 219 230 227 255 #DBE6E3
+    SetBorderColor 219 230 227 255 #DBE6E3
+    SetBackgroundColor 59 84 77 240 #3B544D
+    PlayAlertSound 3 300 #highEnd
+    PlayEffect White #highEnd
+    MinimapIcon 2 White Circle #highEnd
+
+# 쇳소리, 조프의, 달리는
+# 3티어 기폭제
+Show #end
+    Class == "Stackable Currency"
+    BaseType == "Sibilant Catalyst" "Xoph's Catalyst" "Skittering Catalyst"
+    SetFontSize 45
+    SetTextColor 219 230 227 255 #DBE6E3
+    SetBorderColor 219 230 227 255 #DBE6E3
+    SetBackgroundColor 35 49 45 240 #23312D
+    PlayAlertSound 3 300 #end
+    PlayEffect White #end
+    MinimapIcon 2 White Circle #end
+
+# 울네톨의, 육체, 갑각
+# 4티어 기폭제
+Show #mid
+    Class == "Stackable Currency"
+    BaseType == "Uul-Netol's Catalyst" "Flesh Catalyst" "Carapace Catalyst"
+    SetFontSize 45
+    SetTextColor 219 230 227 255 #DBE6E3
+    SetBorderColor 219 230 227 255 #DBE6E3
+    SetBackgroundColor 35 49 45 240 #23312D
+    PlayEffect White #mid
+    MinimapIcon 2 White Circle #mid
+
+# 기폭제(필터링 되지 않은)
+Show #default
+    Class == "Stackable Currency"
+    BaseType "Catalyst"
+    SetFontSize 45
+    SetTextColor 91 186 78 255 #5BBA4E
+    SetBorderColor 91 186 78 255 #5BBA4E
+    SetBackgroundColor 10 24 10 240 #0A180A
+    PlayAlertSound 3 300
+    PlayEffect White
+    MinimapIcon 2 White Circle
+
+# 균열 반지
+Show #default
+    BaseType == "Breach Ring"
+    Rarity == Normal Magic Rare
+    SetFontSize 45
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 211 178 255 255 #D3B2FF
+    SetBackgroundColor 67 0 153 240 #430099
+    PlayEffect Purple
+    MinimapIcon 2 Purple UpsideDownHouse
+
+# 균열석
+Show #default
+    BaseType == "Breachstone"
+    SetFontSize 45
+    SetTextColor 112 41 99 255 #702963
+    SetBorderColor 112 41 99 255 #702963
+    SetBackgroundColor 250 230 250 240 #FAE6FA
+    PlayAlertSound 6 300
+    PlayEffect Purple
+    MinimapIcon 0 Purple Star
+
+# 균열 파편 2개 이상
+Show #default
+    StackSize >= 2
+    Class == "Stackable Currency"
+    BaseType == "Breach Splinter"
+    SetFontSize 43
+    SetTextColor 31 5 46 255 #1F052E
+    SetBorderColor 31 5 46 255 #1F052E
+    SetBackgroundColor 187 138 214 240 #BB8AD6
+    MinimapIcon 1 Purple Kite
+
+# 균열 파편
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Breach Splinter"
+    SetFontSize 41
+    SetTextColor 31 5 46 255 #1F052E
+    SetBorderColor 31 5 46 255 #1F052E
+    SetBackgroundColor 187 138 214 240 #BB8AD6
+    MinimapIcon 2 Purple Kite
+
+# ======================================
+# 탐험
+# ======================================
+
+# 탐험 리롤 화폐
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Broken Circle Artifact" "Black Scythe Artifact" "Order Artifact" "Sun Artifact" "Exotic Coinage"
+    SetFontSize 41
+    SetTextColor 240 248 255 255 #F0F8FF
+    SetBorderColor 240 248 255 255 #F0F8FF
+    SetBackgroundColor 19 56 109 240 #13386D
+    MinimapIcon 1 Yellow Circle
+
+# 탐험 일지
+Show #default
+    Class == "Expedition Logbooks"
+    SetFontSize 45
+    SetTextColor 238 197 208 255 #EEC5D0
+    SetBorderColor 238 197 208 255 #EEC5D0
+    SetBackgroundColor 121 12 42 240 #790C2A
+    PlayAlertSound 5 300
+    PlayEffect Red
+    MinimapIcon 1 Red Square
+
+# ======================================
+# 고유 아이템
+# ======================================
+
+# 고유 아이템 색상은 신성한 오브의 색상과 동일하게(임시)
+
+# 칼란드라의 손길 반지
+Show
+    Rarity == Unique
+    BaseType == "Ring"
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 240 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+
+# 비싼 고유 플라스크(올로스의 결의, 녹아내리는 소용돌이)
+Show #default
+    Rarity == Unique
+    Class == "Life Flasks" "Mana Flasks"
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 240 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+
+# 기민함, 리슬라사의 감개, 숲의 여왕, 우두머리의 울부짖음, 말리가로의 기교, 지혜와 행동의 손아귀, 겨울의 추위, 어둠에의 저항 
+Show #default
+    Rarity == Unique
+    Class == "Belts" "Body Armours" "Helmets" "Gloves"
+    BaseType == "Utility Belt" "Ornate Belt" "Smuggler Coat" "Armoured Cap" "Fine Bracers" "Furtive Wraps" "Glass Shank" "Time-Lost Diamond"
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 240 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+
+# 마지막 불길(템포랄리스 유물)
+Show #default
+    Rarity == Unique
+    Class == "Relics"
+    BaseType == "Incense Relic"
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 240 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+
+# 두 번째 성체(어둠에의 저항 유물)
+Show
+    Rarity == Unique
+    Class == "Relics"
+    BaseType == "Vase Relic"
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 240 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Orange
+    MinimapIcon 0 Orange Star
+
+# 별의 보석 별의 목걸이, 꿈의 조각 사파이어 반지, 헤드헌터 무거운 허리띠, 원죄 자수정 반지, 도둑의 고통 에메랄드 반지, 템포랄리스 실크 로브, 최정점 부족 가면, 앗지리의 예리함 주조한 미트
+# 비싼 멀티 베이스 고유 아이템
+Show
+    Rarity == Unique
+    Class == "Amulets" "Rings" "Body Armours" "Gloves"
+    BaseType == "Stellar Amulet" "Sapphire Ring" "Heavy Belt" "Amethyst Ring" "Emerald Ring" "Silk Robe" "Tribal Mask" "Moulded Mitts"
+    SetFontSize 45
+    SetTextColor 13 7 3 255 #0D0703
+    SetBorderColor 13 7 3 255 #0D0703
+    SetBackgroundColor 228 172 129 240 #E4AC81
+    PlayAlertSound 1 200
+    PlayEffect Orange
+    MinimapIcon 0 Orange Star
+
+# 고유 주얼
+Show
+    Rarity == Unique
+    Class == "Jewels"
+    SetFontSize 45
+    SetTextColor 13 7 3 255 #0D0703
+    SetBorderColor 13 7 3 255 #0D0703
+    SetBackgroundColor 228 172 129 240 #E4AC81
+    PlayAlertSound 1 200
+    PlayEffect Orange
+    MinimapIcon 0 Orange Star
+
+# 그 외 고유 아이템
+Show #default
+    Rarity == Unique
+    SetFontSize 40
+    SetTextColor 175 96 37 255 #AF6025
+    SetBorderColor 175 96 37 255 #AF6025
+    SetBackgroundColor 13 7 3 240 #0D0703
+    PlayAlertSound 2 200
+    PlayEffect Orange
+    MinimapIcon 2 Orange Cross
+
+
+
+
+# ======================================
+# 식별된 아이템
+# 식별된 아이템에 부여된 속성을 필터링
+# ======================================
+
+##### ======================================
+##### 식별된 생명력 플라스크
+##### ======================================
+
+# 접두어(2티어 이상)
+#   낮은 생명력 상태일 때 사용 시 회복  증폭
+#   회복량 증가
+
+# 접미어 2티어 이상
+#   충전량 증가
+#   1회당 충전 소모량 감소
+#   충전 증가
+# 위의 유효 속성이 2개인 극한의 생명력 플라스크
+Show #uber
+    Identified True
+    Class == "Life Flasks"
+    BaseType == "Ultimate Life Flask"
+    HasExplicitMod ==2 "Careful" "Cautious" "Potent" "Saturated" "of the Perpetual" "of the Eternal" "of the Brewer" "of the Chemist" "of the Abundant" "of the Ample"
+    Rarity == Magic
+    SetFontSize 38
+    PlayAlertSound 1 300
+    PlayEffect Yellow
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 121 50 121 255 #793279
+    SetBackgroundColor 121 50 121 240 #793279
+
+# 접두어(2티어 이상)
+#   낮은 생명력 상태일 때 사용 시 회복 증폭
+#   회복량 증가
+
+# 접미어 2티어 이상
+#   충전량 증가
+#   1회당 충전 소모량 감소
+#   충전 증가
+# 위의 유효 속성이 1개인 극한의 생명력 플라스크
+Show #highEnd
+    Identified True
+    Class == "Life Flasks"
+    BaseType == "Ultimate Life Flask"
+    HasExplicitMod >=1 "Careful" "Cautious" "Potent" "Saturated" "of the Perpetual" "of the Eternal" "of the Brewer" "of the Chemist" "of the Abundant" "of the Ample"
+    Rarity == Magic
+    SetFontSize 38
+    PlayAlertSound 2 300
+    PlayEffect Yellow
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 121 50 121 255 #793279
+    SetBackgroundColor 121 50 121 240 #793279
+
+##### ======================================
+##### 식별된 마나 플라스크
+##### ======================================
+
+# 접두어(2티어 이상)
+#   낮은 마나 상태일 때 사용 시 회복 증폭
+#   회복량 증가
+
+# 접미어 2티어 이상
+#   충전량 증가
+#   1회당 충전 소모량 감소
+#   충전 증가
+# 위의 유효 속성이 2개인 극한의 마나 플라스크
+Show #uber
+    Identified True
+    Class == "Life Flasks"
+    BaseType == "Ultimate Mana Flask"
+    HasExplicitMod ==2 "Persevering" "Prolonged" "Potent" "Saturated" "of the Perpetual" "of the Eternal" "of the Brewer" "of the Chemist" "of the Abundant" "of the Ample"
+    Rarity == Magic
+    SetFontSize 38
+    PlayAlertSound 1 300
+    PlayEffect Yellow
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 121 50 121 255 #793279
+    SetBackgroundColor 121 50 121 240 #793279
+
+Show #highEnd
+    Identified True
+    Class == "Life Flasks"
+    BaseType == "Ultimate Mana Flask"
+    HasExplicitMod >=1 "Persevering" "Prolonged" "Potent" "Saturated" "of the Perpetual" "of the Eternal" "of the Brewer" "of the Chemist" "of the Abundant" "of the Ample"
+    Rarity == Magic
+    SetFontSize 38
+    PlayAlertSound 1 300
+    PlayEffect Yellow
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 121 50 121 255 #793279
+    SetBackgroundColor 121 50 121 240 #793279
+
+######### ======================================
+######### 식별된 무도 무기
+######### ======================================
+
+# 물리 양손 무기(4티어 이상 물리 피해 관련 유효 속성 3개 이상)
+Show
+    Identified True
+    Class == "Two Hand Maces" "Quarterstaves" "Crossbows"
+    HasExplicitMod >=3 "Annealed" "Razor-sharp" "Tempered" "Flaring" "Bloodthirsty" "Cruel" "Tyrannical" "Merciless" "Champion's" "Conqueror's" "Emperor's" "Dictator's"
+    Rarity == Magic Rare
+    SetFontSize 45
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 121 50 121 255 #793279
+    SetBackgroundColor 121 50 121 240 #793279
+    PlayAlertSound 6 300
+    PlayEffect Red
+
+# 물리 양손 무기(4티어 이상 물리 피해 관련 유효 속성 3개 이상)
+Show
+    Identified True
+    Class == "Two Hand Maces" "Quarterstaves" "Crossbows"
+    HasExplicitMod >=2 "Annealed" "Razor-sharp" "Tempered" "Flaring" "Bloodthirsty" "Cruel" "Tyrannical" "Merciless" "Champion's" "Conqueror's" "Emperor's" "Dictator's"
+    Rarity == Magic Rare
+    SetFontSize 45
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 121 50 121 255 #793279
+    SetBackgroundColor 121 50 121 240 #793279
+    PlayAlertSound 1 300
+    PlayEffect Red
+
+# 물리 양손 무기(4티어 이상 물리 피해 관련 유효 속성 1개 이상)
+Show
+    Identified True
+    Class == "Two Hand Maces" "Quarterstaves" "Crossbows"
+    HasExplicitMod >=1 "Annealed" "Razor-sharp" "Tempered" "Flaring" "Bloodthirsty" "Cruel" "Tyrannical" "Merciless" "Champion's" "Conqueror's" "Emperor's" "Dictator's"
+    Rarity == Magic Rare
+    SetFontSize 45
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 121 50 121 255 #793279
+    SetBackgroundColor 121 50 121 240 #793279
+    PlayAlertSound 1 300
+    PlayEffect Yellow
+
+######### ======================================
+######### 식별된 활
+######### ======================================
+
+# 물리 활(4티어 이상 물리 피해 관련 유효 속성 3개 이상)
+Show
+    Identified True
+    Class == "Bows"
+    HasExplicitMod >=3 "Annealed" "Razor-sharp" "Tempered" "Flaring" "Bloodthirsty" "Cruel" "Tyrannical" "Merciless" "Champion's" "Conqueror's" "Emperor's" "Dictator's"
+    Rarity == Magic Rare
+    SetFontSize 45
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 121 50 121 255 #793279
+    SetBackgroundColor 121 50 121 240 #793279
+    PlayAlertSound 6 300
+    PlayEffect Red
+
+# 물리 활(4티어 이상 물리 피해 관련 유효 속성 3개 이상)
+Show
+    Identified True
+    Class == "Bows"
+    HasExplicitMod >=2 "Annealed" "Razor-sharp" "Tempered" "Flaring" "Bloodthirsty" "Cruel" "Tyrannical" "Merciless" "Champion's" "Conqueror's" "Emperor's" "Dictator's"
+    Rarity == Magic Rare
+    SetFontSize 45
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 121 50 121 255 #793279
+    SetBackgroundColor 121 50 121 240 #793279
+    PlayAlertSound 1 300
+    PlayEffect Red
+
+# 물리 활(4티어 이상 물리 피해 관련 유효 속성 1개 이상)
+Show
+    Identified True
+    Class == "Bows"
+    HasExplicitMod >=1 "Annealed" "Razor-sharp" "Tempered" "Flaring" "Bloodthirsty" "Cruel" "Tyrannical" "Merciless" "Champion's" "Conqueror's" "Emperor's" "Dictator's"
+    Rarity == Magic Rare
+    SetFontSize 45
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 121 50 121 255 #793279
+    SetBackgroundColor 121 50 121 240 #793279
+    PlayAlertSound 1 300
+    PlayEffect Yellow
+
+# 활 공격 시 화살 n개 추가 발사
+Show
+    Identified True
+    Class == "Bows"
+    HasExplicitMod ==1 "of Splintering" "of Many"
+    Rarity == Magic Rare
+    SetFontSize 45
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 121 50 121 255 #793279
+    SetBackgroundColor 121 50 121 240 #793279
+    PlayAlertSound 2 300
+    PlayEffect Yellow
+
+######### ======================================
+######### 식별된 마법봉
+######### ======================================
+
+# 마법봉, 주문, 화염, 냉기, 번개 스킬 레벨 3이상
+Show
+    Identified True
+    Class == "Wands"
+    HasExplicitMod >=1 "of the Sorcerer" "of the Wizard" "of Flames" "of Immolation" "of Inferno" "of Ice" "of Rime" "of Frostbite" "of Electricity" "of Voltage" "of Thunder" "of Ruin" "of Havoc" "of Armageddon" "of Torment" "of Desolation" "of Grief"
+    Rarity == Magic Rare
+    SetFontSize 45
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 121 50 121 255 #793279
+    SetBackgroundColor 121 50 121 240 #793279
+    PlayAlertSound 2 300
+    PlayEffect Yellow
+
+######### ======================================
+######### 식별된 장화
+######### ======================================
+
+# 이동 속도 25% 이상이 부여된 장화
+Show
+    Identified True
+    Class == "Boots"
+    HasExplicitMod >=1 "Cheetah's" "Hellion's" "Gazelle's"
+    Rarity == Magic Rare
+    SetFontSize 45
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 121 50 121 255 #793279
+    SetBackgroundColor 121 50 121 240 #793279
+    PlayAlertSound 2 300
+    PlayEffect Yellow
+
+######### ======================================
+######### 식별된 갑옷
+######### ======================================
+
+# 정신력 갑옷
+Show
+    Identified True
+    Class == "Body Armours"
+    HasExplicitMod >=1 "Lady's" "Baronness'" "Viscountess'" "Marchioness'" "Countess'" "Duchess'" "Princess'" "Queen's"
+    Rarity == Magic Rare
+    SetFontSize 45
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 121 50 121 255 #793279
+    SetBackgroundColor 121 50 121 240 #793279
+    PlayAlertSound 2 300
+    PlayEffect Yellow
+
+######### ======================================
+######### 식별된 목걸이
+######### ======================================
+
+# 정신력, 스킬 레벨 속성이 1개 이상이 부여된 목걸이
+Show
+    Identified True
+    Class == "Amulets"
+    HasExplicitMod >=1 "Lady's" "Baronness'" "Viscountess'" "Marchioness'" "Countess'" "of the Mage" "of the Enchanter" "of the Sorcerer" "of the Taskmaster" "of the Despot" "of the Overseer" "of Combat" "of Dueling" "of Battle" "of the Archer" "of the Fletcher" "of the Sharpshooter"
+    Rarity == Magic Rare
+    SetFontSize 45
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 121 50 121 255 #793279
+    SetBackgroundColor 121 50 121 240 #793279
+    PlayAlertSound 2 300
+    PlayEffect Yellow
+
+
+
+
+
+
+
+
+# ======================================
+# 크래프팅 아이템
+# ======================================
+
+##### ======================================
+##### 기회의 오브 베이스
+##### ======================================
+
+# 무거운 허리띠, 별의 목걸이, 사파이어 반지
+Show #uber
+    BaseType == "Heavy Belt" "Stellar Amulet" "Sapphire Ring"
+    Rarity == Normal
+    SetFontSize 40
+    SetTextColor 62 39 35 255 #3E2723
+    SetBorderColor 62 39 35 255 #3E2723
+    SetBackgroundColor 214 212 188 240 #D6D4BC
+    PlayAlertSound 12 300
+    PlayEffect Grey
+    MinimapIcon 2 Grey UpsideDownHouse 
+
+# ======================================
+# 아직 미구현된 아이템 방어 코드
+# ======================================
+
+Show #default
+    Class == "Claws" "Daggers" "One Hand Swords" "One Hand Axes" "Spears" "Flails" "Two Hand Swords" "Two Hand Axes" "Traps" "Fishing Rods"
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    # SetBorderColor 0 0 0 255 #000000
+    SetBackgroundColor 24 9 112 240 #180970
+    PlayEffect Yellow Temp
+
+
+
+##### ======================================
+##### 크래프팅 무기
+##### ======================================
+
+######### ======================================
+######### 크래프팅 활
+######### ======================================
+
+# 광신자 활(카오스 피해)은 나쁜 베이스 활이다.
+Hide
+    Quality == 0
+    Sockets == 0
+    Class == "Bows"
+    BaseType == "Cultist Bow"
+
+############## uber #############
+
+# [전문] 이중시위, 간수, 맹신자 활(희귀)
+Show #uber
+    Class == "Bows"
+    BaseType == "Expert Dualstring Bow" "Expert Warden Bow" "Expert Zealot Bow"
+    Rarity == Rare
+    SetFontSize 40
+
+    # [전문] 이중시위, 간수, 맹신자 활(아이템 레벨82 이상, 마법)
+Show #uber
+    ItemLevel >= 82
+    Class == "Bows"
+    BaseType == "Expert Dualstring Bow" "Expert Warden Bow" "Expert Zealot Bow"
+    Rarity == Magic
+    SetFontSize 38
+
+    # [전문] 이중시위, 간수, 맹신자 활(아이템 레벨82 이상, 일반)
+Show #uber
+    ItemLevel >= 82
+    Class == "Bows"
+    BaseType == "Expert Dualstring Bow" "Expert Warden Bow" "Expert Zealot Bow"
+    Rarity == Normal
+    SetFontSize 35
+    SetTextColor 236 233 182 255 #ECE9B6
+    SetBorderColor 178 255 255 255 #B2FFFF
+    SetBackgroundColor 51 51 51 240 #333333
+    PlayEffect Grey Temp
+
+############## highEnd #############
+
+# [전문] 활(희귀)
+Show #highEnd
+    Class == "Bows"
+    BaseType "Expert"
+    Rarity == Rare
+    SetFontSize 40
+    # SetFontSize rare
+
+# [전문] 이중시위, 간수, 맹신자 활(마법)
+Show #highEnd
+    Class == "Bows"
+    BaseType == "Expert Dualstring Bow" "Expert Warden Bow" "Expert Zealot Bow"
+    Rarity == Magic
+    SetFontSize 38
+    # SetFontSize magic
+
+# [전문] 이중시위, 간수, 맹신자 활(일반)
+Show #highEnd
+    Class == "Bows"
+    BaseType == "Expert Dualstring Bow" "Expert Warden Bow" "Expert Zealot Bow"
+    Rarity == Normal
+    SetFontSize 35
+    SetTextColor 236 233 182 255 #ECE9B6
+    SetBorderColor 236 233 182 255 #ECE9B6
+    SetBackgroundColor 51 51 51 240 #333333
+
+############## end #############
+
+# [13퀄리티] 이상의 모든 활(일반, 마법, 희귀)
+Show #end
+    Quality >= 13
+    Class == "Bows"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetFontSize magic
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+    # [2소켓] 이상의 모든 활(일반, 마법, 희귀)
+Show #end
+    Sockets == 2
+    Class == "Bows"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetFontSize magic
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [전문] 활(마법)
+Show #end
+    Class == "Bows"
+    BaseType "Expert"
+    Rarity == Magic
+    SetFontSize 38
+    # SetFontSize magic
+
+# [전문] 활(일반)
+Show #end
+    Class == "Bows"
+    BaseType "Expert"
+    Rarity == Normal
+    SetFontSize 35
+
+# [고급] 활(희귀)
+Show #end
+    Class == "Bows"
+    BaseType "Advanced"
+    Rarity == Rare
+    SetFontSize 40
+
+############## mid #############
+
+# [9퀄리티] 이상의 모든 활(일반, 마법, 희귀)
+Show #mid
+    Quality >= 9
+    Class == "Bows"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [1소켓] 이상의 모든 활(일반, 마법, 희귀)
+Show #mid
+    Sockets == 1
+    Class == "Bows"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [고급] 활(일반, 마법)
+Show #mid
+    Class == "Bows"
+    BaseType "Advanced"
+    Rarity == Normal Magic
+    SetFontSize 38
+
+############## early #############
+
+# [1퀄리티] 이상의 모든 활(일반, 마법, 희귀)
+Show #early
+    Quality >= 1
+    Class == "Bows"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+############## starter #############
+
+# 모든 활
+Show #starter
+    Class == "Bows"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+
+######### ======================================
+######### 크래프팅 쇠뇌(석궁)
+######### ======================================
+
+############## uber #############
+
+# [전문]포격, 이중, 고독한 쇠뇌[희귀]
+Show #uber
+    Class == "Crossbows"
+    BaseType == "Expert Bombard Crossbow" "Expert Dyad Crossbow" "Expert Forlorn Crossbow"
+    Rarity == Rare
+    SetFontSize 40
+
+# [전문]포격, 이중, 고독한 쇠뇌(아이템 레벨82 이상, 일반)
+Show #uber
+    ItemLevel >= 82
+    Class == "Crossbows"
+    BaseType == "Expert Bombard Crossbow" "Expert Dyad Crossbow" "Expert Forlorn Crossbow"
+    Rarity == Normal
+    SetFontSize 35
+    SetTextColor 236 233 182 255 #ECE9B6
+    SetBorderColor 178 255 255 255 #B2FFFF
+    SetBackgroundColor 51 51 51 240 #333333
+    PlayEffect Grey Temp
+
+############## highEnd #############
+
+# [전문] 쇠뇌(희귀)
+Show #highEnd
+    Class == "Crossbows"
+    BaseType "Expert"
+    Rarity == Rare
+    SetFontSize 40
+
+# [전문] 포격, 이중, 고독한 쇠뇌(일반)
+Show #highEnd
+    Class == "Crossbows"
+    BaseType == "Expert Bombard Crossbow" "Expert Dyad Crossbow" "Expert Forlorn Crossbow"
+    Rarity == Normal
+    SetFontSize 35
+
+############## end #############
+
+# [13퀄리티 이상] 이상의 모든 쇠뇌(일반, 마법, 희귀)
+Show #end
+    Quality >= 13
+    Class == "Crossbows"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [2소켓] 이상의 모든 쇠뇌(일반, 마법, 희귀)
+Show #end
+    Sockets == 2
+    Class == "Crossbows"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [전문] 쇠뇌(일반, 마법)
+Show #end
+    Class == "Crossbows"
+    BaseType "Expert"
+    Rarity == Normal Magic
+    SetFontSize 38
+
+# [고급] 쇠뇌(희귀)
+Show #end
+    Class == "Crossbows"
+    BaseType "Advanced"
+    Rarity == Rare
+    SetFontSize 40
+
+# [고급] 포격, 이중, 고독한 쇠뇌(일반, 마법, 희귀)
+Show #end
+    Class == "Crossbows"
+    BaseType == "Advanced Bombard Crossbow" "Advanced Dyad Crossbow" "Advanced Forlorn Crossbow"
+    Rarity == Normal Magic
+    SetFontSize 38
+
+############## mid #############
+
+# [9퀄리티 이상] 모든 쇠뇌(일반, 마법, 희귀)
+Show #mid
+    Quality >= 9
+    Class == "Crossbows"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [1소켓] 이상의 모든 쇠뇌(일반, 마법, 희귀)
+Show #mid
+    Sockets == 1
+    Class == "Crossbows"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [고급] 쇠뇌(일반, 마법)
+Show #mid
+    Class == "Crossbows"
+    BaseType "Advanced"
+    Rarity == Normal Magic
+    SetFontSize 38
+
+############## early #############
+
+# [1퀄리티] 이상의 모든 쇠뇌(일반, 마법, 희귀)
+Show #early
+    Quality >= 1
+    Class == "Crossbows"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+############## starter #############
+
+# 모든 쇠뇌
+Show #starter
+    Class == "Crossbows"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+
+######### ======================================
+######### 크래프팅 육척봉
+######### ======================================
+
+# 전문 치직대는 육척봉, 전문 방벽 육척봉은 숨김 처리. (Bad Base)
+Hide
+    Class == "Quarterstaves"
+    BaseType == "Expert Barrier Quarterstaff" "Expert Crackling Quarterstaff"
+    Rarity == Normal Magic
+    SetFontSize 40
+
+############## uber #############
+
+# [13퀄리티 이상] [전문] 육척봉(희귀)
+Show #uber
+    Quality >= 13
+    Class == "Quarterstaves"
+    BaseType "Expert"
+    Rarity == Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [13퀄리티 미만] [전문] 육척봉(희귀)
+Show #uber
+    Quality < 13
+    Class == "Quarterstaves"
+    BaseType "Expert"
+    Rarity == Rare
+    SetFontSize 40
+
+# [전문] 육척봉(아이템 레벨 81이상, 일반)
+Show #uber
+    ItemLevel >= 81
+    Class == "Quarterstaves"
+    BaseType "Expert"
+    Rarity == Normal
+    SetFontSize 35
+    SetTextColor 236 233 182 255 #ECE9B6
+    SetBorderColor 178 255 255 255 #B2FFFF
+    SetBackgroundColor 51 51 51 240 #333333
+    PlayEffect Grey Temp
+
+# [전문] 육척봉(아이템 레벨 81이상, 마법)
+Show #uber
+    ItemLevel >= 81
+    Class == "Quarterstaves"
+    BaseType "Expert"
+    Rarity == Magic
+    SetFontSize 38
+
+############## highEnd #############
+
+# [전문] 육척봉(일반)
+Show #highEnd
+    Class == "Quarterstaves"
+    BaseType "Expert"
+    Rarity == Normal
+    SetFontSize 35
+    SetTextColor 236 233 182 255 #ECE9B6
+    SetBorderColor 236 233 182 255 #ECE9B6
+    SetBackgroundColor 51 51 51 240 #333333
+    
+# [전문] 육척봉(마법)
+Show #highEnd
+    Class == "Quarterstaves"
+    BaseType "Expert"
+    Rarity == Magic
+    SetFontSize 38
+
+############## end #############
+
+# [13퀄리티] 이상의 모든 육척봉(일반, 마법, 희귀)
+Show #end
+    Quality >= 13
+    Class == "Quarterstaves"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [2소켓] 이상의 모든 육척봉(일반, 마법, 희귀)
+Show #end
+    Sockets == 2
+    Class == "Quarterstaves"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [고급] 육척봉(일반, 마법, 희귀)
+Show #end
+    Class == "Quarterstaves"
+    BaseType "Advanced"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+
+############## mid #############
+
+# [9퀄리티] 이상의 모든 육척봉(일반, 마법, 희귀)
+Show #mid
+    Quality >= 9
+    Class == "Quarterstaves"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [1소켓] 이상의 모든 육척봉(일반, 마법, 희귀)
+Show #mid
+    Sockets == 1
+    Class == "Quarterstaves"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+############## early #############
+
+# [1퀄리티] 이상의 모든 육척봉(일반, 마법, 희귀)
+Show #early
+    Quality >= 1
+    Class == "Quarterstaves"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+############## starter #############
+
+# 모든 육척봉
+Show #starter
+    Class == "Quarterstaves"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+
+######### ======================================
+######### 크래프팅 양손 철퇴
+######### ======================================
+
+############## uber #############
+
+# [13퀄리티 이상] [전문] 양손 철퇴(희귀)
+Show #uber
+    Quality >= 13
+    Class == "Two Hand Maces"
+    BaseType "Expert"
+    Rarity == Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [13퀄리티 이상] [고급] 광신자, 납빛(희귀)
+Show #uber
+    Quality >= 13
+    Class == "Two Hand Maces"
+    BaseType == "Advanced Cultist Greathammer" "Advanced Leaden Greathammer"
+    Rarity == Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [13퀄리티 미만] [전문] 양손 철퇴(희귀)
+Show #uber
+    Quality < 13
+    Class == "Two Hand Maces"
+    BaseType "Expert"
+    Rarity == Rare
+    SetFontSize 40
+
+# [13퀄리티 미만] [고급] 광신자, 납빛(희귀)
+Show #uber
+    Quality < 13
+    Class == "Two Hand Maces"
+    BaseType == "Advanced Cultist Greathammer" "Advanced Leaden Greathammer"
+    Rarity == Rare
+    SetFontSize 40
+
+# [전문] 광신자, 납빛(아이템 레벨이 81이상, 일반)
+Show #uber
+    ItemLevel >= 81
+    Class == "Two Hand Maces"
+    BaseType == "Expert Cultist Greathammer" "Expert Leaden Greathammer"
+    Rarity == Normal
+    SetFontSize 35
+    SetBorderColor 178 255 255 255 #B2FFFF
+    PlayEffect Grey Temp
+
+############## highEnd #############
+
+# [전문] 광신자, 납빛(일반)
+Show #highEnd
+    Class == "Two Hand Maces"
+    BaseType == "Expert Cultist Greathammer" "Expert Leaden Greathammer"
+    Rarity == Normal
+    SetFontSize 35
+
+############## end #############
+
+# [13퀄리티] 이상의 모든 양손 철퇴(일반, 마법, 희귀)
+Show #end
+    Quality >= 13
+    Class == "Two Hand Maces"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [2소켓] 이상의 모든 양손 철퇴(일반, 마법, 희귀)
+Show #end
+    Sockets == 2
+    Class == "Two Hand Maces"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [전문] [고급] 양손 철퇴(마법)
+Show #end
+    Class == "Two Hand Maces"
+    BaseType "Expert" "Advanced" 
+    Rarity == Normal Magic
+    SetFontSize 38
+
+############## mid #############
+
+# [9퀄리티] 이상의 모든 양손 철퇴(일반, 마법, 희귀)
+Show #mid
+    Quality >= 9
+    Class == "Two Hand Maces"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [1소켓] 이상의 모든 양손 철퇴(일반, 마법, 희귀)
+Show #mid
+    Sockets == 1
+    Class == "Two Hand Maces"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+############## early #############
+
+# [1퀄리티] 이상의 모든 양손 철퇴(일반, 마법, 희귀)
+Show #early
+    Quality >= 1
+    Class == "Two Hand Maces"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+############## starter #############
+
+# 모든 양손 철퇴
+Show #starter
+    Class == "Two Hand Maces"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+
+######### ======================================
+######### 한손 철퇴
+######### 현재는 가치가 전혀 없는 아이템.
+######### ======================================
+
+############## end #############
+
+# [13퀄리티] 이상의 모든 한손 철퇴(일반, 마법, 희귀)
+Show #end
+    Quality >= 13
+    Class == "One Hand Maces"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+############## mid #############
+
+# [9퀄리티] 이상의 모든 한손 철퇴(일반, 마법, 희귀)
+Show #mid
+    Quality >= 9
+    Class == "One Hand Maces"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [1소켓] 이상의 모든 한손 철퇴(일반, 마법, 희귀)
+Show #mid
+    Sockets == 1
+    Class == "One Hand Maces"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+############## early #############
+
+# [1퀄리티] 이상의 모든 한손 철퇴(일반, 마법, 희귀)
+Show #early
+    Quality >= 1
+    Class == "One Hand Maces"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+############## starter #############
+
+Show #starter
+    Class == "One Hand Maces"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+
+######### ======================================
+######### 크래프팅 지팡이, 마법봉
+######### 지팡이, 마법봉은 모든 아이템이 다 보여짐
+######### ======================================
+
+############## uber #############
+
+# 지팡이 마법봉(희귀)
+Show #uber
+    Quality >= 13
+	Class == "Staves" "Wands"
+    Rarity == Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# 지팡이 마법봉(희귀)
+Show #uber
+    Quality < 13
+	Class == "Staves" "Wands"
+    Rarity == Rare
+    SetFontSize 40
+
+# 지팡이, 마법봉(아이템 레벨이 81 이상, 일반, 마법)
+Show #uber
+    ItemLevel >= 81
+	Class == "Staves" "Wands"
+    Rarity == Normal
+    SetFontSize 35
+    SetBorderColor 178 255 255 255 #B2FFFF
+    PlayEffect Grey Temp
+
+############## highEnd #############
+
+# 조율된 마법봉(Attuned Wand) 착취 마법봉(Siphoning Wand)
+Show #highEnd
+    Quality >= 13
+	Class == "Wands"
+    BaseType == "Attuned Wand" "Siphoning Wand" 
+    Rarity == Magic
+    SetFontSize 38
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+Show #highEnd
+    Quality < 13
+	Class == "Wands"
+    BaseType == "Attuned Wand" "Siphoning Wand" 
+    Rarity == Magic
+    SetFontSize 38
+
+# [13퀄리티] 이상의 모든 지팡이, 마법봉(일반, 마법, 희귀)
+Show #highEnd
+    Quality >= 13
+	Class == "Staves" "Wands"
+    Rarity == Normal
+    SetFontSize 35
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# 지팡이, 마법봉(일반)
+Show #highEnd
+    Quality < 13
+	Class == "Staves" "Wands"
+    Rarity == Normal
+    SetFontSize 35
+
+############## end #############
+
+# [9퀄리티] 이상의 모든 지팡이, 마법봉(일반, 마법, 희귀)
+Show #end
+    Quality >= 13
+	Class == "Staves" "Wands"
+    Rarity == Magic
+    SetFontSize 38
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# 지팡이, 마법봉(마법)
+Show #end
+	Class == "Staves" "Wands"
+    Rarity == Magic
+    SetFontSize 38
+
+######### ======================================
+######### 크래프팅 셉터
+######### ======================================
+
+############## uber #############
+
+# [13퀄리티] 이상의 모든 셉터(희귀)
+Show #uber
+    Quality >= 13
+    Class == "Sceptres"
+    Rarity == Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [12퀄리티] 이하의 모든 셉터(희귀)
+Show #uber
+    Quality < 13
+	Class == "Sceptres"
+    Rarity == Rare
+    SetFontSize 40
+
+# 모든 셉터(아이템 레벨이 81 이상, 일반, 마법)
+Show #uber
+    ItemLevel >= 81
+	Class == "Sceptres"
+    Rarity == Normal Magic
+    SetFontSize 38
+
+############## highEnd #############
+
+# [13퀄리티] 이상의 모든 셉터(일반, 마법, 희귀)
+Show #highEnd
+    Quality >= 13
+    Class == "Sceptres"
+    Rarity == Normal
+    SetFontSize 35
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# 모든 셉터(일반)
+Show #highEnd
+    Quality < 13
+	Class == "Sceptres"
+    Rarity == Normal
+    SetFontSize 35
+
+############## end #############
+
+# [13퀄리티] 이상의 모든 셉터(일반, 마법, 희귀)
+Show #end
+    Quality >= 13
+    Class == "Sceptres"
+    Rarity == Magic
+    SetFontSize 38
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# 모든 셉터(마법)
+Show #end
+	Class == "Sceptres"
+    Rarity == Magic
+    SetFontSize 38
+
+
+
+##### ======================================
+##### 크래프팅 보조 장비
+##### ======================================
+
+######### ======================================
+######### 크래프팅 화살통
+######### ======================================
+
+############## uber #############
+
+# 넓은 촉, 불 화살통을 제외
+# 희귀 화살통
+Show #uber
+	Class == "Quivers"
+    BaseType == "Sacral Quiver" "Two-Point Quiver" "Blunt Quiver" "Toxic Quiver" "Serrated Quiver" "Primed Quiver" "Penetrating Quiver" "Volant Quiver" "Visceral Quiver"
+    Rarity == Rare
+    SetFontSize 40
+
+# ↓공속 화살통
+# 준비된(아이템 레벨 81이상, 일반)
+Show #uber
+    ItemLevel >= 81
+	Class == "Quivers"
+    BaseType == "Primed Quiver"
+    Rarity == Normal
+    SetFontSize 35
+    SetTextColor 236 233 182 255 #ECE9B6
+    SetBorderColor 178 255 255 255 #B2FFFF
+    SetBackgroundColor 51 51 51 240 #333333
+    PlayEffect Grey Temp
+
+# 준비된, 관통, 본능적인, 기민한 화살통(아이템 레벨 81이상, 마법)
+Show #uber
+    ItemLevel >= 81
+	Class == "Quivers"
+    BaseType == "Primed Quiver"
+    Rarity == Magic
+    SetFontSize 38
+
+############## highEnd #############
+
+# 넓은 촉, 불 화살통을 제외한
+# 화살통(일반, 마법)
+Show #highEnd
+	Class == "Quivers"
+    BaseType == "Primed Quiver" "Penetrating Quiver" "Visceral Quiver" "Volant Quiver"
+    Rarity == Normal
+    SetFontSize 35
+    SetTextColor 236 233 182 255 #ECE9B6
+    SetBorderColor 236 233 182 255 #ECE9B6
+    SetBackgroundColor 51 51 51 240 #333333
+
+Show #highEnd
+	Class == "Quivers"
+    BaseType == "Primed Quiver" "Penetrating Quiver" "Visceral Quiver" "Volant Quiver"
+    Rarity == Magic
+    SetFontSize 38
+
+Show #highEnd
+	Class == "Quivers"
+    BaseType == "Sacral Quiver" "Two-Point Quiver" "Blunt Quiver" "Toxic Quiver" "Serrated Quiver"
+    Rarity == Magic
+    SetFontSize 38
+
+############## end #############
+
+Show #end
+	Class == "Quivers"
+    BaseType == "Sacral Quiver" "Two-Point Quiver" "Blunt Quiver" "Toxic Quiver" "Serrated Quiver"
+    Rarity == Normal
+    SetFontSize 35
+
+# 넓은 촉, 불 화살통을 제외한 모든 화살통
+Show #end
+	Class == "Quivers"
+    BaseType == "Broadhead Quiver" "Fire Quiver"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+
+############## starter #############
+
+# 모든 화살통
+Show #starter
+	Class == "Quivers"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+
+######### ======================================
+######### 크래프팅 집중구
+######### ======================================
+
+############## uber #############
+
+# [13퀄리티] 이상의 모든 집중구(일반, 마법, 희귀)
+Show #uber
+    Quality >= 13
+    Class == "Foci"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [전문] 집중구(희귀)
+Show #uber
+    Class == "Foci"
+    BaseType "Expert"
+    Rarity == Rare
+    SetFontSize 40
+
+############## highEnd #############
+
+# [9퀄리티] 이상의 모든 집중구(일반, 마법, 희귀)
+Show #highEnd
+    Quality >= 9
+    Class == "Foci"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [전문] 집중구(일반)
+Show #highEnd
+    Class == "Foci"
+    BaseType "Expert"
+    Rarity == Normal
+    SetFontSize 35
+
+############## end #############
+
+Show #end
+    Quality >= 1
+    Class == "Foci"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [1소켓] 이상의 모든 집중구(일반, 마법, 희귀)
+Show #end
+    Sockets == 1
+    Class == "Foci"
+    Rarity == Normal Magic Rare
+    SetFontSize 38
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [전문] 집중구(마법)
+Show #end
+    Class == "Foci"
+    BaseType "Expert"
+    Rarity == Magic
+    SetFontSize 38
+
+# [고급] 집중구(일반, 마법, 희귀)
+Show #end
+    Class == "Foci"
+    BaseType "Advanced"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+
+############## starter #############
+
+Show #starter
+    Class == "Foci"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+
+##### ======================================
+##### 크래프팅 방패
+##### ======================================
+
+############## uber #############
+
+# [9퀄리티] 이상의 모든 방패(일반, 마법, 희귀)
+Show #uber
+    Quality >= 13
+    Class == "Shields"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetFontSize normal
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+############## highEnd #############
+
+# [1퀄리티] 이상의 모든 방패(일반, 마법, 희귀)
+Show #highEnd
+    Quality >= 9
+    Class == "Shields"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+############## end #############
+
+Show #end
+    Quality >= 1
+    Class == "Shields"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# [1소켓] 이상의 모든 방패(일반, 마법, 희귀)
+Show #end
+    Sockets == 1
+    Class == "Shields"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+######### ======================================
+######### 힘 방패(방어도, Str)
+######### ======================================
+
+############## uber #############
+
+Show #uber
+    DropLevel >= 65
+    Class == "Shields"
+    BaseArmour > 0
+    BaseEvasion < 1
+    BaseEnergyShield < 1
+    Rarity == Rare
+    SetFontSize 40
+    SetBorderColor 200 200 200 255 #C8C8C8
+    SetBackgroundColor 77 0 0 240 #4D0000
+
+############## highEnd #############
+
+Show #highEnd
+    DropLevel >= 75
+    Class == "Shields"
+    BaseArmour > 0
+    BaseEvasion < 1
+    BaseEnergyShield < 1
+    Rarity == Normal
+    SetFontSize 35
+    SetBorderColor 200 200 200 255 #C8C8C8
+    SetBackgroundColor 77 0 0 240 #4D0000
+
+############## end #############
+
+Show #end
+    DropLevel >= 75
+    Class == "Shields"
+    BaseArmour > 0
+    BaseEvasion < 1
+    BaseEnergyShield < 1
+    Rarity == Magic
+    SetFontSize 38
+    SetBorderColor 200 200 200 255 #C8C8C8
+    SetBackgroundColor 77 0 0 240 #4D0000
+
+############## mid #############
+
+Show #mid
+    DropLevel >= 70
+    Class == "Shields"
+    BaseArmour > 0
+    BaseEvasion < 1
+    BaseEnergyShield < 1
+    Rarity == Normal Magic
+    SetFontSize 38
+    SetBorderColor 200 200 200 255 #C8C8C8
+    SetBackgroundColor 77 0 0 240 #4D0000
+
+############## early #############
+
+Show #early
+    DropLevel >= 65
+    Class == "Shields"
+    BaseArmour > 0
+    BaseEvasion < 1
+    BaseEnergyShield < 1
+    Rarity == Normal Magic
+    SetFontSize 38
+    SetBorderColor 200 200 200 255 #C8C8C8
+    SetBackgroundColor 77 0 0 240 #4D0000
+
+############## starter #############
+
+Show #starter
+    Class == "Shields"
+    BaseArmour > 0
+    BaseEvasion < 1
+    BaseEnergyShield < 1
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    SetBorderColor 200 200 200 255 #C8C8C8
+    SetBackgroundColor 77 0 0 240 #4D0000
+
+######### ======================================
+######### 그 외 방패
+######### ======================================
+
+############## uber #############
+
+Show #uber
+    DropLevel >= 65
+    Class == "Shields"
+    Rarity == Rare
+    SetFontSize 40
+
+############## starter #############
+
+Show #starter
+    Class == "Shields"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+
+
+
+
+
+
+##### ======================================
+##### 크래프팅 방어구
+##### ======================================
+
+######### ======================================
+######### 크래프팅 장갑
+######### ======================================
+
+############## uber #############
+
+Show #uber
+    Quality >= 13
+    Class == "Gloves"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# 희귀 아이템(요구사항 레벨이 65 이상)
+Show #uber
+    DropLevel >= 65
+    Class == "Gloves"
+    Rarity == Rare
+    SetFontSize 40
+
+############## highEnd #############
+
+# 일반 아이템(요구사항 레벨이 75 이상)
+Show #highEnd
+    DropLevel >= 75
+    Class == "Gloves"
+    Rarity == Normal
+    SetFontSize 35
+
+############## end #############
+
+Show #end
+    Quality >= 9
+    Class == "Gloves"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+Show #end
+    Sockets == 1
+    SetFontSize 40
+    Class == "Gloves"
+    Rarity == Normal Magic Rare
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# 마법 아이템(요구사항 레벨이 75 이상)
+Show #end
+    DropLevel >= 75
+    Class == "Gloves"
+    Rarity == Magic
+    SetFontSize 38
+
+Show #end
+    DropLevel >= 59
+    Class == "Gloves"
+    Rarity == Rare
+    SetFontSize 40
+
+############## mid #############
+
+Show #mid
+    Quality >= 1
+    Class == "Gloves"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+Show #mid
+    DropLevel >= 70
+    Class == "Gloves"
+    Rarity == Normal Magic
+    SetFontSize 38
+
+Show #mid
+    DropLevel >= 55
+    Class == "Gloves"
+    Rarity == Rare
+    SetFontSize 40
+
+############## early #############
+
+Show #early
+    DropLevel >= 65
+    Class == "Gloves"
+    Rarity == Normal
+    SetFontSize 35
+
+Show #early
+    DropLevel >= 55
+    Class == "Gloves"
+    Rarity == Magic
+    SetFontSize 38
+
+Show #early
+    DropLevel >= 51
+    Class == "Gloves"
+    Rarity == Rare
+    SetFontSize 40
+
+############## starter #############
+
+Show #starter
+    Class == "Gloves"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+
+######### ======================================
+######### 크래프팅 장화
+######### ======================================
+
+############## uber #############
+
+Show #uber
+    Quality >= 13
+    Class == "Boots"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# 이속 35%를 위해 일반, 마법 장화 필터링
+# 회피, 에쉴 관련된 장화만 필터링.
+
+# 희귀 장화(요구사항 레벨이 65 이상)
+Show #uber
+    DropLevel >= 65
+    Class == "Boots"
+    Rarity == Rare
+    SetFontSize 40
+
+# 힘 장화(방어도 장화)
+Show #uber
+    ItemLevel >= 82
+    DropLevel >= 75
+    Class == "Boots"
+    BaseArmour > 0
+    BaseEvasion < 1
+    BaseEnergyShield < 1
+    Rarity == Normal Magic
+    SetFontSize 38
+    SetBorderColor 178 255 255 255 #B2FFFF
+    PlayEffect Grey Temp
+
+# 민첩 장화(회피 장화)
+Show #uber
+    ItemLevel >= 82
+    DropLevel >= 75
+    Class == "Boots"
+    BaseEvasion > 0
+    BaseArmour < 1
+    BaseEnergyShield < 1
+    Rarity == Normal Magic
+    SetFontSize 38
+    SetBorderColor 178 255 255 255 #B2FFFF
+    PlayEffect Grey Temp
+
+# 지능 장화(에쉴 장화)
+Show #uber
+    ItemLevel >= 82
+    DropLevel >= 75
+    Class == "Boots"
+    BaseEnergyShield > 0
+    BaseArmour < 1
+    BaseEvasion < 1
+    Rarity == Normal Magic
+    SetFontSize 38
+    SetBorderColor 178 255 255 255 #B2FFFF
+    PlayEffect Grey Temp
+
+# 민첩 지능 장화(회피, 에쉴 장화)
+Show #uber
+    ItemLevel >= 82
+    DropLevel >= 75
+    Class == "Boots"
+    BaseEvasion > 0
+    BaseEnergyShield > 0
+    BaseArmour < 1
+    Rarity == Normal Magic
+    SetFontSize 38
+    SetBorderColor 178 255 255 255 #B2FFFF
+    PlayEffect Grey Temp
+
+############## highEnd #############
+
+# 일반 아이템(요구사항 레벨이 75 이상)
+Show #highEnd
+    DropLevel >= 75
+    Class == "Boots"
+    Rarity == Normal
+    SetFontSize 35
+
+############## end #############
+
+Show #end
+    Quality >= 9
+    Class == "Boots"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+Show #end
+    Sockets == 1
+    Class == "Boots"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# 마법 아이템(요구사항 레벨이 75 이상)
+Show #end
+    DropLevel >= 75
+    Class == "Boots"
+    Rarity == Magic
+    SetFontSize 38
+
+Show #end
+    DropLevel >= 59
+    Class == "Boots"
+    Rarity == Rare
+    SetFontSize 40
+
+############## mid #############
+
+Show #mid
+    Quality >= 1
+    Class == "Boots"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+Show #mid
+    DropLevel >= 70
+    Class == "Boots"
+    Rarity == Normal Magic
+    SetFontSize 38
+
+Show #mid
+    DropLevel >= 55
+    Class == "Boots"
+    Rarity == Rare
+    SetFontSize 40
+
+############# ======================================
+############# early
+############# ======================================
+
+Show #early
+    DropLevel >= 65
+    Class == "Boots"
+    Rarity == Normal
+    SetFontSize 35
+
+Show #early
+    DropLevel >= 55
+    Class == "Boots"
+    Rarity == Magic
+    SetFontSize 38
+
+Show #early
+    DropLevel >= 51
+    Class == "Boots"
+    Rarity == Rare
+    SetFontSize 40
+
+############## starter #############
+
+Show #starter
+    Class == "Boots"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+
+######### ======================================
+######### 크래프팅 투구
+######### ======================================
+
+############## uber #############
+
+Show #uber
+    Quality >= 13
+    Class == "Helmets"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# 희귀 아이템(요구사항 레벨이 65 이상)
+Show #uber
+    DropLevel >= 65
+    Class == "Helmets"
+    Rarity == Rare
+    SetFontSize 40
+
+############## highEnd #############
+
+# 일반 아이템(요구사항 레벨이 75 이상)
+Show #highEnd
+    DropLevel >= 75
+    Class == "Helmets"
+    Rarity == Normal
+    SetFontSize 35
+
+############## end #############
+
+Show #end
+    Quality >= 9
+    Class == "Helmets"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+Show #end
+    Sockets == 1
+    Class == "Helmets"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# 마법 아이템(요구사항 레벨이 75 이상)
+Show #end
+    DropLevel >= 75
+    Class == "Helmets"
+    Rarity == Magic
+    SetFontSize 38
+
+Show #end
+    DropLevel >= 59
+    Class == "Helmets"
+    Rarity == Rare
+    SetFontSize 40
+
+############## mid #############
+
+Show #mid
+    Quality >= 1
+    Class == "Helmets"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+Show #mid
+    DropLevel >= 70
+    Class == "Helmets"
+    Rarity == Normal Magic
+    SetFontSize 38
+
+Show #mid
+    DropLevel >= 55
+    Class == "Helmets"
+    Rarity == Rare
+    SetFontSize 40
+
+############# early #############
+
+Show #early
+    DropLevel >= 65
+    Class == "Helmets"
+    Rarity == Normal
+    SetFontSize 35
+
+Show #early
+    DropLevel >= 55
+    Class == "Helmets"
+    Rarity == Magic
+    SetFontSize 38
+
+Show #early
+    DropLevel >= 50
+    Class == "Helmets"
+    Rarity == Rare
+    SetFontSize 40
+
+############## starter #############
+
+Show #starter
+    Class == "Helmets"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+
+######### ======================================
+######### 크래프팅 갑옷
+#########
+######### 갑옷의 경우, 요구 사항 레벨이 65레벨 이상이라면
+######### 고정 속성이 부여되어 있거나,
+######### 고정 속성이 부여되어 있지 않다면
+######### 갑옷의 방어 속성 수치가 가장 높다.
+######### =====================================
+
+############## uber #############
+
+Show #uber
+    Quality >= 13
+    Class == "Body Armours"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# 고정 속성은 없지만, 방어력 수치가 높은 갑옷들(희귀)
+Show #uber
+    Class == "Body Armours"
+    BaseType == "Expert Iron Cuirass" "Glorious Plate" "Expert Studded Vest" "Exquisite Vest" "Havoc Raiment" "Expert Hexer's Robe" "Slayer Armour" "Expert Scale Mail" "Zenith Vestments" "Torment Jacket" "Expert Waxed Jacket"
+    Rarity == Rare
+    SetFontSize 40
+
+# 고정 속성은 없지만, 방어력 수치가 높은 갑옷들(아이템 레벨이 82이상, 일반)
+Show #uber
+    ItemLevel >= 82
+    Class == "Body Armours"
+    BaseType == "Expert Iron Cuirass" "Glorious Plate" "Expert Studded Vest" "Exquisite Vest" "Havoc Raiment" "Expert Hexer's Robe" "Slayer Armour" "Expert Scale Mail" "Zenith Vestments" "Torment Jacket" "Expert Waxed Jacket"
+    Rarity == Normal
+    SetFontSize 35
+    SetBorderColor 178 255 255 255 #B2FFFF
+    PlayEffect Grey Temp
+
+# 고정 속성이 있는 갑옷(희귀)
+Show #uber
+    DropLevel >= 65
+    HasImplicitMod True
+    Class == "Body Armours"
+    Rarity == Rare
+    SetFontSize 40
+
+# 고정 속성이 있는 갑옷(아이템 레벨이 82이상, 일반)
+Show #uber
+    ItemLevel >= 82
+    DropLevel >= 65
+    HasImplicitMod True
+    Class == "Body Armours"
+    Rarity == Normal
+    SetFontSize 35
+    SetBorderColor 178 255 255 255 #B2FFFF
+    PlayEffect Grey Temp
+
+############## highEnd #############
+
+# 고정 속성은 없지만, 방어력 수치가 높은 갑옷들(일반)
+Show #highEnd
+    Class == "Body Armours"
+    BaseType == "Expert Iron Cuirass" "Glorious Plate" "Expert Studded Vest" "Exquisite Vest" "Havoc Raiment" "Expert Hexer's Robe" "Slayer Armour" "Expert Scale Mail" "Zenith Vestments" "Torment Jacket" "Expert Waxed Jacket"
+    Rarity == Normal
+    SetFontSize 35
+
+# 고정 속성이 있는 갑옷(일반)
+Show #highEnd
+    DropLevel >= 65
+    HasImplicitMod True
+    Class == "Body Armours"
+    Rarity == Normal
+    SetFontSize 35
+
+############## end #############
+
+Show #end
+    Quality >= 9
+    Class == "Body Armours"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+Show #end
+    Sockets == 1
+    Class == "Body Armours"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+Show #end
+    Sockets == 2
+    Class == "Body Armours"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+# 고정 속성은 없지만, 방어력 수치가 높은 갑옷들(마법)
+Show #end
+    Class == "Body Armours"
+    BaseType == "Expert Iron Cuirass" "Glorious Plate" "Expert Studded Vest" "Exquisite Vest" "Havoc Raiment" "Expert Hexer's Robe" "Slayer Armour" "Expert Scale Mail" "Zenith Vestments" "Torment Jacket" "Expert Waxed Jacket"
+    Rarity == Magic
+    SetFontSize 38
+
+# 고정 속성이 있는 갑옷(마법)
+Show #end
+    DropLevel >= 65
+    HasImplicitMod True
+    Class == "Body Armours"
+    Rarity == Magic
+    SetFontSize 38
+
+Show #end
+    DropLevel >= 59
+    Class == "Body Armours"
+    Rarity == Rare
+    SetFontSize 40
+
+############## mid #############
+
+Show #mid
+    Quality >= 1
+    Class == "Body Armours"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 248 203 255 255 #F8CBFF
+    SetBackgroundColor 78 48 90 240 #4E305A
+
+Show #mid
+    DropLevel >= 65
+    Class == "Body Armours"
+    Rarity == Normal
+    SetFontSize 35
+
+Show #mid
+    DropLevel >= 54
+    Class == "Body Armours"
+    Rarity == Magic
+    SetFontSize 38
+
+Show #mid
+    DropLevel >= 50
+    Class == "Body Armours"
+    Rarity == Rare
+    SetFontSize 40
+
+############# early #############
+
+Show #early
+    DropLevel >= 45
+    Class == "Body Armours"
+    Rarity == Rare
+    SetFontSize 40
+
+############## starter #############
+
+Show #starter
+    Class == "Body Armours"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+
+
+
+
+
+
+
+
+
+##### ======================================
+##### 크래프팅 장신구
+##### ======================================
+
+
+######### ======================================
+######### 크래프팅 목걸이
+######### ======================================
+
+Show #uber
+    Class == "Amulets"
+	BaseType == "Azure Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Solar Amulet" "Gold Amulet"
+    Rarity == Rare
+    SetFontSize 40
+
+Show #uber
+    ItemLevel >= 81
+    Class == "Amulets"
+	BaseType == "Azure Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Solar Amulet" "Gold Amulet"
+    Rarity == Normal
+    SetFontSize 35
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 178 255 255 255 #B2FFFF
+    SetBackgroundColor 24 9 112 240 #180970
+    PlayEffect Grey Temp
+
+Show #highEnd
+    Class == "Amulets"
+	BaseType == "Azure Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Solar Amulet" "Gold Amulet"
+    Rarity == Normal Magic
+    SetFontSize 38
+    # SetTextColor 0 0 0 255 #000000
+    # SetBorderColor 0 0 0 255 #000000
+    SetBackgroundColor 24 9 112 240 #180970
+
+Show #starter
+    Class == "Amulets"
+    Rarity == Rare
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    # SetBorderColor 0 0 0 255 #000000
+    SetBackgroundColor 24 9 112 240 #180970
+
+Show #starter
+    Class == "Amulets"
+    Rarity == Normal Magic
+    SetFontSize 38
+    # SetTextColor 0 0 0 255 #000000
+    # SetBorderColor 0 0 0 255 #000000
+    SetBackgroundColor 24 9 112 240 #180970
+
+######### ======================================
+######### 크래프팅 반지
+######### ======================================
+
+Show #uber
+    Class == "Rings" 
+	BaseType == "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Pearl Ring" "Prismatic Ring" "Gold Ring" "Unset Ring"
+    Rarity == Rare
+    SetFontSize 40
+
+Show #uber
+    Class == "Rings" 
+    ItemLevel >= 81
+	BaseType == "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Pearl Ring" "Prismatic Ring" "Gold Ring" "Unset Ring"
+    Rarity == Normal
+    SetFontSize 35
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 178 255 255 255 #B2FFFF
+    SetBackgroundColor 24 9 112 240 #180970
+
+Show #highEnd
+    Class == "Rings" 
+	BaseType == "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Emerald Ring" "Pearl Ring" "Prismatic Ring" "Gold Ring" "Unset Ring"
+    Rarity == Normal Magic
+    SetFontSize 38
+    # SetTextColor 0 0 0 255 #000000
+    # SetBorderColor 0 0 0 255 #000000
+    SetBackgroundColor 24 9 112 240 #180970
+
+Show #starter
+    Class == "Rings" 
+    Rarity == Rare
+    SetFontSize 40
+
+Show #starter
+    Class == "Rings" 
+    Rarity == Normal Magic
+    SetFontSize 38
+    # SetTextColor 0 0 0 255 #000000
+    # SetBorderColor 0 0 0 255 #000000
+    SetBackgroundColor 24 9 112 240 #180970
+
+######### ======================================
+######### 크래프팅 허리띠
+######### ======================================
+
+Show #uber
+	Class == "Belts"
+    Rarity == Rare
+    SetFontSize 40
+    SetBackgroundColor 24 9 112 240 #180970
+
+# 섬세한, 특수, 사슬, 판금, 넓은
+Show #uber
+    ItemLevel >= 81
+	Class == "Belts"
+    BaseType == "Fine Belt" "Utility Belt" "Mail Belt" "Plate Belt" "Wide Belt"
+    Rarity == Normal
+    SetFontSize 35
+    SetBackgroundColor 24 9 112 240 #180970
+
+Show #highEnd
+	Class == "Belts"
+    BaseType == "Fine Belt" "Utility Belt" "Mail Belt" "Plate Belt" "Wide Belt"
+    Rarity == Normal Magic
+    SetFontSize 38
+    SetBackgroundColor 24 9 112 240 #180970
+
+Show #starter
+	Class == "Belts"
+    Rarity == Normal Magic
+    SetFontSize 38
+    SetBackgroundColor 24 9 112 240 #180970# ======================================
+# 플라스크
+# ======================================
+
+##### ======================================
+##### 생명력 플라스크
+##### ======================================
+
+Show #uber
+    Identified False
+    ItemLevel >= 83
+    Class == "Life Flasks"
+    BaseType == "Ultimate Life Flask"
+    Rarity == Magic
+    SetFontSize 38
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 102 6 22 255 #660616
+    SetBackgroundColor 72 4 15 240 #48040F
+
+Show #uber
+    ItemLevel >= 83
+    Class == "Life Flasks"
+    BaseType == "Ultimate Life Flask"
+    Rarity == Normal
+    SetFontSize 35
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 102 6 22 255 #660616
+    SetBackgroundColor 72 4 15 240 #48040F
+
+Show #highEnd
+    Identified False
+    ItemLevel >= 81
+    Class == "Life Flasks"
+    BaseType == "Ultimate Life Flask"
+    Rarity == Magic
+    SetFontSize 38
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 102 6 22 255 #660616
+    SetBackgroundColor 72 4 15 240 #48040F
+
+Show #highEnd
+    ItemLevel >= 81
+    Class == "Life Flasks"
+    BaseType == "Ultimate Life Flask"
+    Rarity == Normal
+    SetFontSize 35
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 102 6 22 255 #660616
+    SetBackgroundColor 72 4 15 240 #48040F
+
+# 극한의 생명력 플라스크(일반)
+Show #end
+    Class == "Life Flasks"
+    BaseType == "Ultimate Life Flask"
+    Rarity == Normal
+    SetFontSize 35
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 102 6 22 255 #660616
+    SetBackgroundColor 72 4 15 240 #48040F
+
+# 극한의 생명력 플라스크(마법)
+Show #mid
+    Identified False
+    Class == "Life Flasks"
+    BaseType == "Ultimate Life Flask"
+    Rarity == Magic
+    SetFontSize 38
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 102 6 22 255 #660616
+    SetBackgroundColor 72 4 15 240 #48040F
+
+# 모든 생명력 플라스크 
+Show #starter
+    Class == "Life Flasks"
+    Rarity == Normal Magic
+    SetFontSize 38
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 102 6 22 255 #660616
+    SetBackgroundColor 72 4 15 240 #48040F
+
+##### ======================================
+##### 마나 플라스크
+##### ======================================
+
+Show #uber
+    Identified False
+    ItemLevel >= 83
+    Class == "Mana Flasks"
+    BaseType == "Ultimate Mana Flask"
+    Rarity == Magic
+    SetFontSize 38
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 7 52 100 255 #073464
+    SetBackgroundColor 5 37 71 240 #052547
+
+Show #uber
+    ItemLevel >= 83
+    Class == "Mana Flasks"
+    BaseType == "Ultimate Mana Flask"
+    Rarity == Normal
+    SetFontSize 35
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 7 52 100 255 #073464
+    SetBackgroundColor 5 37 71 240 #052547
+
+Show #highEnd
+    Identified False
+    ItemLevel >= 81
+    Class == "Mana Flasks"
+    BaseType == "Ultimate Mana Flask"
+    Rarity == Magic
+    SetFontSize 38
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 7 52 100 255 #073464
+    SetBackgroundColor 5 37 71 240 #052547
+
+Show #highEnd
+    ItemLevel >= 81
+    Class == "Mana Flasks"
+    BaseType == "Ultimate Mana Flask"
+    Rarity == Normal
+    SetFontSize 35
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 7 52 100 255 #073464
+    SetBackgroundColor 5 37 71 240 #052547
+
+# 극한의 마나 플라스크(일반)
+Show #end
+    Class == "Mana Flasks"
+    BaseType == "Ultimate Mana Flask"
+    Rarity == Normal
+    SetFontSize 35
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 7 52 100 255 #073464
+    SetBackgroundColor 5 37 71 240 #052547
+
+# 극한의 마나 플라스크(마법)
+Show #mid
+    Identified False
+    Class == "Mana Flasks"
+    BaseType == "Ultimate Mana Flask"
+    Rarity == Magic
+    SetFontSize 38
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 7 52 100 255 #073464
+    SetBackgroundColor 5 37 71 240 #052547
+
+# 마나 플라스크
+Show #starter
+    Class == "Mana Flasks"
+    Rarity == Normal Magic
+    SetFontSize 38
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 7 52 100 255 #073464
+    SetBackgroundColor 5 37 71 240 #052547
+
+# ======================================
+# 호신부 베이스 아이템
+# ======================================
+
+# 호신부(황금, 출혈, 기절, 동결, 중독)
+Show #uber
+    Class == "Charms"
+    BaseType == "Golden Charm"
+    Rarity == Normal Magic
+    SetFontSize 38
+    PlayEffect Yellow Temp
+    SetBackgroundColor 24 9 112 240 #180970
+
+Show #highEnd
+    Class == "Charms"
+    BaseType == "Staunching Charm" "Stone Charm" "Antidote Charm" "Thawing Charm"
+    Rarity == Normal
+    SetFontSize 35
+    SetBackgroundColor 24 9 112 240 #180970
+
+Show #end
+    Class == "Charms"
+    BaseType == "Staunching Charm" "Stone Charm" "Antidote Charm" "Thawing Charm"
+    Rarity == Magic
+    SetFontSize 38
+    SetBackgroundColor 24 9 112 240 #180970
+
+Show #starter
+    Class == "Charms"
+    Rarity == Normal Magic
+    SetFontSize 38
+
+
+
+
+# ======================================
+# 홈에 장착가능한 아이템
+# ======================================
+
+# 철 룬
+Show #highEnd
+    Class == "Socketable"
+    BaseType == "Iron Rune"
+    SetFontSize 45
+    SetTextColor 183 224 234 255 #B7E0EA
+    SetBorderColor 183 224 234 255 #B7E0EA
+    SetBackgroundColor 37 67 75 240 #25434B
+    PlayAlertSound 3 300 #highEnd
+    PlayEffect Cyan Temp #highEnd
+    MinimapIcon 1 Cyan Circle #highEnd
+
+# 다양한 룬
+Show #end
+    Class == "Socketable"
+    BaseType "Rune"
+    SetFontSize 45
+    SetTextColor 247 247 247 255 #F7F7F7
+    SetBorderColor 58 168 193 255 #3AA8C1
+    SetBackgroundColor 37 67 75 240 #25434B
+    PlayAlertSound 3 300 #early
+    PlayEffect Cyan Temp #early
+    MinimapIcon 1 Cyan Circle #early
+
+# 비싼 영혼 핵(소울 코어)
+Show #default
+    Class == "Socketable"
+    BaseType == "Soul Core of Azcapa" "Soul Core of Zalatl" 
+    SetFontSize 45
+    SetTextColor 0 51 26 255 #00331A
+    SetBorderColor 58 168 193 255 #3AA8C1
+    SetBackgroundColor 243 230 216 240 #F3E6D8
+    PlayAlertSound 6 300
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+
+# 모든 영혼 핵(소울 코어)
+Show #default
+    Class == "Socketable"
+    BaseType "Soul Core of"
+    SetFontSize 45
+    SetTextColor 191 255 224 255 #BFFFE0
+    SetBorderColor 58 168 193 255 #3AA8C1
+    SetBackgroundColor 192 127 57 240 #C07F39
+    PlayAlertSound 12 300
+    PlayEffect Cyan Temp
+    MinimapIcon 0 Cyan Circle
+
+
+# ======================================
+# 주얼
+# ======================================
+
+# 오래된 주얼
+Show #default
+    Class == "Jewels"
+    BaseType "Time-Lost"
+    SetFontSize 45
+    # SetTextColor 0 0 0 255 #000000
+    # SetBorderColor 0 0 0 255 #000000
+    SetBackgroundColor 124 8 56 240 #7C0838
+    PlayAlertSound 12 300
+    PlayEffect Yellow
+    MinimapIcon 0 Yellow Raindrop
+
+Show #default
+    Class == "Jewels"
+    Rarity == Normal Magic Rare
+    SetFontSize 45
+    # SetTextColor 255 179 0 255 #FFB300
+    SetBorderColor 252 246 245 255 #FCF6F5
+    SetBackgroundColor 129 26 115 240 #811A73
+    PlayEffect Yellow
+
+
+# ======================================
+# 경로석
+# ======================================
+
+############## uber #############
+
+# 경로석 16등급(타락)(희귀)
+Show #default
+    Class == "Waystones"
+    WaystoneTier >= 16
+    Rarity == Rare
+    SetFontSize 45
+    SetTextColor 255 239 0 255 #FFEF00
+    SetBorderColor 213 36 95 255 #D5245F
+    SetBackgroundColor 143 10 45 240 #8F0A2D
+    PlayAlertSound 13 300
+    PlayEffect Red
+    MinimapIcon 1 Red Square
+    CustomAlertSoundOptional "./CustomSound/waystone-high.wav" 300
+
+# 경로석 16등급(타락)(일반, 마법)
+Show #default
+    Class == "Waystones"
+    WaystoneTier >= 16
+    Rarity == Normal Magic
+    SetFontSize 45
+    # SetTextColor 255 239 0 255 #FFEF00
+    SetBorderColor 213 36 95 255 #D5245F
+    SetBackgroundColor 143 10 45 240 #8F0A2D
+    PlayAlertSound 13 300
+    PlayEffect Red
+    MinimapIcon 1 Red Square
+    CustomAlertSoundOptional "./CustomSound/waystone-high.wav" 300
+
+# 경로석 15등급(희귀)
+Show #default
+    Class == "Waystones"
+    WaystoneTier >= 15
+    Rarity == Rare
+    SetFontSize 45
+    SetTextColor 255 239 0 255 #FFEF00
+    SetBorderColor 219 215 210 255 #DBD7D2
+    SetBackgroundColor 143 10 45 240 #8F0A2D
+    PlayAlertSound 5 300
+    PlayEffect Red
+    MinimapIcon 1 Red Square
+    CustomAlertSoundOptional "./CustomSound/waystone-high.wav" 300
+
+# 경로석 15등급(일반, 마법)
+Show #default
+    Class == "Waystones"
+    WaystoneTier >= 15
+    Rarity == Normal Magic
+    SetFontSize 45
+    # SetTextColor 253 226 233 255 #FDE2E9
+    SetBorderColor 219 215 210 255 #DBD7D2
+    SetBackgroundColor 143 10 45 240 #8F0A2D
+    PlayAlertSound 5 300
+    PlayEffect Red
+    MinimapIcon 1 Red Square
+    CustomAlertSoundOptional "./CustomSound/waystone-high.wav" 300
+
+# 인챈트된 경로석 13등급 이상(희귀)(ex. 환영)
+Show #default
+    Class == "Waystones"
+    AnyEnchantment True
+    WaystoneTier >= 13
+    Rarity == Rare
+    SetFontSize 45
+    SetTextColor 158 255 226 255 #9EFFE2
+    SetBorderColor 158 219 255 255 #9EDBFF
+    SetBackgroundColor 48 3 43 240 #30032B
+    PlayAlertSound 5 300
+    PlayEffect Red
+    MinimapIcon 1 Red Square
+    CustomAlertSoundOptional "./CustomSound/waystone-high.wav" 300
+
+# 인챈트된 경로석 13등급 이상(일반, 마법)(ex. 환영)
+Show #default
+    Class == "Waystones"
+    AnyEnchantment True
+    WaystoneTier >= 13
+    Rarity == Normal Magic
+    SetFontSize 45
+    # SetTextColor 158 255 226 255 #9EFFE2
+    SetBorderColor 158 219 255 255 #9EDBFF
+    SetBackgroundColor 48 3 43 240 #30032B
+    PlayAlertSound 5 300
+    PlayEffect Red
+    MinimapIcon 1 Red Square
+    CustomAlertSoundOptional "./CustomSound/waystone-high.wav" 300
+
+############## highEnd #############
+
+# 경로석 13등급 이상 (희귀)
+Show #highEnd
+    Class == "Waystones"
+    WaystoneTier >= 13
+    Rarity == Rare
+    SetFontSize 45
+    # SetTextColor 253 226 233 255 #FDE2E9
+    SetBorderColor 219 215 210 255 #DBD7D2
+    SetBackgroundColor 70 5 22 240 #460516
+    PlayAlertSound 5 300 #highEnd
+    PlayEffect Red #highEnd
+    MinimapIcon 1 Red Square #highEnd
+    CustomAlertSoundOptional "./CustomSound/waystone-high.wav" 300 #highEnd
+
+# 경로석 13등급 이상 (일반, 마법)
+Show #highEnd
+    Class == "Waystones"
+    WaystoneTier >= 13
+    Rarity == Normal Magic
+    SetFontSize 45
+    # SetTextColor 253 226 233 255 #FDE2E9
+    SetBorderColor 219 215 210 255 #DBD7D2
+    SetBackgroundColor 70 5 22 240 #460516
+    PlayAlertSound 5 300 #highEnd
+    PlayEffect Red #highEnd
+    MinimapIcon 1 Red Square #highEnd
+    CustomAlertSoundOptional "./CustomSound/waystone-high.wav" 300 #highEnd
+
+# 인챈트된 경로석 11등급 이상 (희귀)(ex. 환영)
+Show #highEnd
+    Class == "Waystones"
+    AnyEnchantment True
+    WaystoneTier >= 11
+    Rarity == Rare
+    SetFontSize 45
+    SetTextColor 158 255 226 255 #9EFFE2
+    SetBorderColor 158 219 255 255 #9EDBFF
+    SetBackgroundColor 48 3 43 240 #30032B
+    PlayAlertSound 4 300 #highEnd
+    PlayEffect Yellow #highEnd
+    MinimapIcon 1 Yellow Square #highEnd
+    CustomAlertSoundOptional "./CustomSound/waystone-high.wav" 300 #highEnd
+
+# 인챈트된 경로석 11등급 이상 (일반, 마법)(ex. 환영)
+Show #highEnd
+    Class == "Waystones"
+    AnyEnchantment True
+    WaystoneTier >= 11
+    Rarity == Normal Magic
+    SetFontSize 45
+    # SetTextColor 158 255 226 255 #9EFFE2
+    SetBorderColor 158 219 255 255 #9EDBFF
+    SetBackgroundColor 48 3 43 240 #30032B
+    PlayAlertSound 4 300 ##highEnd
+    PlayEffect Yellow ##highEnd
+    MinimapIcon 1 Yellow Square #highEnd
+    CustomAlertSoundOptional "./CustomSound/waystone-high.wav" 300 #highEnd
+
+############## end #############
+
+# 경로석 11등급 이상 (희귀)
+Show #end
+    Class == "Waystones"
+    WaystoneTier >= 11
+    Rarity == Rare
+    SetFontSize 45
+    SetTextColor 255 239 0 255 #FFEF00
+    SetBorderColor 219 215 210 255 #DBD7D2
+    SetBackgroundColor 70 5 22 240 #460516
+    PlayAlertSound 5 300 #end
+    PlayEffect Red #end
+    MinimapIcon 1 Red Square #end
+    CustomAlertSoundOptional "./CustomSound/waystone-high.wav" 300 #end
+
+# 경로석 11등급 이상 (일반, 마법)
+Show #end
+    Class == "Waystones"
+    WaystoneTier >= 11
+    Rarity == Normal Magic
+    SetFontSize 45
+    # SetTextColor 253 226 233 255 #FDE2E9
+    SetBorderColor 219 215 210 255 #DBD7D2
+    SetBackgroundColor 70 5 22 240 #460516
+    PlayAlertSound 5 300 #end
+    PlayEffect Red #end
+    MinimapIcon 1 Red Square #end
+    CustomAlertSoundOptional "./CustomSound/waystone-high.wav" 300 #end
+
+# 경로석 8~10 등급(희귀)
+Show #end
+    Class == "Waystones"
+    WaystoneTier >= 8
+    WaystoneTier <= 10
+    Rarity == Rare
+    SetFontSize 45
+    SetTextColor 255 239 0 255 #FFEF00
+    SetBorderColor 255 239 0 255 #FFEF00
+    SetBackgroundColor 1 11 19 240 #010B13
+    PlayAlertSound 4 300 #end
+    PlayEffect Yellow #end
+    MinimapIcon 1 Yellow Square #end
+    CustomAlertSoundOptional "./CustomSound/waystone-medium.wav" 300 #end
+
+# 경로석 8~10 등급(일반, 마법)
+Show #end
+    Class == "Waystones"
+    WaystoneTier >= 8
+    WaystoneTier <= 10
+    Rarity == Normal Magic
+    SetFontSize 45
+    # SetTextColor 255 239 0 255 #FFEF00
+    SetBorderColor 255 239 0 255 #FFEF00
+    SetBackgroundColor 1 11 19 240 #010B13
+    PlayAlertSound 4 300 #end
+    PlayEffect Yellow #end
+    MinimapIcon 1 Yellow Square #end
+    CustomAlertSoundOptional "./CustomSound/waystone-medium.wav" 300 #end
+
+# 인챈트된 경로석 6등급 이상(희귀)(ex. 환영)
+Show #end
+    Class == "Waystones"
+    AnyEnchantment True
+    WaystoneTier >= 6
+    Rarity == Rare
+    SetFontSize 45
+    SetTextColor 255 239 0 255 #FFEF00
+    SetBorderColor 158 219 255 255 #9EDBFF
+    SetBackgroundColor 48 3 43 240 #30032B
+    PlayAlertSound 3 300 #end
+    PlayEffect White #end
+    MinimapIcon 1 White Square #end
+    CustomAlertSoundOptional "./CustomSound/waystone-medium.wav" 300 #end
+
+# 인챈트된 경로석 6등급 이상(일반, 마법)(ex. 환영)
+Show #end
+    Class == "Waystones"
+    AnyEnchantment True
+    WaystoneTier >= 6
+    Rarity == Normal Magic
+    SetFontSize 45
+    # SetTextColor 158 255 226 255 #9EFFE2
+    SetBorderColor 158 219 255 255 #9EDBFF
+    SetBackgroundColor 48 3 43 240 #30032B
+    PlayAlertSound 3 300 #end
+    PlayEffect White #end
+    MinimapIcon 1 White Square #end
+    CustomAlertSoundOptional "./CustomSound/waystone-medium.wav" 300 #end
+
+############## mid #############
+
+# 경로석 6~7 등급(희귀)
+Show #mid
+    Class == "Waystones"
+    WaystoneTier >= 6
+    WaystoneTier <= 7
+    Rarity == Rare
+    SetFontSize 45
+    SetTextColor 255 239 0 255 #FFEF00
+    SetBorderColor 255 239 0 255 #FFEF00
+    SetBackgroundColor 1 11 19 240 #010B13
+    PlayAlertSound 4 300 #mid
+    PlayEffect Yellow #mid
+    MinimapIcon 1 Yellow Square #mid
+    CustomAlertSoundOptional "./CustomSound/waystone-medium.wav" 300 #mid
+
+# 경로석 6~7 등급(일반, 마법)
+Show #mid
+    Class == "Waystones"
+    WaystoneTier >= 6
+    WaystoneTier <= 7
+    Rarity == Normal Magic
+    SetFontSize 45
+    # SetTextColor 255 239 0 255 #FFEF00
+    SetBorderColor 255 239 0 255 #FFEF00
+    SetBackgroundColor 1 11 19 240 #010B13
+    PlayAlertSound 4 300 #mid
+    PlayEffect Yellow #mid
+    MinimapIcon 1 Yellow Square #mid
+    CustomAlertSoundOptional "./CustomSound/waystone-medium.wav" 300 #mid
+
+# 경로석 1~5 등급(희귀)
+Show #mid
+    Class == "Waystones"
+    WaystoneTier >= 1
+    WaystoneTier <= 5
+    Rarity == Rare
+    SetFontSize 45
+    SetTextColor 255 239 0 255 #FFEF00
+    SetBorderColor 219 215 210 255 #DBD7D2
+    SetBackgroundColor 1 11 19 240 #010B13
+    PlayAlertSound 3 300 #mid
+    PlayEffect White #mid
+    MinimapIcon 1 White Square #mid
+    CustomAlertSoundOptional "./CustomSound/waystone-low.wav" 300 #mid
+
+# 경로석 1~5 등급(일반, 마법)
+Show #mid
+    Class == "Waystones"
+    WaystoneTier >= 1
+    WaystoneTier <= 5
+    Rarity == Normal Magic
+    SetFontSize 45
+    # SetTextColor 219 215 210 255 #DBD7D2
+    SetBorderColor 219 215 210 255 #DBD7D2
+    SetBackgroundColor 1 11 19 240 #010B13
+    PlayAlertSound 3 300 #mid
+    PlayEffect White #mid
+    MinimapIcon 1 White Square #mid
+    CustomAlertSoundOptional "./CustomSound/waystone-low.wav" 300 #mid
+
+# 인챈트된 경로석 1등급 이상(희귀)(ex. 환영)
+Show #mid
+    Class == "Waystones"
+    AnyEnchantment True
+    WaystoneTier >= 1
+    Rarity == Rare
+    SetFontSize 45
+    SetTextColor 255 239 0 255 #FFEF00
+    SetBorderColor 158 219 255 255 #9EDBFF
+    SetBackgroundColor 48 3 43 240 #30032B
+    PlayAlertSound 3 300 #mid
+    PlayEffect White #mid
+    MinimapIcon 1 White Square #mid
+    CustomAlertSoundOptional "./CustomSound/waystone-low.wav" 300 #mid
+
+# 인챈트된 경로석 1등급 이상(일반, 마법)(ex. 환영)
+Show #mid
+    Class == "Waystones"
+    AnyEnchantment True
+    WaystoneTier >= 1
+    Rarity == Normal Magic
+    SetFontSize 45
+    # SetTextColor 158 255 226 255 #9EFFE2
+    SetBorderColor 158 219 255 255 #9EDBFF
+    SetBackgroundColor 48 3 43 240 #30032B
+    PlayAlertSound 3 300 #mid
+    PlayEffect White #mid
+    MinimapIcon 1 White Square #mid
+    CustomAlertSoundOptional "./CustomSound/waystone-low.wav" 300 #mid
+
+##### ======================================
+##### 서판
+##### ======================================
+
+# 의식 선도자 서판
+Show #default
+    Class == "Tablet"
+    BaseType == "Ritual Precursor Tablet"
+    SetFontSize 45
+    SetTextColor 16 24 32 255 #101820
+    SetBorderColor 16 24 32 255 #101820
+    SetBackgroundColor 244 143 177 240 #F48FB1
+    PlayAlertSound 12 300
+    PlayEffect Blue
+    MinimapIcon 0 Blue Hexagon
+
+# 균열, 탐험, 환영 선도자 서판
+Show #default
+    Class == "Tablet"
+    BaseType == "Breach Precursor Tablet" "Expedition Precursor Tablet" "Delirium Precursor Tablet"
+    SetFontSize 45
+    SetTextColor 16 24 32 255 #101820
+    SetBorderColor 16 24 32 255 #101820
+    SetBackgroundColor 244 143 177 240 #F48FB1
+    PlayAlertSound 3 300
+    PlayEffect Blue
+    MinimapIcon 1 Blue Hexagon
+
+# 선도자 서판
+Show #default
+    Class == "Tablet"
+    SetFontSize 45
+    SetTextColor 244 143 177 255 #F48FB1
+    SetBorderColor 244 143 177 255 #F48FB1
+    SetBackgroundColor 16 24 32 240 #101820
+    PlayAlertSound 3 300
+    PlayEffect Blue
+    MinimapIcon 1 Blue Hexagon
+
+# 혼돈의 시련 지도 조각
+Show #default
+    Class == "Map Fragments"
+    BaseType == "Cowardly Fate" "Deadly Fate" "Victorious Fate"
+    SetFontSize 45
+    SetTextColor 48 25 52 255 #301934
+    SetBorderColor 48 25 52 255 #301934
+    SetBackgroundColor 255 250 222 240 #FFFADE
+    PlayAlertSound 6 300
+    PlayEffect Purple
+    MinimapIcon 0 Purple Star
+
+# 지도 조각
+Show #default
+    Class == "Map Fragments" "Pinnacle Keys"
+    SetFontSize 45
+    SetTextColor 48 25 52 255 #301934
+    SetBorderColor 48 25 52 255 #301934
+    SetBackgroundColor 255 250 222 240 #FFFADE
+    PlayAlertSound 7 300
+    PlayEffect Purple
+    MinimapIcon 0 Purple Star
+
+# ======================================
+# 언컷 젬, 미가공 젬
+# ======================================
+
+# 20레벨 이상 미가공 스킬, 정신력 젬
+Show #default
+    ItemLevel  >= 20
+    BaseType == "Uncut Skill Gem" "Uncut Spirit Gem"
+    SetFontSize 45
+    SetTextColor 233 251 250 255 #E9FBFA
+    SetBorderColor 9 62 60 255 #093E3C
+    SetBackgroundColor 27 162 155 240 #1BA29B
+    PlayAlertSound 6 300
+    PlayEffect Cyan
+    MinimapIcon 0 Cyan Star
+    CustomAlertSoundOptional "./CustomSound/fortune-t1.wav" 300
+
+# 19레벨 이상 미가공 스킬 젬
+Show #default
+    ItemLevel == 19
+    BaseType == "Uncut Skill Gem" "Uncut Spirit Gem"
+    SetFontSize 40
+    SetTextColor 233 251 250 255 #E9FBFA
+    SetBorderColor 9 62 60 255 #093E3C
+    SetBackgroundColor 12 74 71 240 #0C4A47
+    PlayAlertSound 3 300
+    PlayEffect Cyan Temp
+    MinimapIcon 2 Cyan Triangle
+
+# 8레벨 미가공 정신력 젬은 특정 빌드에서 사용하기 때문에 가격이 좀 있다.
+Show #default
+    ItemLevel == 8
+    BaseType == "Uncut Spirit Gem"
+    SetFontSize 40
+    SetTextColor 233 251 250 255 #E9FBFA
+    SetBorderColor 9 62 60 255 #093E3C
+    SetBackgroundColor 12 74 71 240 #0C4A47
+    PlayAlertSound 3 300
+    PlayEffect Cyan Triangle
+
+# 18레벨 미가공 스킬 젬은 4~5단계 사이 고민 중.
+# 18레벨 미가공 스킬 젬
+Show #highEnd
+    ItemLevel == 18
+    BaseType == "Uncut Skill Gem" "Uncut Spirit Gem"
+    SetFontSize 40
+    SetTextColor 27 162 155 255 #1BA29B
+    SetBorderColor 9 62 60 255 #093E3C
+    SetBackgroundColor 3 17 17 240 #031111
+
+# 17레벨 이하 미가공 스킬 젬
+Show #end
+    ItemLevel <= 17
+    BaseType == "Uncut Skill Gem" "Uncut Spirit Gem"
+    SetFontSize 40
+    SetTextColor 27 162 155 255 #1BA29B
+    SetBorderColor 9 62 60 255 #093E3C
+    SetBackgroundColor 3 17 17 240 #031111
+
+# 3레벨 미가공 보조 젬
+Show #end
+    ItemLevel == 3
+    BaseType == "Uncut Support Gem"
+    SetFontSize 40
+    SetTextColor 27 162 155 255 #1BA29B
+    SetBorderColor 9 62 60 255 #093E3C
+    SetBackgroundColor 3 17 17 240 #031111
+
+# 아틀라스에 진입한 이후부터는
+# 미가공 스킬 젬, 미가공 보조 젬 알림음 제거
+Show #early
+    AreaLevel >= 65
+    BaseType == "Uncut Skill Gem" "Uncut Support Gem"
+    SetFontSize 40
+    SetTextColor 27 162 155 255 #1BA29B
+    SetBorderColor 9 62 60 255 #093E3C
+    SetBackgroundColor 3 17 17 240 #031111
+
+# 미가공 스킬 젬, 미가공 보조 젬
+Show #default
+    AreaLevel < 65
+    BaseType == "Uncut Skill Gem" "Uncut Support Gem"
+    SetFontSize 40
+    SetTextColor 27 162 155 255 #1BA29B
+    SetBorderColor 9 62 60 255 #093E3C
+    SetBackgroundColor 3 17 17 240 #031111
+    PlayAlertSound 3 300 #starter
+    MinimapIcon 1 Cyan Triangle #starter
+
+# 미가공 정신력 젬
+Show #default
+    BaseType == "Uncut Spirit Gem"
+    SetFontSize 40
+    SetTextColor 27 162 155 255 #1BA29B
+    SetBorderColor 9 62 60 255 #093E3C
+    SetBackgroundColor 3 17 17 240 #031111
+
+# ======================================
+# 각종 특수 아이템
+# ======================================
+
+# 시련 입장템은 많이 드랍되기 때문에 6단계에서는 숨겨집니다.
+# 시련 입장템(성역)
+Show #highEnd
+    ItemLevel >= 80
+    Class == "Trial Coins"
+    SetFontSize 45
+    SetTextColor 172 225 175 255 #ACE1AF
+    SetBorderColor 172 225 175 255 #ACE1AF
+    SetBackgroundColor 21 42 37 240 #152A25
+    PlayEffect Green #highEnd
+    PlayAlertSound 3 300 #highEnd
+    MinimapIcon 1 Green Circle #highEnd
+
+# 75렙 시련 입장템이 비싸다는 이야기가 있습니다.
+# 시련 입장템(성역)
+Show #highEnd
+    ItemLevel == 75
+    Class == "Trial Coins"
+    SetFontSize 45
+    SetTextColor 172 225 175 255 #ACE1AF
+    SetBorderColor 172 225 175 255 #ACE1AF
+    SetBackgroundColor 21 42 37 240 #152A25
+    PlayEffect Green #highEnd
+    PlayAlertSound 3 300 #highEnd
+    MinimapIcon 1 Green Circle #highEnd
+
+Show #end
+    ItemLevel < 80
+    Class == "Trial Coins"
+    SetFontSize 45
+    SetTextColor 172 225 175 255 #ACE1AF
+    SetBorderColor 172 225 175 255 #ACE1AF
+    SetBackgroundColor 21 42 37 240 #152A25
+    PlayEffect Green #end
+    PlayAlertSound 3 300 #end
+    MinimapIcon 1 Green Circle #end
+
+# 결전도 시련(성역)과 마찬가지로
+# 6단계에서는 숨겨지고, 5단계에서는 80레벨 이상, 4단계까지는 79레벨 이하
+# 결전 입장템
+Show #highEnd
+    ItemLevel >= 80
+    Class == "Inscribed Ultimatum"
+    SetFontSize 45
+    SetTextColor 172 225 175 255 #ACE1AF
+    SetBorderColor 172 225 175 255 #ACE1AF
+    SetBackgroundColor 21 42 37 240 #152A25
+    PlayEffect Green #highEnd
+    PlayAlertSound 3 300 #highEnd
+    MinimapIcon 1 Green Circle #highEnd
+
+Show #end
+    ItemLevel < 80
+    Class == "Inscribed Ultimatum"
+    SetFontSize 45
+    SetTextColor 172 225 175 255 #ACE1AF
+    SetBorderColor 172 225 175 255 #ACE1AF
+    SetBackgroundColor 21 42 37 240 #152A25
+    PlayEffect Green #end
+    PlayAlertSound 3 300 #end
+    MinimapIcon 1 Green Circle #end
+
+# 시련 유물
+Show #default
+    Class == "Relics"
+    SetFontSize 45
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 255 248 231 255 #FFF8E7
+    SetBackgroundColor 27 0 104 240 #1B0068
+    PlayEffect Blue
+    PlayAlertSound 3 300
+    MinimapIcon 1 Blue Circle
+
+# 시련 보상 키
+Show #default
+    BaseType == "Gold Key" "Silver Key" "Bronze Key"
+    SetFontSize 45
+    SetTextColor 73 230 58 255 #49E63A
+    SetBorderColor 73 230 58 255 #49E63A
+    SetBackgroundColor 5 34 2 245 #052202
+    PlayEffect Green
+    PlayAlertSound 3 300
+    MinimapIcon 1 Green Circle
+
+# ======================================
+# 희귀 아이템 처리
+# ======================================
+
+##### ======================================
+##### 미감정 아이템 처리
+##### ======================================
+
+######### ======================================
+######### 미감정 무도 무기(공격, 어택 무기)
+######### ======================================
+
+# # 미감정 무도 무기
+# Show #uber
+#     Identified False
+#     DropLevel >= 77
+#     Class == "Claws" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Spears" "Flails" "Bows"  "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" 
+#     BaseType "Expert"
+#     Rarity == Rare
+#     SetFontSize 40
+#     SetTextColor 255 255 119 255 #FFFF77
+#     SetBorderColor 200 200 200 255 #C8C8C8
+#     SetBackgroundColor 80 80 0 240 #505000
+#     PlayAlertSound 2 300 #uber
+# 	PlayEffect Yellow #uber
+# 	MinimapIcon 2 Yellow UpsideDownHouse #uber
+
+# Show #highEnd
+#     Identified False
+#     Class == "Claws" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Spears" "Flails" "Bows"  "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" 
+#     BaseType "Expert"
+#     Rarity == Rare
+#     SetFontSize 40
+#     SetTextColor 255 255 119 255 #FFFF77
+#     SetBorderColor 200 200 200 255 #C8C8C8
+#     SetBackgroundColor 53 53 0 240 #353500
+#     PlayAlertSound 2 300 #highEnd
+# 	PlayEffect Yellow #highEnd
+# 	MinimapIcon 2 Yellow UpsideDownHouse #highEnd
+
+# 이 코드에 필터링 되어선 안 된다.
+Show 
+    Identified False
+    Class == "Claws" "Daggers" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Spears" "Flails" "Bows"  "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" 
+    Rarity == Rare
+    SetFontSize 25
+    SetTextColor 12 11 0 255 #0C0B00
+    SetBorderColor 255 255 119 255 #FFFF77
+    SetBackgroundColor 172 155 0 240 #AC9B00
+    PlayEffect Yellow #end
+    MinimapIcon 2 Yellow UpsideDownHouse #end
+
+######### ======================================
+######### 미감정 마법봉, 셉터, 지팡이(주문, 스펠 무기)
+######### ======================================
+
+Show #uber
+    Identified False    
+    Class == "Wands" "Sceptres" "Staves"
+    Rarity == Rare
+    SetFontSize 40
+    SetTextColor 12 11 0 255 #0C0B00
+    SetBorderColor 255 255 119 255 #FFFF77
+    SetBackgroundColor 172 155 0 240 #AC9B00
+    PlayAlertSound 2 300 #uber
+    PlayEffect Yellow #uber
+    MinimapIcon 2 Yellow UpsideDownHouse #uber
+
+######### ======================================
+######### 미감정 보조 장비
+######### ======================================
+
+Show #uber
+    Identified False
+    Class == "Quivers" "Shields" "Foci"
+    Rarity == Rare
+    SetFontSize 40
+    SetTextColor 12 11 0 255 #0C0B00
+    SetBorderColor 255 255 119 255 #FFFF77
+    SetBackgroundColor 172 155 0 240 #AC9B00
+    PlayAlertSound 2 300 #uber
+    PlayEffect Yellow #uber
+    MinimapIcon 2 Yellow UpsideDownHouse #uber
+
+######### ======================================
+######### 미감정 방어구
+######### ======================================
+
+# 보조 장비(방어구) 방어구(장갑 장화 투구 갑옷)
+# "Gloves" "Boots" "Helmets" "Body Armours" 
+
+# 미감정
+Show
+    Identified False
+    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts"
+    DropLevel >= 75
+    Rarity == Rare
+    SetFontSize 45
+    SetTextColor 0 0 0 255 #000000
+    SetBorderColor 30 136 229 255 #1E88E5
+    SetBackgroundColor 251 192 45 240 #FBC02D
+    PlayAlertSound 2 300
+    PlayEffect Yellow
+    MinimapIcon 2 Yellow UpsideDownHouse
+
+Show
+    Identified False
+    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts"
+    DropLevel >= 70
+    Rarity == Rare
+    SetFontSize 42
+    SetTextColor 0 0 0 255 #000000
+    SetBorderColor 30 136 229 255 #1E88E5
+    SetBackgroundColor 251 192 45 240 #FBC02D
+    PlayAlertSound 2 300 #highEnd
+    PlayEffect Yellow #highEnd
+    MinimapIcon 2 Yellow UpsideDownHouse #highEnd
+
+Show
+    Identified False
+    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts"
+    DropLevel >= 65
+    Rarity == Rare
+    SetFontSize 39
+    SetTextColor 0 0 0 255 #000000
+    SetBorderColor 30 136 229 255 #1E88E5
+    SetBackgroundColor 251 192 45 240 #FBC02D
+    PlayAlertSound 2 300 #highEnd
+    PlayEffect Yellow #highEnd
+    MinimapIcon 2 Yellow UpsideDownHouse #highEnd
+
+######### ======================================
+######### 미감정 장신구
+######### ======================================
+
+Show
+    Identified False
+    Class == "Amulets" "Rings" "Belts"
+    Rarity == Rare
+    SetFontSize 45
+    SetTextColor 12 11 0 255 #0C0B00
+    SetBorderColor 255 255 119 255 #FFFF77
+    SetBackgroundColor 168 143 0 240 #A88F00
+    PlayAlertSound 2 300
+    PlayEffect Yellow
+    MinimapIcon 2 Yellow UpsideDownHouse
+
+
+######### ======================================
+######### 미감정 방어코드
+######### ======================================
+Show
+    Identified False
+    Rarity == Rare
+    SetFontSize 35
+    SetTextColor 114 0 0 255 #720000
+    SetBorderColor 114 0 0 255 #720000
+    SetBackgroundColor 255 255 255 240 #FFFFFF
+    PlayAlertSound 2 300
+    PlayEffect Yellow
+    MinimapIcon 2 Yellow UpsideDownHouse
+
+# 감정된 아이템
+Show
+    Identified True
+    Rarity == Rare
+    SetFontSize 35
+    PlayAlertSound 2 300
+    PlayEffect Yellow
+    MinimapIcon 2 Yellow UpsideDownHouse
+    SetTextColor 0 0 0 255 #000000
+    SetBackgroundColor 251 192 45 240 #FBC02D# ======================================
+# 일반, 마법 아이템
+# 일반, 마법 아이템 중 베이스 가치가 낮은 것들은 숨긴다.
+# ======================================
+
+# 우선은 공격 빌드에 사용될 무기만 필터링해서 숨기기
+# 한손 철퇴, 양손 철퇴, 육척봉, 활, 쇠뇌, 방패, 집중구
+
+# # 퀄리티 마법 무기 (상위 베이스)
+# Show #early
+#     Quality > 0
+#     AreaLevel >= 65
+#     Class == "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows" "Shields" "Foci"
+#     Rarity == Magic
+#     DropLevel >= 50
+#     # SetFontSize 35
+#     SetBackgroundColor 57 50 58 240 #39323A
+
+# #  소켓 마법 무기 (상위 베이스)
+# Show #early
+#     Sockets > 0
+#     AreaLevel >= 65
+#     Class == "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows" "Shields" "Foci"
+#     Rarity == Magic
+#     DropLevel >= 50
+#     # SetFontSize 35
+#     SetBackgroundColor 57 50 58 240 #39323A
+
+# # 퀄리티 마법 무기
+# Show #starter
+#     Quality > 0
+#     Class == "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows" "Shields" "Foci"
+#     Rarity == Magic
+#     # SetFontSize 35
+#     SetBackgroundColor 57 50 58 240 #39323A
+
+# # 소켓 마법 무기
+# Show #starter
+#     Sockets > 0
+#     Class == "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows" "Shields" "Foci"
+#     Rarity == Magic
+#     # SetFontSize 35
+#     SetBackgroundColor 57 50 58 240 #39323A
+
+# # 마법 무기
+# Show #starter
+#     Class == "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows" "Shields" "Foci"
+#     Rarity == Magic
+#     # SetFontSize 35
+
+# # 퀄리티 마법 방어구(상위 베이스)
+# Show #early
+#     Quality > 0
+#     AreaLevel >= 65
+#     Class == "Body Armours" "Helmets" "Gloves" "Boots"
+#     Rarity == Magic
+#     DropLevel >= 50
+#     # SetFontSize 35
+#     SetBackgroundColor 57 50 58 240 #39323A
+
+# # 소켓 마법 방어구(상위 베이스)
+# Show #early
+#     Sockets > 0
+#     AreaLevel >= 65
+#     Class == "Body Armours" "Helmets" "Gloves" "Boots"
+#     Rarity == Magic
+#     DropLevel >= 50
+#     # SetFontSize 35
+#     SetBackgroundColor 57 50 58 240 #39323A
+
+# # 퀄리티 마법 방어구
+# Show #starter
+#     Quality > 0
+#     Class == "Body Armours" "Helmets" "Gloves" "Boots"
+#     Rarity == Magic
+#     # SetFontSize 35
+#     SetBackgroundColor 57 50 58 240 #39323A
+
+# # 소켓 마법 방어구
+# Show #starter
+#     Sockets > 0
+#     Class == "Body Armours" "Helmets" "Gloves" "Boots"
+#     Rarity == Magic
+#     # SetFontSize 35
+#     SetBackgroundColor 57 50 58 240 #39323A
+
+# # 마법 방어구
+# Show #starter
+#     Class == "Body Armours" "Helmets" "Gloves" "Boots"
+#     Rarity == Magic
+#     # SetFontSize 35
+
+# Show #starter
+#     Class == "Quivers"
+#     Rarity == Magic
+#     # SetFontSize 35
+
+# 일반 아이템 ==============================
+
+# # 퀄리티 일반 무기(상위 베이스)
+# Show #early
+#     Quality > 0
+#     AreaLevel >= 65
+#     Class == "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows" "Shields" "Foci"
+#     Rarity == Normal
+#     DropLevel >= 50
+#     SetBackgroundColor 57 50 58 240 #39323A
+
+# # 소켓 일반 무기(상위 베이스)
+# Show #early
+#     Sockets > 0
+#     AreaLevel >= 65
+#     Class == "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows" "Shields" "Foci"
+#     Rarity == Normal
+#     DropLevel >= 50
+#     SetBackgroundColor 57 50 58 240 #39323A
+
+# # 퀄리티 일반 무기
+# Show #starter
+#     Quality > 0
+#     Class == "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows" "Shields" "Foci"
+#     Rarity == Normal
+#     SetBackgroundColor 57 50 58 240 #39323A
+
+# # 소켓 일반 무기
+# Show #starter
+#     Sockets > 0
+#     Class == "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows" "Shields" "Foci"
+#     Rarity == Normal
+#     SetBackgroundColor 57 50 58 240 #39323A
+
+# # 일반 무기
+# Show #starter
+#     Class == "One Hand Maces" "Two Hand Maces" "Quarterstaves" "Bows" "Crossbows" "Shields" "Foci"
+#     Rarity == Normal
+
+# # 퀄리티 일반 방어구(상위 베이스)
+# Show #early
+#     AreaLevel >= 65
+#     Quality > 0
+#     Class == "Body Armours" "Helmets" "Gloves" "Boots"
+#     Rarity == Normal
+#     DropLevel >= 50
+#     SetBackgroundColor 57 50 58 240 #39323A
+
+# # 소켓 일반 방어구(상위 베이스)
+# Show #early
+#     AreaLevel >= 65
+#     Sockets > 0
+#     Class == "Body Armours" "Helmets" "Gloves" "Boots"
+#     Rarity == Normal
+#     DropLevel >= 50
+#     SetBackgroundColor 57 50 58 240 #39323A
+
+# # 퀄리티 일반 방어구
+# Show #starter
+#     Quality > 0
+#     Class == "Body Armours" "Helmets" "Gloves" "Boots"
+#     Rarity == Normal
+#     SetBackgroundColor 57 50 58 240 #39323A
+
+# # 소켓 일반 방어구
+# Show #starter
+#     Sockets > 0
+#     Class == "Body Armours" "Helmets" "Gloves" "Boots"
+#     Rarity == Normal
+#     SetBackgroundColor 57 50 58 240 #39323A
+
+# ======================================
+# 크래프팅에 사용되지 않는
+# 모든 일반, 마법 아이템 처리
+# 마법, 일반 아이템은 액트를 진행하는 동안만 보이도록
+# ======================================
+
+# 희귀도로 아이템 보이기==============================
+
+# 마법 아이템
+Show
+    AreaLevel < 65
+    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts" "Charms"
+    Rarity == Magic
+    SetFontSize 35
+
+# 일반 아이템
+Show
+    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts" "Charms"
+    AreaLevel < 65
+    Rarity == Normal
+
+# 희귀도로 아이템 숨기기==============================
+
+# 마법 아이템 숨기기
+Hide
+    AreaLevel >= 65
+    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts" "Charms"
+    Rarity == Magic
+
+# 일반 아이템 숨기기
+Hide
+    AreaLevel >= 65
+    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts" "Charms"
+    Rarity == Normal
+
+# 방어 코드==============================
+# 이 코드에 필터링 되어선 안된다.
+
+# 방어 코드
+Show
+    Rarity Unique
+    SetFontSize 45
+    SetTextColor 114 0 0 255 #720000
+    SetBorderColor 114 0 0 255 #720000
+    SetBackgroundColor 255 255 255 240 #FFFFFF
+    PlayAlertSound 10 300
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+
+# 방어 코드
+Show
+    SetFontSize 45
+    SetTextColor 114 0 0 255 #720000
+    SetBorderColor 114 0 0 255 #720000
+    SetBackgroundColor 255 255 255 240 #FFFFFF
+    PlayAlertSound 10 300
+    PlayEffect Grey
+    MinimapIcon 0 Grey Star
