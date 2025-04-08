@@ -3,7 +3,7 @@
 
 
 # ======================================
-# 필터 버전: 4-end seoMinugi
+# 필터 버전: 0.2.2b 4-end seoMinugi
 
 # 안녕하세요. 서미누기입니다.
 # 모든 코드는 제가 직접 작성해서 만들고 있습니다.
@@ -2150,18 +2150,6 @@ Show #uber
     PlayEffect Pink
     MinimapIcon 0 Pink UpsideDownHouse 
 
-# ======================================
-# 아직 미구현된 아이템 방어 코드
-# ======================================
-
-Show #default
-    Class == "Claws" "Daggers" "One Hand Swords" "One Hand Axes" "Spears" "Flails" "Two Hand Swords" "Two Hand Axes" "Traps" "Fishing Rods"
-    SetFontSize 40
-    # SetTextColor 0 0 0 255 #000000
-    # SetBorderColor 0 0 0 255 #000000
-    SetBackgroundColor 24 9 112 255 #180970
-    PlayEffect Yellow Temp
-
 
 
 # ▶ ======================================
@@ -3014,7 +3002,7 @@ Hide #starter
 Show #uber
     ItemLevel >= 82
     Class == "Spears"
-    BaseType == "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
+    BaseType == "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Sword Spear" "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
     Rarity == Normal
     SetFontSize 39 #normal
     SetBorderColor 178 255 255 255 #B2FFFF
@@ -3023,13 +3011,13 @@ Show #uber
 Show #uber
     ItemLevel >= 82
     Class == "Spears"
-    BaseType == "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
+    BaseType == "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Sword Spear" "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
     Rarity == Magic
     SetFontSize 42 #magic
 
 Show #uber
     Class == "Spears"
-    BaseType == "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
+    BaseType == "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Sword Spear" "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
     Rarity == Rare
     SetFontSize 45 #rare
 
@@ -3042,7 +3030,7 @@ Show #uber
 Show #highEnd
     ItemLevel >= 81
     Class == "Spears"
-    BaseType == "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
+    BaseType == "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Sword Spear" "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
     Rarity == Normal
     SetFontSize 39 #normal
     SetBorderColor 136 136 255 255 #8888FF
@@ -3050,7 +3038,7 @@ Show #highEnd
 Show #highEnd
     ItemLevel >= 81
     Class == "Spears"
-    BaseType == "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
+    BaseType == "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Sword Spear" "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
     Rarity == Magic
     SetFontSize 42 #magic
 
@@ -3061,7 +3049,7 @@ Show #highEnd
 
 Show #end
     Class == "Spears"
-    BaseType == "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
+    BaseType == "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Sword Spear" "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
     Rarity == Normal
     SetFontSize 39 #normal
 
@@ -3072,7 +3060,7 @@ Show #end
 
 Hide #mid
     Class == "Spears"
-    BaseType == "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
+    BaseType == "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Sword Spear" "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
     Rarity == Magic
     SetFontSize 42 #magic
 
@@ -5235,7 +5223,7 @@ Show
     SetTextColor 6 17 20 255 #061114
     SetBorderColor 48 136 156 255 #30889C
     SetBackgroundColor 216 238 243 255 #D8EEF3
-    PlayAlertSound 1 300
+    PlayAlertSound 2 300
     PlayEffect Cyan
     MinimapIcon 1 Cyan Cross
 
@@ -5247,10 +5235,10 @@ Show
 # 철 룬(무기 물리 피해)
 Show #highEnd
     Class == "Socketable"
-    BaseType == "Iron Rune" "Lesser Iron Rune"
+    BaseType == "Iron Rune"
     SetFontSize 45
-    SetTextColor 216 238 243 255 #D8EEF3
-    SetBorderColor 183 224 234 255 #B7E0EA
+    SetTextColor 237 244 246 255 #EDF4F6
+    SetBorderColor 237 244 246 255 #EDF4F6
     SetBackgroundColor 42 76 85 255 #2A4C55
     PlayAlertSound 3 300 #highEnd
     PlayEffect Cyan Temp #highEnd
@@ -5266,8 +5254,8 @@ Show #end
     Class == "Socketable"
     BaseType == "Desert Rune" "Glacial Rune" "Storm Rune" 
     SetFontSize 45
-    SetTextColor 216 238 243 255 #D8EEF3
-    SetBorderColor 183 224 234 255 #B7E0EA
+    SetTextColor 237 244 246 255 #EDF4F6
+    SetBorderColor 237 244 246 255 #EDF4F6
     SetBackgroundColor 42 76 85 255 #2A4C55
     PlayAlertSound 3 300 #end
     PlayEffect Cyan Temp #end
@@ -5278,41 +5266,41 @@ Show #end
     Class == "Socketable"
     BaseType == "Lesser Iron Rune"
     SetFontSize 45
-    SetTextColor 216 238 243 255 #D8EEF3
-    SetBorderColor 183 224 234 255 #B7E0EA
+    SetTextColor 237 244 246 255 #EDF4F6
+    SetBorderColor 237 244 246 255 #EDF4F6
     SetBackgroundColor 42 76 85 255 #2A4C55
     PlayAlertSound 3 300 #end
     PlayEffect Cyan Temp #end
-    MinimapIcon 1 Cyan Circle #end
+    MinimapIcon 2 Cyan Circle #end
 
 # 하위 사막 룬, 빙하 룬, 폭풍 룬(방어구 원소 저항)
 Show #end
     Class == "Socketable"
     BaseType == "Lesser Desert Rune" "Lesser Glacial Rune" "Lesser Storm Rune"
     SetFontSize 45
-    SetTextColor 216 238 243 255 #D8EEF3
-    SetBorderColor 183 224 234 255 #B7E0EA
-    SetBackgroundColor 42 76 85 255 #2A4C55
+    SetTextColor 247 247 247 255 #F7F7F7
+    SetBorderColor 58 168 193 255 #3AA8C1
+    SetBackgroundColor 17 30 34 255 #111E22
     PlayAlertSound 3 300 #end
     PlayEffect Cyan Temp #end
-    MinimapIcon 1 Cyan Circle #end
+    MinimapIcon 2 Cyan Circle #end
 
 # ——————————————————————————————
 # ▶ mid
 # ▶▶ 기타 나머지 룬이 보입니다.
 # ——————————————————————————————
 
-# 모든 하위 룬
+# 기타 나머지 하위 룬
 Hide #mid
     Class == "Socketable"
     BaseType == "Lesser Body Rune" "Lesser Mind Rune" "Lesser Rebirth Rune" "Lesser Inspiration Rune" "Lesser Stone Rune" "Lesser Vision Rune"
     SetFontSize 45
     SetTextColor 247 247 247 255 #F7F7F7
     SetBorderColor 58 168 193 255 #3AA8C1
-    SetBackgroundColor 37 67 75 255 #25434B
+    SetBackgroundColor 17 30 34 255 #111E22
     #PlayAlertSound 3 300 #mid
     #PlayEffect Cyan Temp #mid
-    #MinimapIcon 1 Cyan Circle #mid
+    #MinimapIcon 2 Cyan Circle #mid
 
 # 기타 나머지 룬
 Hide #mid
@@ -5324,7 +5312,7 @@ Hide #mid
     SetBackgroundColor 37 67 75 255 #25434B
     #PlayAlertSound 3 300 #mid
     #PlayEffect Cyan Temp #mid
-    #MinimapIcon 1 Cyan Circle #mid
+    #MinimapIcon 0 Cyan Circle #mid
 
 # ▶ ======================================
 # ▶ 홈에 장착가능한 아이템(영혼 핵)
@@ -6141,7 +6129,20 @@ Show
     PlayEffect Yellow
     MinimapIcon 2 Yellow UpsideDownHouse
     SetTextColor 0 0 0 255 #000000
-    SetBackgroundColor 251 192 45 255 #FBC02D# ======================================
+    SetBackgroundColor 251 192 45 255 #FBC02D
+# ======================================
+# 아직 미구현된 아이템 방어 코드
+# ======================================
+
+Show #default
+    Class == "Claws" "Daggers" "One Hand Swords" "One Hand Axes" "Flails" "Two Hand Swords" "Two Hand Axes" "Traps" "Fishing Rods"
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    # SetBorderColor 0 0 0 255 #000000
+    SetBackgroundColor 24 9 112 255 #180970
+    PlayEffect Yellow Temp
+
+# ======================================
 # 크래프팅에 사용되지 않는
 # 모든 일반, 마법 아이템 처리
 # 마법, 일반 아이템은 액트를 진행하는 동안만 보이도록
