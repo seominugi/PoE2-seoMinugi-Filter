@@ -3,7 +3,7 @@
 
 
 # ======================================
-# 필터 버전: 0.2.2b 5-highEnd seoMinugi
+# 필터 버전: 0.2.4a 4-end seoMinugi
 
 # 안녕하세요. 서미누기입니다.
 # 모든 코드는 제가 직접 작성해서 만들고 있습니다.
@@ -74,7 +74,49 @@
 # ▶     탐험 리롤 화폐
 # ▶     탐험 일지
 # ▶ ======================================
+# ▶ 각종 특수 아이템(ex.시련, 결전 입장템)
+# ▶ ======================================
+# ▶ 진 바리야(시련)
+# ▶ uber
+#      지역 레벨 80 이상. 진 바리야(시련 입장템(성역))입니다.
+# ▶ highEnd
+#      지역 레벨 75. 진 바리야가 보입니다.
+# ▶ end
+#      지역 레벨 75 이상. 진 바리야가 보입니다.
+# ▶ mid
+#      지역 레벨 75 이하. 진 바리야가 보입니다.
+# ▶ 새겨진 결전
+# ▶ uber
+#      타락. 마법. 새겨진 결전이 강조되어 보입니다.
+#      지역 레벨 80 이상. 새겨진 결전이 보입니다.
+# ▶ highEnd
+#      지역 레벨 75 이상. 새겨진 결전이 보입니다.
+# ▶ end
+#      지역 레벨 60~74 사이. 새겨진 결전이 보입니다.
+# ▶ mid
+#      지역 레벨 73 이하. 새겨진 결전이 보입니다.
+# ▶ 시련 유물과 시련 보상 키
+#      모든 단계에서 시련 유물과, 시련 보상 키가 보입니다.
 # ▶ 고유 아이템
+# ▶ ======================================
+# ▶ 홈에 장착가능한 아이템(부적)
+# ▶ ======================================
+# ▶ 홈에 장착가능한 아이템(룬)
+# ▶ highEnd
+#      철 룬이 보입니다.
+# ▶ end
+#      사막 룬, 빙하 룬, 폭풍 룬(방어구 원소 저항)이 보입니다.
+# ▶ mid
+#      기타 나머지 룬이 보입니다.
+# ▶ early
+# ▶ ======================================
+# ▶ 홈에 장착가능한 아이템(영혼 핵)
+#      아즈카파의 영혼 핵, 잘라틀의 영혼 핵은 강조되어 보입니다.
+# ▶ ======================================
+# ▶ 금고실 열쇠(성유물 보관실 열쇠)
+# ▶ ======================================
+# ▶ 기회의 오브 도박 베이스
+#      0.2 업데이트에 맞춰서 재작업 필요
 # ▶ ======================================
 # ▶ 식별된 아이템(식별된 아이템에 부여된 속성을 필터링)
 # ▶ ======================================
@@ -97,9 +139,6 @@
 # ▶     20% 4개, 13% 이상 3개, 9% 이상 2개, 1% 이상 1개
 # ▶ 분해 아이템(플라스크)
 # ▶ 분해 아이템(소켓 아이템)
-# ▶ ======================================
-# ▶ 기회의 오브 도박 베이스
-#      0.2 업데이트에 맞춰서 재작업 필요
 # ▶ ======================================
 # ▶ 루팅 무기
 # ▶ 활 ——————————————————————————————
@@ -166,19 +205,21 @@
 #      액트 구간에서 모든 육척봉이 보입니다.
 # ▶ 양손 철퇴 ——————————————————————————————
 # ▶ uber
-#      아이템 레벨 82. 일반. 마법. 전문 광신자 대망치, 전문 납빛 대망치가 보입니다.
-#      희귀. 전문 광신자 대망치, 전문 납빛 대망치가 보입니다.
+#      아이템 레벨 82. 일반. 마법. 전문 광신자 대망치, 전문 납빛 대망치, 무거운 대망치가 보입니다.
+#      희귀. 요구사항 레벨 59 이상의 양손 철퇴가 보입니다.
 # ▶ highEnd
-#      아이템 레벨 81이상. 일반. 마법. 전문 광신자 대망치, 전문 납빛 대망치가 보입니다.
+#      아이템 레벨 81이상. 일반. 마법. 전문 광신자 대망치, 전문 납빛 대망치, 무거운 대망치가 보입니다.
 # ▶ end
-#      일반. 전문 광신자 대망치, 전문 납빛 대망치가 보입니다.
+#      일반. 전문 광신자 대망치, 전문 납빛 대망치, 무거운 대망치가 보입니다.
+#      마법. 무거운 대망치가 보입니다.
+#      무거운 대망치는 거인의 피 세팅에서 사용합니다.
 # ▶ mid
 #      마법. 전문 광신자 대망치, 전문 납빛 대망치가 보입니다.
 # ▶ early
 #      희귀. 요구사항 레벨 65 이상 양손 철퇴가 보입니다.
 # ▶ starter
-#      엔드 게임부터는 일반. 마법. 요구사항 레벨 65 이상 양손 철퇴가 보입니다.
-#      엔드 게임부터는 요구사항 레벨 55 이상 희귀 양손 철퇴가 보이며,
+#      엔드 게임부터는 일반. 마법. 요구사항 레벨 59 이상 양손 철퇴가 보입니다.
+#      엔드 게임부터는 요구사항 레벨 50 이상 희귀 양손 철퇴가 보이며,
 #      엔드 게임부터는 낮은 베이스의 희귀 양손 철퇴 숨겨집니다.
 #      액트 구간에서 모든 양손 철퇴가 보입니다.
 # ▶ 한손 철퇴 ——————————————————————————————
@@ -197,21 +238,19 @@
 #      모든 한손 철퇴가 보입니다.
 # ▶ 창 ——————————————————————————————
 # ▶ uber
-#      아이템 레벨 82이상. 일반. 마법.
+#      아이템 레벨 82이상. 일반. 마법 전문 가시 돋친 창, 바다유리 창, 전문 사냥 창, 전문 넓은날 창이 보입니다.
 #      좋은 베이스 아이템 희귀.작업 중
-#      그 외 작업 중
+#      희귀. 전문 가시 돋친 창, 바다유리 창, 전문 사냥 창, 전문 넓은날 창이 보입니다.
 # ▶ highEnd
-#      아이템 레벨 81이상. 일반. 마법.
-#      작업 중
+#      아이템 레벨 81이상. 일반. 마법 전문 가시 돋친 창, 바다유리 창, 전문 사냥 창, 전문 넓은날 창이 보입니다.
 # ▶ end
-#      작업 중
+#      일반. 전문 가시 돋친 창, 바다유리 창, 전문 사냥 창, 전문 넓은날 창이 보입니다.
 # ▶ mid
-#      작업 중
+#      마법. 전문 가시 돋친 창, 바다유리 창, 전문 사냥 창, 전문 넓은날 창이 보입니다.
 # ▶ early
 #      희귀. 요구사항 레벨 65 이상 창이 보입니다.
-#      작업 중
 # ▶ starter
-#      모든 창이 보입니다.
+#      모든 한손 창이 보입니다.
 # ▶ 지팡이
 # ▶ uber
 #      아이템 레벨 81이상. 일반. 마법. 차임벨 지팡이가 보입니다.
@@ -224,6 +263,8 @@
 #      마법. 차임벨 지팡이가 보입니다.
 # ▶ early
 #      마법. 모든 지팡이가 보입니다.
+# ▶ starter
+#      일반. 마법. 모든 지팡이가 보입니다.
 # ▶ 마법봉 ——————————————————————————————
 #      매서운 마법봉 추가 더 작업해야 함(0.2)
 # ▶ uber
@@ -467,21 +508,6 @@
 # ▶ starter
 #      일반. 마법. 모든 호신부가 보입니다.
 # ▶ ======================================
-# ▶ 홈에 장착가능한 아이템(부적)
-# ▶ ======================================
-# ▶ 홈에 장착가능한 아이템(룬)
-# ▶ highEnd
-#      철 룬이 보입니다.
-# ▶ end
-#      사막 룬, 빙하 룬, 폭풍 룬(방어구 원소 저항)이 보입니다.
-# ▶ mid
-#      기타 나머지 룬이 보입니다.
-# ▶ ======================================
-# ▶ 홈에 장착가능한 아이템(영혼 핵)
-#      아즈카파의 영혼 핵, 잘라틀의 영혼 핵은 강조되어 보입니다.
-# ▶ ======================================
-# ▶ 금고실 열쇠(성유물 보관실 열쇠)
-# ▶ ======================================
 # ▶ 주얼
 #      오래된 주얼과, 일반 주얼로 색상이 분리되어 보입니다.
 # ▶ ======================================
@@ -516,36 +542,13 @@
 #      19레벨 이상 미가공 스킬 젬이 보입니다.
 # ▶ end
 #      18레벨 이상 미가공 스킬 젬이 보입니다.
+#      지역 레벨이 높아질 수록 18레벨 미가공 스킬 젬은 잘 보이지 않습니다.
 # ▶ mid
 #      17레벨 이하 미가공 스킬 젬이 보입니다.
 #      3레벨 미가공 보조 젬이 보입니다.
 # ▶ early
 #      엔드 게임부터 미가공 스킬, 보조 젬의 드랍 사운드가 제거됩니다.
 #      액트 구간에서 모든 미가공 젬이 보입니다.
-# ▶ ======================================
-# ▶ 각종 특수 아이템(ex.시련, 결전 입장템)
-# ▶ ======================================
-# ▶ 진 바리야(시련)
-# ▶ uber
-#      지역 레벨 80 이상. 진 바리야(시련 입장템(성역))입니다.
-# ▶ highEnd
-#      지역 레벨 75. 진 바리야가 보입니다.
-# ▶ end
-#      지역 레벨 75 이상. 진 바리야가 보입니다.
-# ▶ mid
-#      지역 레벨 75 이하. 진 바리야가 보입니다.
-# ▶ 새겨진 결전
-# ▶ uber
-#      타락. 마법. 새겨진 결전이 강조되어 보입니다.
-#      지역 레벨 80 이상. 새겨진 결전이 보입니다.
-# ▶ highEnd
-#      지역 레벨 75 이상. 새겨진 결전이 보입니다.
-# ▶ end
-#      지역 레벨 60~74 사이. 새겨진 결전이 보입니다.
-# ▶ mid
-#      지역 레벨 73 이하. 새겨진 결전이 보입니다.
-# ▶ 시련 유물과 시련 보상 키
-#      모든 단계에서 시련 유물과, 시련 보상 키가 보입니다.
 # ▶ ==== 방어 코드 ==============================
 #      이 코드에 필터링 되어선 안됩니다.
 
@@ -555,9 +558,9 @@
 # ▶ 골드
 ##### ======================================
 
-# 골드 3500 이상
+# 골드 2000 이상
 Show #uber
-    StackSize >= 3500
+    StackSize >= 2000
     Class == "Stackable Currency"
     BaseType == "Gold"
     # SetFontSize 28
@@ -567,9 +570,9 @@ Show #uber
     PlayEffect Yellow Temp
     MinimapIcon 2 Yellow Diamond #highEnd
 
-# 골드 2500 이상
+# 골드 1000 이상
 Show #highEnd
-    StackSize >= 2500
+    StackSize >= 1000
     Class == "Stackable Currency"
     BaseType == "Gold"
     # SetFontSize 28
@@ -578,30 +581,30 @@ Show #highEnd
     SetBackgroundColor 0 0 0 200 #000000
     PlayEffect Yellow Temp #highEnd
 
-# 골드 1500 이상
-Hide #end
-    StackSize >= 1500
-    Class == "Stackable Currency"
-    BaseType == "Gold"
-    # SetFontSize 28
-    SetTextColor 255 183 197 255 #FFB7C5
-    SetBorderColor 0 0 0 200 #000000
-    SetBackgroundColor 0 0 0 200 #000000
-    #PlayEffect Yellow Temp #end
-
-# 골드 1000 이상
-Hide #mid
-    StackSize >= 1000
-    Class == "Stackable Currency"
-    BaseType == "Gold"
-    # SetFontSize 28
-    SetTextColor 255 183 197 255 #FFB7C5
-    SetBorderColor 0 0 0 200 #000000
-    SetBackgroundColor 0 0 0 200 #000000
-
 # 골드 500 이상
-Hide #early
+Show #end
     StackSize >= 500
+    Class == "Stackable Currency"
+    BaseType == "Gold"
+    # SetFontSize 28
+    SetTextColor 255 183 197 255 #FFB7C5
+    SetBorderColor 0 0 0 200 #000000
+    SetBackgroundColor 0 0 0 200 #000000
+    PlayEffect Yellow Temp #end
+
+# 골드 300 이상
+Hide #mid
+    StackSize >= 300
+    Class == "Stackable Currency"
+    BaseType == "Gold"
+    # SetFontSize 28
+    SetTextColor 255 183 197 255 #FFB7C5
+    SetBorderColor 0 0 0 200 #000000
+    SetBackgroundColor 0 0 0 200 #000000
+
+# 골드 200 이상
+Hide #early
+    StackSize >= 200
     Class == "Stackable Currency"
     BaseType == "Gold"
     # SetFontSize 28
@@ -657,7 +660,7 @@ Hide #starter
 ##### ======================================
 
 Show #default
-    Class == "Quest Items"
+    Class == "Quest Items" "Instance Local Items"
     SetFontSize 45
     SetTextColor 73 230 58 255 #49E63A
     SetBorderColor 73 230 58 255 #49E63A
@@ -723,20 +726,6 @@ Show #default
     CustomAlertSoundOptional "./CustomSound/currency-t0.mp3" 300
     CustomAlertSoundOptional "./CustomSound/currency-t0.wav" 300
 
-# 분열의 오브
-Show #default
-    Class == "Stackable Currency"
-    BaseType == "Fracturing Orb"
-    SetFontSize 45
-    SetTextColor 227 11 92 255 #E30B5C
-    SetBorderColor 227 11 92 255 #E30B5C
-    SetBackgroundColor 254 237 243 255 #FEEDF3
-    PlayAlertSound 6 300
-    PlayEffect Pink
-    MinimapIcon 0 Pink Star
-    CustomAlertSoundOptional "./CustomSound/currency-t0.mp3" 300
-    CustomAlertSoundOptional "./CustomSound/currency-t0.wav" 300
-
 # ▶ ======================================
 # ▶ 1티어 화폐
 # ▶     상위 쥬얼러 오브
@@ -760,6 +749,20 @@ Show #default
 # ▶ 2티어 화폐
 # ▶     기회의 오브와 파편, 카오스 오브, 소멸의 오브, 세공사의 프리즘
 ##### ======================================
+
+# 분열의 오브
+Show #default
+    Class == "Stackable Currency"
+    BaseType == "Fracturing Orb"
+    SetFontSize 45
+    SetTextColor 0 0 0 255 #000000
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 233 144 80 255 #E99050
+    PlayAlertSound 2 300
+    PlayEffect Yellow Temp
+    MinimapIcon 0 Yellow Cross
+    CustomAlertSoundOptional "./CustomSound/currency-t2.mp3" 300
+    CustomAlertSoundOptional "./CustomSound/currency-t2.wav" 300
 
 # 기회의 오브
 Show #default
@@ -906,30 +909,30 @@ Show #default
     CustomAlertSoundOptional "./CustomSound/currency-t4.wav" 300
 
 # 하위 쥬얼러 오브
-Hide #end
+Show #end
     Class == "Stackable Currency"
     BaseType == "Lesser Jeweller's Orb"
     SetFontSize 45
     SetTextColor 17 17 17 255 #111111
     SetBorderColor 17 17 17 255 #111111
     SetBackgroundColor 102 153 204 255 #6699CC
-    #PlayAlertSound 2 300 #end
-    #MinimapIcon 2 White Circle #end
-    #CustomAlertSoundOptional "./CustomSound/currency-t4.mp3" 300 #end
-    #CustomAlertSoundOptional "./CustomSound/currency-t4.wav" 300 #end
+    PlayAlertSound 2 300 #end
+    MinimapIcon 2 White Circle #end
+    CustomAlertSoundOptional "./CustomSound/currency-t4.mp3" 300 #end
+    CustomAlertSoundOptional "./CustomSound/currency-t4.wav" 300 #end
 
 # 숙련공의 오브
-Hide #end
+Show #end
     Class == "Stackable Currency"
     BaseType == "Artificer's Orb"
     SetFontSize 45
     SetTextColor 17 17 17 255 #111111
     SetBorderColor 17 17 17 255 #111111
     SetBackgroundColor 102 153 204 255 #6699CC
-    #PlayAlertSound 2 300 #end
-    #MinimapIcon 2 White Circle #end
-    #CustomAlertSoundOptional "./CustomSound/currency-t4.mp3" 300 #end
-    #CustomAlertSoundOptional "./CustomSound/currency-t4.wav" 300 #end
+    PlayAlertSound 2 300 #end
+    MinimapIcon 2 White Circle #end
+    CustomAlertSoundOptional "./CustomSound/currency-t4.mp3" 300 #end
+    CustomAlertSoundOptional "./CustomSound/currency-t4.wav" 300 #end
 
 # 대장장이의 숫돌
 Show #highEnd
@@ -962,14 +965,14 @@ Show #highEnd
     MinimapIcon 2 White Circle #highEnd
 
 # 제왕의 파편
-Hide #early
+Show #end
     Class == "Stackable Currency"
     BaseType == "Regal Shard"
     SetFontSize 40
     SetTextColor 17 17 17 255 #111111
     SetBorderColor 17 17 17 255 #111111
     SetBackgroundColor 102 153 204 255 #6699CC
-    #MinimapIcon 2 White Kite #early
+    MinimapIcon 2 White Kite #end
 
 # 숙련공의 파편
 Hide #early
@@ -987,18 +990,28 @@ Hide #early
 ##### ======================================
 
 # 진화, 확장의 오브가 스택으로 떨어지는 것을 보진 못했지만 혹시나 해서 작성
-# 2개 이상 진화의 오브, 확장의 오브
+# 2개 이상 진화의 오브
 Show #default
     StackSize >= 2
     Class == "Stackable Currency"
-    BaseType == "Orb of Transmutation" "Orb of Augmentation"
+    BaseType == "Orb of Transmutation"
     SetFontSize 42
     SetTextColor 170 158 130 255 #AA9E82
     SetBorderColor 255 239 213 255 #FFEFD5
     SetBackgroundColor 0 0 0 255 #000000
 
+# 2개 이상의 확장의 오브 
+Show #default
+    StackSize >= 2
+    Class == "Stackable Currency"
+    BaseType == "Orb of Augmentation"
+    SetFontSize 42
+    SetTextColor 170 158 130 255 #AA9E82
+    # SetBorderColor 255 239 213 255 #FFEFD5
+    SetBackgroundColor 0 0 0 255 #000000
+
 # 진화의 오브
-Hide #end
+Show #end
     Class == "Stackable Currency"
     BaseType == "Orb of Transmutation"
     SetFontSize 40
@@ -1007,12 +1020,12 @@ Hide #end
     SetBackgroundColor 0 0 0 255 #000000
 
 # 확장의 오브
-Hide #end
+Show #end
     Class == "Stackable Currency"
     BaseType == "Orb of Augmentation"
     SetFontSize 40
     SetTextColor 170 158 130 255 #AA9E82
-    SetBorderColor 255 239 213 255 #FFEFD5
+    # SetBorderColor 255 239 213 255 #FFEFD5
     SetBackgroundColor 0 0 0 255 #000000
 
 # 진화의 파편
@@ -1265,6 +1278,32 @@ Show #default
 # ▶     균열파편
 # ======================================
 
+# 기폭제 풀세트
+Show
+    StackSize == 10
+    Class == "Stackable Currency"
+    BaseType "Catalyst"
+    SetFontSize 45
+    SetTextColor 0 0 0 255 #000000
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 233 144 80 255 #E99050
+    PlayAlertSound 1 300
+    PlayEffect White
+    MinimapIcon 2 White Cross
+
+# 기폭제 2개 이상 스택
+Show
+    StackSize >= 2
+    Class == "Stackable Currency"
+    BaseType "Catalyst"
+    SetFontSize 45
+    SetTextColor 0 0 0 255 #000000
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 233 144 80 255 #E99050
+    PlayAlertSound 1 300
+    PlayEffect White
+    MinimapIcon 0 White Circle
+
 # 적응형, 에쉬의, 강탈자
 # 1티어 기폭제
 Show #uber
@@ -1293,16 +1332,16 @@ Show #highEnd
 
 # 쇳소리, 조프의, 달리는
 # 3티어 기폭제
-Hide #end
+Show #end
     Class == "Stackable Currency"
     BaseType == "Sibilant Catalyst" "Xoph's Catalyst" "Skittering Catalyst"
     SetFontSize 45
     SetTextColor 219 230 227 255 #DBE6E3
     SetBorderColor 219 230 227 255 #DBE6E3
     SetBackgroundColor 35 49 45 255 #23312D
-    #PlayAlertSound 3 300 #end
-    #PlayEffect White #end
-    #MinimapIcon 2 White Circle #end
+    PlayAlertSound 3 300 #end
+    PlayEffect White #end
+    MinimapIcon 2 White Circle #end
 
 # 울네톨의, 육체, 갑각
 # 4티어 기폭제
@@ -1353,7 +1392,7 @@ Show #uber
     MinimapIcon 2 Purple UpsideDownHouse
 
 Show #highEnd
-    ItemLevel >= 81
+    ItemLevel >= 77
     Class == "Rings"
     BaseType == "Breach Ring"
     Rarity == Normal Magic
@@ -1364,7 +1403,7 @@ Show #highEnd
     PlayEffect Purple #highEnd
     MinimapIcon 2 Purple UpsideDownHouse #highEnd
 
-Hide #end
+Show #end
     Class == "Rings"
     BaseType == "Breach Ring"
     Rarity == Normal Magic
@@ -1372,8 +1411,8 @@ Hide #end
     # SetTextColor 0 0 0 255 #000000
     SetBorderColor 211 178 255 255 #D3B2FF
     SetBackgroundColor 67 0 153 255 #430099
-    #PlayEffect Purple #end
-    #MinimapIcon 2 Purple UpsideDownHouse #end
+    PlayEffect Purple #end
+    MinimapIcon 2 Purple UpsideDownHouse #end
 
 # 균열석
 Show #default
@@ -1434,7 +1473,7 @@ Show #default
     SetTextColor 240 248 255 255 #F0F8FF
     SetBorderColor 240 248 255 255 #F0F8FF
     SetBackgroundColor 19 56 109 255 #13386D
-    MinimapIcon 1 Yellow Circle
+    MinimapIcon 2 Yellow Circle
 
 # 탐험 일지(지역 레벨 79 이상. 올로스가 등장)
 Show #default
@@ -1446,7 +1485,7 @@ Show #default
     SetBackgroundColor 121 12 42 255 #790C2A
     PlayAlertSound 5 300
     PlayEffect Red
-    MinimapIcon 1 Red Square
+    MinimapIcon 0 Red Square
 
 # 탐험 일지(지역 레벨 78 이하)
 Show #default
@@ -1460,7 +1499,196 @@ Show #default
     PlayEffect Red
     MinimapIcon 1 Red Square
 
+
 # ▶ ======================================
+# ▶ 각종 특수 아이템(ex.시련, 결전 입장템)
+# ▶ ======================================
+
+######### ======================================
+# ▶ 진 바리야(시련)
+######### ======================================
+
+# ——————————————————————————————
+# ▶ uber
+# ▶▶ 지역 레벨 80 이상. 진 바리야(시련 입장템(성역))입니다.
+# ——————————————————————————————
+
+# 지역 레벨 80레벨 이상. 진 바리야(시련 입장템(성역))
+Show #uber
+    ItemLevel >= 80
+    Class == "Trial Coins"
+    SetFontSize 45
+    SetTextColor 172 225 175 255 #ACE1AF
+    SetBorderColor 172 225 175 255 #ACE1AF
+    SetBackgroundColor 21 42 37 255 #152A25
+    PlayEffect Green #highEnd
+    PlayAlertSound 3 300 #highEnd
+    MinimapIcon 1 Green Circle #highEnd
+
+# ——————————————————————————————
+# ▶ highEnd
+# ▶▶ 지역 레벨 75. 진 바리야가 보입니다.
+# ——————————————————————————————
+
+# 75렙 시련 입장템이 비싸다는 이야기가 있습니다.
+# 진 바리야(시련 입장템(성역))
+Show #highEnd
+    ItemLevel == 75
+    Class == "Trial Coins"
+    SetFontSize 45
+    SetTextColor 172 225 175 255 #ACE1AF
+    SetBorderColor 172 225 175 255 #ACE1AF
+    SetBackgroundColor 21 42 37 255 #152A25
+    PlayEffect Green #highEnd
+    PlayAlertSound 3 300 #highEnd
+    MinimapIcon 1 Green Circle #highEnd
+
+# ——————————————————————————————
+# ▶ end
+# ▶▶ 지역 레벨 75 이상. 진 바리야가 보입니다.
+# ——————————————————————————————
+
+# 진 바리야(75레벨 이상. 75이상부터 시련 수 4)
+Show #end
+    ItemLevel >= 75
+    Class == "Trial Coins"
+    SetFontSize 45
+    SetTextColor 172 225 175 255 #ACE1AF
+    SetBorderColor 172 225 175 255 #ACE1AF
+    SetBackgroundColor 21 42 37 255 #152A25
+    PlayEffect Green #end
+    PlayAlertSound 3 300 #end
+    MinimapIcon 1 Green Circle #end
+
+# ——————————————————————————————
+# ▶ mid
+# ▶▶ 지역 레벨 75 이하. 진 바리야가 보입니다.
+# ——————————————————————————————
+
+# 진 바리야(75레벨 미만 처리)
+Hide #mid
+    ItemLevel < 75
+    Class == "Trial Coins"
+    SetFontSize 45
+    SetTextColor 172 225 175 255 #ACE1AF
+    SetBorderColor 172 225 175 255 #ACE1AF
+    SetBackgroundColor 21 42 37 255 #152A25
+    #PlayEffect Green #mid
+    #PlayAlertSound 3 300 #mid
+    #MinimapIcon 1 Green Circle #mid
+
+######### ======================================
+# ▶ 새겨진 결전
+######### ======================================
+
+# ——————————————————————————————
+# ▶ uber
+# ▶▶ 타락. 마법. 새겨진 결전이 강조되어 보입니다.
+# ▶▶ 지역 레벨 80 이상. 새겨진 결전이 보입니다.
+# ——————————————————————————————
+
+# 타락. 마법. 새겨진 결전
+Show #default
+    Corrupted True
+    Class == "Inscribed Ultimatum"
+    Rarity == Magic
+    SetFontSize 45
+    SetTextColor 0 0 0 255 #000000
+    SetBorderColor 0 0 0 255 #000000
+    SetBackgroundColor 172 225 175 255 #ACE1AF
+    PlayAlertSound 12 300 #default
+    PlayEffect Green #default
+    MinimapIcon 0 Green Cross #default
+
+# 새겨진 결전
+Show #uber
+    ItemLevel >= 80
+    Class == "Inscribed Ultimatum"
+    SetFontSize 45
+    SetTextColor 172 225 175 255 #ACE1AF
+    SetBorderColor 172 225 175 255 #ACE1AF
+    SetBackgroundColor 21 42 37 255 #152A25
+    PlayAlertSound 3 300 #uber
+    PlayEffect Green #uber
+    MinimapIcon 1 Green Circle #uber
+
+# ——————————————————————————————
+# ▶ highEnd
+# ▶▶ 지역 레벨 75 이상. 새겨진 결전이 보입니다.
+# ——————————————————————————————
+
+# 새겨진 결전(10라운드)
+Show #highEnd
+    ItemLevel >= 75
+    Class == "Inscribed Ultimatum"
+    SetFontSize 45
+    SetTextColor 172 225 175 255 #ACE1AF
+    SetBorderColor 172 225 175 255 #ACE1AF
+    SetBackgroundColor 21 42 37 255 #152A25
+    PlayEffect Green #highEnd
+    PlayAlertSound 3 300 #highEnd
+    MinimapIcon 1 Green Circle #highEnd
+
+# ——————————————————————————————
+# ▶ end
+# ▶▶ 지역 레벨 60~74 사이. 새겨진 결전이 보입니다.
+# ——————————————————————————————
+
+# 새겨진 결전(7라운드)
+Show #end
+    ItemLevel >= 60
+    ItemLevel <= 74
+    Class == "Inscribed Ultimatum"
+    SetFontSize 45
+    SetTextColor 172 225 175 255 #ACE1AF
+    SetBorderColor 172 225 175 255 #ACE1AF
+    SetBackgroundColor 21 42 37 255 #152A25
+    PlayEffect Green #end
+    PlayAlertSound 3 300 #end
+    MinimapIcon 1 Green Circle #end
+
+# ——————————————————————————————
+# ▶ mid
+# ▶▶ 지역 레벨 73 이하. 새겨진 결전이 보입니다.
+# ——————————————————————————————
+
+Hide #mid
+    ItemLevel <= 73
+    Class == "Inscribed Ultimatum"
+    SetFontSize 45
+    SetTextColor 172 225 175 255 #ACE1AF
+    SetBorderColor 172 225 175 255 #ACE1AF
+    SetBackgroundColor 21 42 37 255 #152A25
+    #PlayEffect Green #mid
+    #PlayAlertSound 3 300 #mid
+    #MinimapIcon 1 Green Circle #mid
+
+######### ======================================
+# ▶ 시련 유물과 시련 보상 키
+# ▶▶ 모든 단계에서 시련 유물과, 시련 보상 키가 보입니다.
+######### ======================================
+
+# 시련 유물
+Show #default
+    Class == "Relics"
+    SetFontSize 45
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 255 248 231 255 #FFF8E7
+    SetBackgroundColor 27 0 104 255 #1B0068
+    PlayEffect Blue
+    PlayAlertSound 3 300
+    MinimapIcon 1 Blue Circle
+
+# 시련 보상 키
+Show #default
+    BaseType == "Gold Key" "Silver Key" "Bronze Key"
+    SetFontSize 45
+    SetTextColor 73 230 58 255 #49E63A
+    SetBorderColor 73 230 58 255 #49E63A
+    SetBackgroundColor 5 34 2 245 #052202
+    PlayEffect Green
+    PlayAlertSound 3 300
+    MinimapIcon 1 Green Circle# ▶ ======================================
 # ▶ 고유 아이템
 # ======================================
 
@@ -1584,11 +1812,37 @@ Show #default
 # 1티어 유니크
 # ——————————————————————————————
 
-# 우두머리의 울부짖음, 말리가로의 기교, 겨울의 추위, 리슬라사의 감개, 숲의 여왕
+# 우두머리의 울부짖음, 말리가로의 기교, 겨울의 추위, 리슬라사의 감개, 숲의 여왕, 해적 모자, 늑대 거미
 # 1티어 유니크
 Show #default
     Rarity == Unique
-    BaseType == "Armoured Cap" "Fine Bracers" "Glass Shank" "Ornate Belt" "Smuggler Coat"
+    BaseType == "Armoured Cap" "Fine Bracers" "Glass Shank" "Ornate Belt" "Smuggler Coat" "Corsair Cap" "Rampart Tower Shield" 
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 255 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+
+# 다가오는 대재난, 래스피스, 레오폴드의 갈채, 분광의 수호자, 숭배의 비단
+# 0.2 신규유니크 1티어
+Show #default
+    Rarity == Unique
+    BaseType == "Heroic Armour" "Sacred Focus" "Embroidered Gloves" "Sectarian Crest Shield" "Enlightened Robe"
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 255 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+
+# 꼬인혀
+# 1티어 유니크(애매한 것)
+Show #default
+    Rarity == Unique
+    BaseType == "Forked Spear"
     SetFontSize 45
     SetTextColor 227 11 92 255 #E30B5C
     SetBorderColor 227 11 92 255 #E30B5C
@@ -1601,10 +1855,10 @@ Show #default
 # 2티어 유니크
 # ——————————————————————————————
 
-# 포기, 카옴의 심장, 짓발가락 
+# 포기, 카옴의 심장, 짓발가락, 키토코의 흐름
 Show #default
     Rarity == Unique
-    BaseType == "Stone Tower Shield" "Conqueror Plate" "Trimmed Greaves"
+    BaseType == "Stone Tower Shield" "Conqueror Plate" "Trimmed Greaves" "Jewelled Gloves"
     SetFontSize 45
     SetTextColor 0 0 0 255 #000000
     SetBorderColor 0 0 0 255 #000000
@@ -1620,7 +1874,7 @@ Show #default
 # 과부우박, 샤브론의 가방, 앗지리의 멸시, 키토코의 흐름, 갇힌 신의 기둥, 도리아니의 프로토타입, 세 마리의 용, 검은 태양 문양
 Show #default
     Rarity == Unique
-    BaseType == "Crude Bow" "Fine Belt" "Gold Circlet" "Jewelled Gloves" "Long Quarterstaff" "Scale Mail" "Solid Mask" "Wrapped Greathelm"
+    BaseType == "Crude Bow" "Fine Belt" "Gold Circlet" "Long Quarterstaff" "Scale Mail" "Solid Mask" "Wrapped Greathelm"
     SetFontSize 45
     SetTextColor 0 0 0 255 #000000
     SetBorderColor 0 0 0 255 #000000
@@ -1672,7 +1926,7 @@ Show
     SetTextColor 175 96 37 255 #AF6025
     SetBorderColor 13 7 3 255 #0D0703
     SetBackgroundColor 13 7 3 255 #0D0703
-    # #PlayAlertSound 2 300 #end
+    # PlayAlertSound 2 300 #end
     PlayAlertSound 2 300
     PlayEffect Orange Temp
     MinimapIcon 2 Orange Circle
@@ -1686,10 +1940,10 @@ Show
     SetTextColor 175 96 37 255 #AF6025
     SetBorderColor 13 7 3 255 #0D0703
     SetBackgroundColor 13 7 3 255 #0D0703
-    # #PlayAlertSound 2 300 #end
+    # PlayAlertSound 2 300 #end
     PlayAlertSound 2 300
     PlayEffect Orange Temp
-    # #MinimapIcon 2 Orange Circle #end
+    # MinimapIcon 2 Orange Circle #end
     MinimapIcon 2 Orange Circle
 
 # 그 외 고유 아이템(방어 코드)
@@ -1702,6 +1956,289 @@ Show #default
     PlayAlertSound 3 300
     PlayEffect Pink
     MinimapIcon 0 Pink Raindrop
+
+
+
+
+# ▶ ======================================
+# ▶ 홈에 장착가능한 아이템(부적)
+# ======================================
+
+# 도깨비불 부적(추후 티어 재작업)
+Show
+    Class == "Socketable"
+    BaseType == "Serpent Talisman" "Primate Talisman" "Owl Talisman" "Cat Talisman" "Wolf Talisman" "Stag Talisman" "Boar Talisman" "Bear Talisman" "Ox Talisman" "Rabbit Talisman" "Fox Talisman"
+    SetFontSize 45
+    SetTextColor 6 17 20 255 #061114
+    SetBorderColor 48 136 156 255 #30889C
+    SetBackgroundColor 216 238 243 255 #D8EEF3
+    PlayAlertSound 1 300
+    PlayEffect Cyan
+    MinimapIcon 1 Cyan Star
+
+# ▶ ======================================
+# ▶ 홈에 장착가능한 아이템(룬)
+# ======================================
+
+# 신규 상위 룬(통솔력, 십일조, 기민성, 고결성)
+Show
+    Class == "Socketable"
+    BaseType == "Greater Rune of Leadership" "Greater Rune of Tithing" "Greater Rune of Alacrity" "Greater Rune of Nobility"
+    SetFontSize 45
+    SetTextColor 6 17 20 255 #061114
+    SetBorderColor 48 136 156 255 #30889C
+    SetBackgroundColor 216 238 243 255 #D8EEF3
+    PlayAlertSound 1 300
+    PlayEffect Cyan
+    MinimapIcon 1 Cyan Cross
+
+# ——————————————————————————————
+# ▶ highEnd
+# ▶▶ 철 룬이 보입니다.
+# ——————————————————————————————
+
+# 상위 철 룬(무기 물리 피해)
+Show #highEnd
+    Class == "Socketable"
+    BaseType == "Greater Iron Rune"
+    SetFontSize 45
+    SetTextColor 237 244 246 255 #EDF4F6
+    SetBorderColor 237 244 246 255 #EDF4F6
+    SetBackgroundColor 42 76 85 255 #2A4C55
+    PlayAlertSound 3 300 #highEnd
+    PlayEffect Cyan Temp #highEnd
+    MinimapIcon 1 Cyan Circle #highEnd
+
+
+# ——————————————————————————————
+# ▶ end
+# ▶▶ 사막 룬, 빙하 룬, 폭풍 룬(방어구 원소 저항)이 보입니다.
+# ——————————————————————————————
+
+# 상위 사막 룬, 빙하 룬, 폭풍 룬(방어구 원소 저항)
+Show #end
+    Class == "Socketable"
+    BaseType == "Greater Desert Rune" "Greater Glacial Rune" "Greater Storm Rune"
+    SetFontSize 45
+    SetTextColor 237 244 246 255 #EDF4F6
+    SetBorderColor 237 244 246 255 #EDF4F6
+    SetBackgroundColor 42 76 85 255 #2A4C55
+    PlayAlertSound 3 300 #end
+    PlayEffect Cyan Temp #end
+    MinimapIcon 1 Cyan Circle #end
+
+# 상위 능력치 룬
+Show #end
+    Class == "Socketable"
+    BaseType == "Greater Robust Rune" "Greater Adept Rune" "Greater Resolve Rune"
+    SetFontSize 45
+    SetTextColor 237 244 246 255 #EDF4F6
+    SetBorderColor 237 244 246 255 #EDF4F6
+    SetBackgroundColor 42 76 85 255 #2A4C55
+    PlayAlertSound 3 300 #end
+    PlayEffect Cyan Temp #end
+    MinimapIcon 1 Cyan Circle #end
+
+# 상위 기타 룬
+Show #end
+    Class == "Socketable"
+    BaseType == "Greater Body Rune" "Greater Mind Rune" "Greater Rebirth Rune" "Greater Inspiration Rune" "Greater Stone Rune" "Greater Vision Rune" 
+    SetFontSize 45
+    SetTextColor 237 244 246 255 #EDF4F6
+    SetBorderColor 237 244 246 255 #EDF4F6
+    SetBackgroundColor 42 76 85 255 #2A4C55
+    PlayAlertSound 3 300 #end
+    PlayEffect Cyan Temp #end
+    MinimapIcon 1 Cyan Circle #end
+
+# 철 룬
+Show #end
+    Class == "Socketable"
+    BaseType == "Iron Rune"
+    SetFontSize 45
+    SetTextColor 237 244 246 255 #EDF4F6
+    SetBorderColor 237 244 246 255 #EDF4F6
+    SetBackgroundColor 42 76 85 255 #2A4C55
+    PlayAlertSound 3 300 #end
+    PlayEffect Cyan Temp #end
+    MinimapIcon 1 Cyan Circle #end
+
+# ——————————————————————————————
+# ▶ mid
+# ▶▶ 기타 나머지 룬이 보입니다.
+# ——————————————————————————————
+
+# 사막 룬, 빙하 룬, 폭풍 룬(방어구 원소 저항)
+Show #end
+    Class == "Socketable"
+    BaseType == "Desert Rune" "Glacial Rune" "Storm Rune"
+    SetFontSize 45
+    SetTextColor 237 244 246 255 #EDF4F6
+    SetBorderColor 237 244 246 255 #EDF4F6
+    SetBackgroundColor 42 76 85 255 #2A4C55
+    #PlayAlertSound 3 300 #mid
+    #PlayEffect Cyan Temp #mid
+    #MinimapIcon 1 Cyan Circle #mid
+
+# 능력치 룬
+Show #end
+    Class == "Socketable"
+    BaseType == "Robust Rune" "Adept Rune" "Resolve Rune"
+    SetFontSize 45
+    SetTextColor 237 244 246 255 #EDF4F6
+    SetBorderColor 237 244 246 255 #EDF4F6
+    SetBackgroundColor 42 76 85 255 #2A4C55
+    #PlayAlertSound 3 300 #mid
+    #PlayEffect Cyan Temp #mid
+    #MinimapIcon 1 Cyan Circle #mid
+
+# 기타 룬
+Hide #mid
+    Class == "Socketable"
+    BaseType == "Body Rune" "Mind Rune" "Rebirth Rune" "Inspiration Rune" "Stone Rune" "Vision Rune"
+    SetFontSize 45
+    SetTextColor 237 244 246 255 #EDF4F6
+    SetBorderColor 237 244 246 255 #EDF4F6
+    SetBackgroundColor 42 76 85 255 #2A4C55
+    #PlayAlertSound 3 300 #mid
+    #PlayEffect Cyan Temp #mid
+    #MinimapIcon 2 Cyan Circle #mid
+
+# 하위 철 룬
+Hide #mid
+    Class == "Socketable"
+    BaseType == "Lesser Iron Rune"
+    SetFontSize 45
+    SetTextColor 247 247 247 255 #F7F7F7
+    SetBorderColor 58 168 193 255 #3AA8C1
+    SetBackgroundColor 17 30 34 255 #111E22
+    #PlayAlertSound 3 300 #mid
+    #PlayEffect Cyan Temp #mid
+    #MinimapIcon 2 Cyan Circle #mid
+
+# 하위 능력치 룬
+Hide #mid
+    Class == "Socketable"
+    BaseType == "Lesser Robust Rune" "Lesser Adept Rune" "Lesser Resolve Rune"
+    SetFontSize 45
+    SetTextColor 247 247 247 255 #F7F7F7
+    SetBorderColor 58 168 193 255 #3AA8C1
+    SetBackgroundColor 17 30 34 255 #111E22
+    #PlayAlertSound 3 300 #mid
+    #PlayEffect Cyan Temp #mid
+    #MinimapIcon 2 Cyan Circle #mid
+
+# ——————————————————————————————
+# ▶ early
+# ——————————————————————————————
+
+# 하위 원소 저항 룬(방어구 원소 저항)
+Hide #early
+    Class == "Socketable"
+    BaseType == "Lesser Desert Rune" "Lesser Glacial Rune" "Lesser Storm Rune"
+    SetFontSize 45
+    SetTextColor 247 247 247 255 #F7F7F7
+    SetBorderColor 58 168 193 255 #3AA8C1
+    SetBackgroundColor 17 30 34 255 #111E22
+    #PlayAlertSound 3 300 #early
+    #PlayEffect Cyan Temp #early
+    #MinimapIcon 2 Cyan Circle #early
+
+# 하위 기타 룬
+Hide #early
+    Class == "Socketable"
+    BaseType == "Lesser Body Rune" "Lesser Mind Rune" "Lesser Rebirth Rune" "Lesser Inspiration Rune" "Lesser Stone Rune" "Lesser Vision Rune" 
+    SetFontSize 45
+    SetTextColor 247 247 247 255 #F7F7F7
+    SetBorderColor 58 168 193 255 #3AA8C1
+    SetBackgroundColor 17 30 34 255 #111E22
+    #PlayAlertSound 3 300 #early
+    #PlayEffect Cyan Temp #early
+    #MinimapIcon 2 Cyan Circle #early
+
+# 기타 나머지 룬(방어 코드)
+Show 
+    Class == "Socketable"
+    BaseType "Rune"
+    SetFontSize 45
+    SetTextColor 247 247 247 255 #F7F7F7
+    SetBorderColor 58 168 193 255 #3AA8C1
+    SetBackgroundColor 37 67 75 255 #25434B
+    PlayAlertSound 3 300 
+    PlayEffect Cyan 
+    MinimapIcon 0 Grey Star
+
+# ▶ ======================================
+# ▶ 홈에 장착가능한 아이템(영혼 핵)
+# ▶▶ 아즈카파의 영혼 핵, 잘라틀의 영혼 핵은 강조되어 보입니다.
+# ======================================
+
+# 비싼 영혼 핵(소울 코어)
+Show #default
+    Class == "Socketable"
+    BaseType == "Soul Core of Azcapa" "Soul Core of Zalatl" 
+    SetFontSize 45
+    SetTextColor 0 51 26 255 #00331A
+    SetBorderColor 58 168 193 255 #3AA8C1
+    SetBackgroundColor 243 230 216 255 #F3E6D8
+    PlayAlertSound 6 300
+    PlayEffect Red
+    MinimapIcon 0 Red Star
+
+# 모든 영혼 핵(소울 코어)
+Show #default
+    Class == "Socketable"
+    BaseType "Soul Core of"
+    SetFontSize 45
+    SetTextColor 191 255 224 255 #BFFFE0
+    SetBorderColor 58 168 193 255 #3AA8C1
+    SetBackgroundColor 192 127 57 255 #C07F39
+    PlayAlertSound 12 300
+    PlayEffect Cyan Temp
+    MinimapIcon 0 Cyan Circle
+
+# ▶ ======================================
+# ▶ 금고실 열쇠(성유물 보관실 열쇠)
+# ======================================
+
+
+# 자로크의 성유물 보관실 열쇠 관련 오류가 있어서 BaseType 우선 제거(추후 재확인 필요)
+# BaseType == "Twilight Reliquary Key" "Xesht's Reliquary Key" "The Trialmaster's Reliquary Key" "Ritualistic Reliquary Key" "Tangmazu's Reliquary Key" "Olroth's Reliquary Key" "The Arbiter's Reliquary Key" "Zarokh's Reliquary Key (Against the Darkness)" "Zarokh's Reliquary Key (Sandstorm Visage)" "Zarokh's Reliquary Key (Blessed Bonds)" "Zarokh's Reliquary Key (Sekhema's Resolve)" "Zarokh's Reliquary Key (Temporalis)"
+
+Show #default
+    Class == "Vault Keys"
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 255 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+    CustomAlertSoundOptional "./CustomSound/currency-t0.mp3" 300
+    CustomAlertSoundOptional "./CustomSound/currency-t0.wav" 300
+
+
+# ▶ ======================================
+# ▶ 기회의 오브 도박 베이스
+# ▶▶ 0.2 업데이트에 맞춰서 재작업 필요
+##### ======================================
+
+# 별의 목걸이, 사파이어 반지, 리슬라사의 감개, 꼬인혀, 헤드헌터
+Show
+    BaseType == "Stellar Amulet" "Sapphire Ring" "Ornate Belt" "Forked Spear" "Heavy Belt"
+    Rarity == Normal
+    SetFontSize 45
+    SetTextColor 0 0 0 255 #000000
+    SetBorderColor 0 0 0 255 #000000
+    SetBackgroundColor 242 193 209 255 #F2C1D1
+    PlayAlertSound 12 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink UpsideDownHouse 
+
+
+
+
+
 
 
 
@@ -2010,13 +2547,13 @@ Show #disable-in-highEnd
     SetBorderColor 255 239 0 255 #FFEF00
     SetBackgroundColor 3 35 48 255 #032330
 
-#Show #disable-in-end
-#    Quality >= 9
-#    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" 
-#    Rarity == Normal Magic Rare
-#    SetFontSize 40
-#    SetBorderColor 115 194 251 255 #73C2FB
-#    SetBackgroundColor 3 35 48 255 #032330
+Show #disable-in-end
+    Quality >= 9
+    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" 
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    SetBorderColor 115 194 251 255 #73C2FB
+    SetBackgroundColor 3 35 48 255 #032330
 
 #Show #disable-in-early
 #    Quality >= 1
@@ -2048,13 +2585,13 @@ Show #disable-in-highEnd
     SetBorderColor 255 239 0 255 #FFEF00
     SetBackgroundColor 3 35 48 255 #032330
 
-#Show #disable-in-end
-#    Quality >= 9
-#    Class == "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Bucklers"
-#    Rarity == Normal Magic Rare
-#    SetFontSize 40
-#    SetBorderColor 115 194 251 255 #73C2FB
-#    SetBackgroundColor 3 35 48 255 #032330
+Show #disable-in-end
+    Quality >= 9
+    Class == "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Bucklers"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    SetBorderColor 115 194 251 255 #73C2FB
+    SetBackgroundColor 3 35 48 255 #032330
 
 #Show #disable-in-early
 #    Quality >= 1
@@ -2084,13 +2621,13 @@ Show #disable-in-highEnd
     SetBorderColor 255 239 0 255 #FFEF00
     SetBackgroundColor 3 35 48 255 #032330
 
-#Show #disable-in-end
-#    Quality >= 9
-#    Class == "Life Flasks" "Mana Flasks"
-#    Rarity == Normal Magic Rare
-#    SetFontSize 40
-#    SetBorderColor 115 194 251 255 #73C2FB
-#    SetBackgroundColor 3 35 48 255 #032330
+Show #disable-in-end
+    Quality >= 9
+    Class == "Life Flasks" "Mana Flasks"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    SetBorderColor 115 194 251 255 #73C2FB
+    SetBackgroundColor 3 35 48 255 #032330
 
 #Show #disable-in-early
 #    Quality >= 1
@@ -2104,14 +2641,14 @@ Show #disable-in-highEnd
 # ▶ 분해 아이템(소켓 아이템)
 # —————————————————————————————— #
 
-#Show #disable-in-end
-#    Sockets == 2
-#    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts" "Charms" "Bucklers"
-#    Rarity == Normal Magic Rare
-#    SetFontSize 40
-#    # SetTextColor 170 158 130 255 #AA9E82
-#    SetBorderColor 255 248 231 255 #FFF8E7
-#    SetBackgroundColor 1 20 50 255 #011432
+Show #disable-in-end
+    Sockets == 2
+    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts" "Charms" "Bucklers"
+    Rarity == Normal Magic Rare
+    SetFontSize 40
+    # SetTextColor 170 158 130 255 #AA9E82
+    SetBorderColor 255 248 231 255 #FFF8E7
+    SetBackgroundColor 1 20 50 255 #011432
 
 #Show #disable-in-mid
 #    Sockets == 1
@@ -2133,22 +2670,6 @@ Show #disable-in-highEnd
 #    SetBorderColor 0 0 0 255 #000000
 #    SetBackgroundColor 1 20 50 255 #011432
 
-# ▶ ======================================
-# ▶ 기회의 오브 도박 베이스
-# ▶▶ 0.2 업데이트에 맞춰서 재작업 필요
-##### ======================================
-
-# 별의 목걸이, 사파이어 반지
-Show #uber
-    BaseType == "Stellar Amulet" "Sapphire Ring"
-    Rarity == Normal
-    SetFontSize 45
-    SetTextColor 0 0 0 255 #000000
-    SetBorderColor 0 0 0 255 #000000
-    SetBackgroundColor 242 193 209 255 #F2C1D1
-    PlayAlertSound 12 300
-    PlayEffect Pink
-    MinimapIcon 0 Pink UpsideDownHouse 
 
 
 
@@ -2229,7 +2750,7 @@ Show #highEnd
 # ——————————————————————————————
 
 # 일반. 전문 간수 활, 전문 맹신자 활
-Hide #end
+Show #end
     ItemLevel >= 81
     Class == "Bows"
     BaseType == "Guardian Bow" "Warmonger Bow"
@@ -2238,7 +2759,7 @@ Hide #end
     SetBorderColor 136 136 255 255 #8888FF
 
 # 마법. 전문 간수 활, 전문 맹신자 활
-Hide #end
+Show #end
     ItemLevel >= 81
     Class == "Bows"
     BaseType == "Guardian Bow" "Warmonger Bow"
@@ -2246,14 +2767,14 @@ Hide #end
     SetFontSize 42 #magic
 
 # 일반. 전문 이중시위 활
-Hide #end
+Show #end
     Class == "Bows"
     BaseType == "Gemini Bow"
     Rarity == Normal
     SetFontSize 39 #normal
 
 # 희귀. 전문 합성궁
-Hide #end
+Show #end
     Class == "Bows"
     BaseType == "Cavalry Bow"
     Rarity == Rare
@@ -2307,7 +2828,7 @@ Hide #early
     Rarity == Magic
     SetFontSize 42 #magic
 
-# 모든 이중시위 활, 맹신자 활, 간수 활
+# 이중시위 활, 맹신자 활, 간수 활
 Hide #early
     Class == "Bows"
     BaseType "Dualstring Bow" "Zealot Bow" "Warden Bow"
@@ -2441,14 +2962,14 @@ Show #highEnd
 # ——————————————————————————————
 
 # 일반. 전문 이중 석궁, 전문 포격 석궁, 전문 고독한 석궁, 전문 팽팽한 석궁
-Hide #end
+Show #end
     Class == "Crossbows"
     BaseType == "Gemini Crossbow" "Siege Crossbow" "Desolate Crossbow" "Flexed Crossbow"
     Rarity == Normal
     SetFontSize 39 #normal
 
 # 희귀. 요구사항 레벨 77 이상 석궁
-Hide #end
+Show #end
     Class == "Crossbows"
     DropLevel >= 77
     Rarity == Rare
@@ -2630,7 +3151,7 @@ Show #highEnd
 # ——————————————————————————————
 
 # 일반. 모든 전문 육척봉
-Hide #end
+Show #end
     Class == "Quarterstaves"
     BaseType == "Sinister Quarterstaff" "Lunar Quarterstaff" "Bolting Quarterstaff" "Aegis Quarterstaff" "Razor Quarterstaff" "Striking Quarterstaff"
     Rarity == Normal
@@ -2715,68 +3236,77 @@ Hide #starter
 
 # ——————————————————————————————
 # ▶ uber
-# ▶▶ 아이템 레벨 82. 일반. 마법. 전문 광신자 대망치, 전문 납빛 대망치가 보입니다.
-# ▶▶ 희귀. 전문 광신자 대망치, 전문 납빛 대망치가 보입니다.
+# ▶▶ 아이템 레벨 82. 일반. 마법. 전문 광신자 대망치, 전문 납빛 대망치, 무거운 대망치가 보입니다.
+# ▶▶ 희귀. 요구사항 레벨 59 이상의 양손 철퇴가 보입니다.
 # ——————————————————————————————
 
-# 일반. 전문 광신자 대망치, 전문 납빛 대망치
+# 일반. 전문 광신자 대망치, 전문 납빛 대망치, 무거운 대망치
 Show #uber
     ItemLevel >= 82
     Class == "Two Hand Maces"
-    BaseType == "Fanatic Greathammer" "Massive Greathammer"
+    BaseType == "Fanatic Greathammer" "Massive Greathammer" "Heavy Greathammer"
     Rarity == Normal
     SetFontSize 39 #normal
     SetBorderColor 178 255 255 255 #B2FFFF
     PlayEffect Grey Temp
 
-# 마법. 전문 광신자 대망치, 전문 납빛 대망치
+# 마법. 전문 광신자 대망치, 전문 납빛 대망치, 무거운 대망치
 Show #uber
     ItemLevel >= 82
     Class == "Two Hand Maces"
-    BaseType == "Fanatic Greathammer" "Massive Greathammer"
+    BaseType == "Fanatic Greathammer" "Massive Greathammer" "Heavy Greathammer"
     Rarity == Magic
     SetFontSize 42 #magic
 
-# 희귀. 전문 광신자 대망치, 전문 납빛 대망치
+# 희귀. 요구사항 레벨 59 이상
 Show #uber
     Class == "Two Hand Maces"
-    BaseType == "Fanatic Greathammer" "Massive Greathammer"
+    DropLevel >= 59
     Rarity == Rare
     SetFontSize 45 #rare
 
 # ——————————————————————————————
 # ▶ highEnd
-# ▶▶ 아이템 레벨 81이상. 일반. 마법. 전문 광신자 대망치, 전문 납빛 대망치가 보입니다.
+# ▶▶ 아이템 레벨 81이상. 일반. 마법. 전문 광신자 대망치, 전문 납빛 대망치, 무거운 대망치가 보입니다.
 # ——————————————————————————————
 
-# 일반. 전문 광신자 대망치, 전문 납빛 대망치
+# 일반. 전문 광신자 대망치, 전문 납빛 대망치, 무거운 대망치
 Show #highEnd
     ItemLevel >= 81
     Class == "Two Hand Maces"
-    BaseType == "Fanatic Greathammer" "Massive Greathammer"
+    BaseType == "Fanatic Greathammer" "Massive Greathammer" "Heavy Greathammer"
     Rarity == Normal
     SetFontSize 39 #normal
     SetBorderColor 136 136 255 255 #8888FF
 
-# 마법. 전문 광신자 대망치, 전문 납빛 대망치
+# 마법. 전문 광신자 대망치, 전문 납빛 대망치, 무거운 대망치
 Show #highEnd
     ItemLevel >= 81
     Class == "Two Hand Maces"
-    BaseType == "Fanatic Greathammer" "Massive Greathammer"
+    BaseType == "Fanatic Greathammer" "Massive Greathammer" "Heavy Greathammer"
     Rarity == Magic
     SetFontSize 42 #magic
 
 # ——————————————————————————————
 # ▶ end
-# ▶▶ 일반. 전문 광신자 대망치, 전문 납빛 대망치가 보입니다.
+# ▶▶ 일반. 전문 광신자 대망치, 전문 납빛 대망치, 무거운 대망치가 보입니다.
+# ▶▶ 마법. 무거운 대망치가 보입니다.
+# ▶▶ 무거운 대망치는 거인의 피 세팅에서 사용합니다.
 # ——————————————————————————————
 
-# 일반. 전문 광신자 대망치, 전문 납빛 대망치
-Hide #end
+# 일반. 전문 광신자 대망치, 전문 납빛 대망치, 무거운 대망치
+Show #end
     Class == "Two Hand Maces"
-    BaseType "Fanatic Greathammer" "Massive Greathammer"
+    BaseType "Fanatic Greathammer" "Massive Greathammer" "Heavy Greathammer"
     Rarity == Normal
     SetFontSize 39 #normal
+
+# 마법. 무거운 대망치
+Show #end
+    Class == "Two Hand Maces"
+    BaseType "Heavy Greathammer"
+    Rarity == Magic
+    SetFontSize 42 #magic
 
 # ——————————————————————————————
 # ▶ mid 
@@ -2804,33 +3334,33 @@ Hide #early
 
 # ——————————————————————————————
 # ▶ starter 
-# ▶▶ 엔드 게임부터는 일반. 마법. 요구사항 레벨 65 이상 양손 철퇴가 보입니다.
-# ▶▶ 엔드 게임부터는 요구사항 레벨 55 이상 희귀 양손 철퇴가 보이며,
+# ▶▶ 엔드 게임부터는 일반. 마법. 요구사항 레벨 59 이상 양손 철퇴가 보입니다.
+# ▶▶ 엔드 게임부터는 요구사항 레벨 50 이상 희귀 양손 철퇴가 보이며,
 # ▶▶ 엔드 게임부터는 낮은 베이스의 희귀 양손 철퇴 숨겨집니다.
 # ▶▶ 액트 구간에서 모든 양손 철퇴가 보입니다.
 # ——————————————————————————————
 
-# 일반. 요구사항 레벨 65 이상 양손 철퇴
+# 일반. 요구사항 레벨 59 이상 양손 철퇴
 Hide #starter
     AreaLevel >= 65
-    DropLevel >= 65
+    DropLevel >= 59
     Class == "Two Hand Maces"
     Rarity == Normal
     SetFontSize 39 #normal
 
-# 마법. 요구사항 레벨 65 이상 양손 철퇴
+# 마법. 요구사항 레벨 59 이상 양손 철퇴
 Hide #starter
     AreaLevel >= 65
-    DropLevel >= 65
+    DropLevel >= 59
     Class == "Two Hand Maces"
     Rarity == Magic
     SetFontSize 42 #magic
 
 # 엔드 게임부터는
-# 요구사항 레벨 55 이상 희귀 양손 철퇴
+# 요구사항 레벨 50 이상 희귀 양손 철퇴
 Hide #starter
     AreaLevel >= 65
-    DropLevel >= 55
+    DropLevel >= 50
     Class == "Two Hand Maces"
     Rarity == Rare
     SetFontSize 45 #rare
@@ -2838,7 +3368,7 @@ Hide #starter
 # 엔드 게임부터는 낮은 베이스의 희귀 양손 철퇴 숨기기
 Hide
     AreaLevel >= 65
-    DropLevel < 55
+    DropLevel < 50
     Class == "Two Hand Maces"
     Rarity == Rare
     SetFontSize 45 #rare
@@ -2913,7 +3443,7 @@ Show #highEnd
 # ——————————————————————————————
 
 # 일반 전문급 6종
-Hide #end
+Show #end
     Class == "One Hand Maces"
     BaseType == "Crown Mace" "Flanged Mace" "Molten Hammer" "Strife Pick" "Fortified Hammer" "Marauding Mace"
     Rarity == Normal
@@ -2994,15 +3524,16 @@ Hide #starter
 
 # ——————————————————————————————
 # ▶ uber
-# ▶▶ 아이템 레벨 82이상. 일반. 마법.
+# ▶▶ 아이템 레벨 82이상. 일반. 마법 전문 가시 돋친 창, 바다유리 창, 전문 사냥 창, 전문 넓은날 창이 보입니다.
 # ▶▶ 좋은 베이스 아이템 희귀.작업 중
-# ▶▶ 그 외 작업 중
+# ▶▶ 희귀. 전문 가시 돋친 창, 바다유리 창, 전문 사냥 창, 전문 넓은날 창이 보입니다.
 # ——————————————————————————————
 
+# 전문 가시 돋친 창, 바다유리 창
 Show #uber
     ItemLevel >= 82
     Class == "Spears"
-    BaseType == "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Sword Spear" "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
+    BaseType == "Spiked Spear" "Seaglass Spear" "Stalking Spear" "Grand Spear"
     Rarity == Normal
     SetFontSize 39 #normal
     SetBorderColor 178 255 255 255 #B2FFFF
@@ -3011,26 +3542,26 @@ Show #uber
 Show #uber
     ItemLevel >= 82
     Class == "Spears"
-    BaseType == "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Sword Spear" "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
+    BaseType == "Spiked Spear" "Seaglass Spear" "Stalking Spear" "Grand Spear"
     Rarity == Magic
     SetFontSize 42 #magic
 
 Show #uber
     Class == "Spears"
-    BaseType == "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Sword Spear" "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
+    BaseType == "Spiked Spear" "Seaglass Spear" "Stalking Spear" "Grand Spear"
     Rarity == Rare
     SetFontSize 45 #rare
 
 # ——————————————————————————————
 # ▶ highEnd
-# ▶▶ 아이템 레벨 81이상. 일반. 마법.
-# ▶▶ 작업 중
+# ▶▶ 아이템 레벨 81이상. 일반. 마법 전문 가시 돋친 창, 바다유리 창, 전문 사냥 창, 전문 넓은날 창이 보입니다.
 # ——————————————————————————————
 
+# 전문 가시 돋친 창, 바다유리 창
 Show #highEnd
     ItemLevel >= 81
     Class == "Spears"
-    BaseType == "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Sword Spear" "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
+    BaseType == "Spiked Spear" "Seaglass Spear" "Stalking Spear" "Grand Spear"
     Rarity == Normal
     SetFontSize 39 #normal
     SetBorderColor 136 136 255 255 #8888FF
@@ -3038,39 +3569,39 @@ Show #highEnd
 Show #highEnd
     ItemLevel >= 81
     Class == "Spears"
-    BaseType == "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Sword Spear" "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
+    BaseType == "Spiked Spear" "Seaglass Spear" "Stalking Spear" "Grand Spear"
     Rarity == Magic
     SetFontSize 42 #magic
 
 # ——————————————————————————————
 # ▶ end
-# ▶▶ 작업 중
+# ▶▶ 일반. 전문 가시 돋친 창, 바다유리 창, 전문 사냥 창, 전문 넓은날 창이 보입니다.
 # ——————————————————————————————
 
-Hide #end
+# 전문 가시 돋친 창, 바다유리 창
+Show #end
     Class == "Spears"
-    BaseType == "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Sword Spear" "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
+    BaseType == "Spiked Spear" "Seaglass Spear" "Stalking Spear" "Grand Spear"
     Rarity == Normal
     SetFontSize 39 #normal
 
 # ——————————————————————————————
 # ▶ mid
-# ▶▶ 작업 중
+# ▶▶ 마법. 전문 가시 돋친 창, 바다유리 창, 전문 사냥 창, 전문 넓은날 창이 보입니다.
 # ——————————————————————————————
 
 Hide #mid
     Class == "Spears"
-    BaseType == "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Sword Spear" "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
+    BaseType == "Spiked Spear" "Seaglass Spear" "Stalking Spear" "Grand Spear"
     Rarity == Magic
     SetFontSize 42 #magic
 
 # ——————————————————————————————
 # ▶ early 
 # ▶▶ 희귀. 요구사항 레벨 65 이상 창이 보입니다.
-# ▶▶ 작업 중
 # ——————————————————————————————
 
-# 희귀. 요구사항 레벨 65 이상 창
+# 희귀. 요구사항 레벨 65 이상 한손 창
 Hide #early
     DropLevel >= 65
     Class == "Spears"
@@ -3079,10 +3610,10 @@ Hide #early
 
 # ——————————————————————————————
 # ▶ starter
-# ▶▶ 모든 창이 보입니다.
+# ▶▶ 모든 한손 창이 보입니다.
 # ——————————————————————————————
 
-# 일반. 요구사항 레벨 65 이상 창
+# 일반. 요구사항 레벨 65 이상 한손 창
 Hide #starter
     AreaLevel >= 65
     DropLevel >= 65
@@ -3090,7 +3621,7 @@ Hide #starter
     Rarity == Normal
     SetFontSize 39 #normal
 
-# 마법. 요구사항 레벨 65 이상 창
+# 마법. 요구사항 레벨 65 이상 한손 창
 Hide #starter
     AreaLevel >= 65
     DropLevel >= 65
@@ -3099,7 +3630,7 @@ Hide #starter
     SetFontSize 42 #magic
 
 # 엔드 게임부터는
-# 요구사항 레벨 55 이상 희귀 창
+# 요구사항 레벨 55 이상 희귀 한손 창
 Hide #starter
     AreaLevel >= 65
     DropLevel >= 55
@@ -3107,7 +3638,7 @@ Hide #starter
     Rarity == Rare
     SetFontSize 45 #rare
 
-# 엔드 게임부터는 낮은 베이스의 희귀 창 숨기기
+# 엔드 게임부터는 낮은 베이스의 희귀 한손 창 숨기기
 Hide
     AreaLevel >= 65
     DropLevel < 55
@@ -3115,11 +3646,10 @@ Hide
     Rarity == Rare
     SetFontSize 45 #rare
 
-# 액트 구간 모든 창
+# 액트 구간 모든 한손 창
 Hide #starter
     AreaLevel < 65
     Class == "Spears"
-    BaseType == "Hardwood Spear" "Ironhead Spear" "Hunting Spear" "Winged Spear" "War Spear" "Forked Spear" "Barbed Spear" "Broad Spear" "Crossblade Spear" "Seaglass Spear" "Sword Spear" "Striking Spear" "Helix Spear" "Steelhead Spear" "Coursing Spear" "Swift Spear" "Branched Spear" "Jagged Spear" "Massive Spear" "Orichalcum Spear" "Pronged Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
     Rarity == Normal Magic Rare
     SetFontSize 45 #rare
 
@@ -3151,7 +3681,7 @@ Show #uber
     Rarity == Magic
     SetFontSize 42 #magic
 
-# 희귀. 차임벨 지팡이
+# 희귀. 모든 지팡이
 Show #uber
     Class == "Staves"
     Rarity == Rare
@@ -3163,7 +3693,7 @@ Show #uber
 # ——————————————————————————————
 
 # ▶▶ 일반. 차임벨 지팡이
-Hide #end
+Show #end
     Class == "Staves"
     BaseType == "Chiming Staff"
     Rarity == Normal
@@ -3175,18 +3705,18 @@ Hide #end
 # ▶▶ 마법. 차임벨 지팡이가 보입니다.
 # ——————————————————————————————
 
-# 일반. 모든 지팡이
-Hide #mid
-    Class == "Staves"
-    Rarity == Normal
-    SetFontSize 39 #normal
-
 # 마법. 차임벨 지팡이
 Hide #mid
     Class == "Staves"
     BaseType == "Chiming Staff"
     Rarity == Magic
     SetFontSize 42 #magic
+
+# 일반. 모든 지팡이
+Hide #mid
+    Class == "Staves"
+    Rarity == Normal
+    SetFontSize 39 #normal
 
 # ——————————————————————————————
 # ▶ early
@@ -3198,6 +3728,11 @@ Hide #early
     Class == "Staves"
     Rarity == Magic
     SetFontSize 42 #magic
+
+# ——————————————————————————————
+# ▶ starter
+# ▶▶ 일반. 마법. 모든 지팡이가 보입니다.
+# ——————————————————————————————
 
 ######### ======================================
 # ▶ 마법봉 ——————————————————————————————
@@ -3240,7 +3775,7 @@ Show #uber
 # ——————————————————————————————
 
 # 일반. 조율된 마법봉, 착취 마법봉, 매서운 마법봉
-Hide #end
+Show #end
     Class == "Wands"
     BaseType == "Attuned Wand" "Siphoning Wand" "Acrid Wand"
     Rarity == Normal
@@ -3291,7 +3826,7 @@ Show #uber
     ItemLevel >= 82
     Class == "Sceptres"
     Rarity == Normal
-    BaseType == "Rattling Sceptre" "Omen Sceptre"
+    # BaseType == "Rattling Sceptre" "Omen Sceptre"
     SetFontSize 39 #normal
     SetBorderColor 178 255 255 255 #B2FFFF
     PlayEffect Grey Temp
@@ -3300,7 +3835,7 @@ Show #uber
 Show #uber
     ItemLevel >= 82
     Class == "Sceptres"
-    BaseType == "Rattling Sceptre" "Omen Sceptre"
+    # BaseType == "Rattling Sceptre" "Omen Sceptre"
     Rarity == Magic
     SetFontSize 42 #magic
 
@@ -3319,7 +3854,7 @@ Show #uber
 Show #highEnd
     ItemLevel >= 81
     Class == "Sceptres"
-    BaseType == "Rattling Sceptre" "Omen Sceptre"
+    # BaseType == "Rattling Sceptre" "Omen Sceptre"
     Rarity == Normal
     SetFontSize 39 #normal
     SetBorderColor 136 136 255 255 #8888FF
@@ -3328,7 +3863,7 @@ Show #highEnd
 Show #highEnd
     ItemLevel >= 81
     Class == "Sceptres"
-    BaseType == "Rattling Sceptre" "Omen Sceptre"
+    # BaseType == "Rattling Sceptre" "Omen Sceptre"
     Rarity == Magic
     SetFontSize 42 #magic
 
@@ -3338,9 +3873,9 @@ Show #highEnd
 # ——————————————————————————————
 
 # 일반. 덜컹대는 셉터, 징조 셉터
-Hide #end
+Show #end
     Class == "Sceptres"
-    BaseType == "Rattling Sceptre" "Omen Sceptre"
+    # BaseType == "Rattling Sceptre" "Omen Sceptre"
     Rarity == Normal
     SetFontSize 39 #normal
 
@@ -3352,7 +3887,7 @@ Hide #end
 # 마법. 덜컹대는 셉터, 징조 셉터
 Hide #mid
     Class == "Sceptres"
-    BaseType == "Rattling Sceptre" "Omen Sceptre"
+    # BaseType == "Rattling Sceptre" "Omen Sceptre"
     Rarity == Magic
     SetFontSize 42 #magic
 
@@ -3442,7 +3977,7 @@ Show #highEnd
 # ——————————————————————————————
 
 # 일반. 쌍촉 화살통, 뭉툭한 화살통, 맹독성 화살통, 톱니 화살통
-Hide #end
+Show #end
 	Class == "Quivers"
     BaseType == "Two-Point Quiver" "Blunt Quiver" "Toxic Quiver" "Serrated Quiver"
     Rarity == Normal
@@ -3516,7 +4051,7 @@ Show #highEnd
 # ——————————————————————————————
 
 # 일반. 고급, 전문 집중구
-Hide #end
+Show #end
     Class == "Foci"
     BaseType == "Wreath Focus" "Staghorn Focus" "Jingling Focus" "Arrayed Focus" "Cultist Focus" "Hallowed Focus" "Druidic Focus" "Leyline Focus" "Sacred Focus"
     Rarity == Normal
@@ -3600,7 +4135,7 @@ Show #highEnd
 # ▶▶ 작업 중
 # ——————————————————————————————
 
-Hide #end
+Show #end
     DropLevel >= 65
     Class == "Bucklers"
     Rarity == Normal
@@ -3788,7 +4323,7 @@ Show #highEnd
 # ——————————————————————————————
 
 # 일반. 요구사항 레벨 75 이상 방어도 방패
-Hide #end
+Show #end
     DropLevel >= 75
     Class == "Shields"
     BaseArmour >= 1
@@ -3799,7 +4334,7 @@ Hide #end
     SetBackgroundColor 77 0 0 240 #4D0000
 
 # 희귀. 요구사항 레벨 65 이상 방어도 방패
-Hide #end
+Show #end
     DropLevel >= 65
     Class == "Shields"
     BaseArmour >= 1
@@ -3810,7 +4345,7 @@ Hide #end
     SetBackgroundColor 77 0 0 240 #4D0000
 
 # 희귀. 요구사항 레벨 65 이상. 모든 방패
-Hide #end
+Show #end
     DropLevel >= 65
     Class == "Shields"
     Rarity == Rare
@@ -3998,14 +4533,14 @@ Show #highEnd
 # ——————————————————————————————
 
 # 일반. 요구사항 레벨 75 이상 장갑
-Hide #end
+Show #end
     DropLevel >= 75
     Class == "Gloves"
     Rarity == Normal
     SetFontSize 39 #normal
 
 # 희귀. 요구사항 레벨 65 이상 장갑
-Hide #end
+Show #end
     DropLevel >= 65
     Class == "Gloves"
     Rarity == Rare
@@ -4130,6 +4665,7 @@ Show #uber
 
 # 마법. 요구사항 레벨 65 이상 장화
 Show #uber
+    Identified False
     ItemLevel >= 82
     DropLevel >= 65
     Class == "Boots"
@@ -4138,10 +4674,12 @@ Show #uber
 
 # 희귀. 요구사항 레벨 75 이상 장화
 Show #uber
+    Identified False
     DropLevel >= 75
     Class == "Boots"
     Rarity == Rare
     SetFontSize 45 #rare
+
 
 # ——————————————————————————————
 # ▶ highEnd
@@ -4160,6 +4698,7 @@ Show #highEnd
 
 # 마법. 요구사항 레벨 65 이상 장화
 Show #uber
+    Identified False
     ItemLevel >= 81
     DropLevel >= 65
     Class == "Boots"
@@ -4168,6 +4707,7 @@ Show #uber
 
 # 희귀. 요구사항 레벨 70 이상 장화
 Show #highEnd
+    Identified False
     DropLevel >= 70
     Class == "Boots"
     Rarity == Rare
@@ -4180,14 +4720,15 @@ Show #highEnd
 # ——————————————————————————————
 
 # 일반. 요구사항 레벨 70 이상 장화
-Hide #end
+Show #end
     DropLevel >= 70
     Class == "Boots"
     Rarity == Normal
     SetFontSize 39 #normal
 
 # 희귀. 요구사항 레벨 65 이상 장화
-Hide #end
+Show #end
+    Identified False
     DropLevel >= 65
     Class == "Boots"
     Rarity == Rare
@@ -4201,6 +4742,7 @@ Hide #end
 
 # 마법. 요구사항 레벨 65 이상 장화
 Hide #mid
+    Identified False
     DropLevel >= 65
     Class == "Boots"
     Rarity == Magic
@@ -4208,6 +4750,7 @@ Hide #mid
 
 # 희귀. 요구사항 레벨 59 이상 장화
 Hide #mid
+    Identified False
     DropLevel >= 59
     Class == "Boots"
     Rarity == Rare
@@ -4228,6 +4771,7 @@ Hide #early
 
 # 마법. 요구사항 레벨 59 이상 장화
 Hide #early
+    Identified False
     DropLevel >= 59
     Class == "Boots"
     Rarity == Magic
@@ -4235,6 +4779,7 @@ Hide #early
 
 # 희귀. 요구사항 레벨 55 이상 장화
 Hide #early
+    Identified False
     DropLevel >= 55
     Class == "Boots"
     Rarity == Rare
@@ -4258,6 +4803,7 @@ Hide #starter
 
 # 엔드 게임. 마법. 요구사항 레벨 55 이상 장화
 Hide #starter
+    Identified False
     AreaLevel >= 65
     DropLevel >= 55
     Class == "Boots" 
@@ -4266,6 +4812,7 @@ Hide #starter
 
 # 엔드 게임. 희귀. 요구사항 레벨 45 이상 장화
 Hide #starter
+    Identified False
     AreaLevel >= 65
     DropLevel >= 45
     Class == "Boots"
@@ -4274,6 +4821,7 @@ Hide #starter
 
 # 엔드 게임. 희귀. 요구사항 레벨 45 미만 장화 숨김
 Hide
+    Identified False
     AreaLevel >= 65
     DropLevel < 45
     Class == "Boots"
@@ -4282,9 +4830,16 @@ Hide
 
 # 액트 구간. 모든 장화
 Hide #starter
+    Identified False
     AreaLevel < 65
     Class == "Boots"
-    Rarity == Normal Magic Rare
+    Rarity == Magic Rare
+    SetFontSize 45 #rare
+
+Hide #starter
+    AreaLevel < 65
+    Class == "Boots"
+    Rarity == Normal
     SetFontSize 45 #rare
 
 ######### ======================================
@@ -4343,14 +4898,14 @@ Show #highEnd
 # ——————————————————————————————
 
 # 일반. 요구사항 레벨 75 이상 투구
-Hide #end
+Show #end
     DropLevel >= 75
     Class == "Helmets"
     Rarity == Normal
     SetFontSize 42 #magic
 
 # 희귀. 요구사항 레벨 65 이상 투구
-Hide #end
+Show #end
     DropLevel >= 65
     Class == "Helmets"
     Rarity == Rare
@@ -4457,6 +5012,18 @@ Hide #starter
 ######### =====================================
 
 # ——————————————————————————————
+# 스미스 오브 키타바 관련 갑옷(일반 등급)
+# 아래 2개 아이템 필터링(전문 강철 판금 갑옷, 전문 바알 흉갑,전문 철 흉갑)
+# ——————————————————————————————
+
+Show
+    Class == "Body Armours"
+    BaseType == "Ornate Plate" "Utzaal Cuirass" "Soldier Cuirass"
+    Rarity == Normal
+    SetFontSize 39 #normal
+    SetBackgroundColor 77 0 0 240 #4D0000
+
+# ——————————————————————————————
 # ▶ uber
 # ▶▶ 일반. 아이템 레벨이 82 이상. 고정 속성은 없지만 방어력 수치가 높은 갑옷이 보입니다.
 # ▶▶ 일반. 아이템 레벨이 82 이상. 고정 속성이 있는 갑옷이 보입니다.
@@ -4515,6 +5082,14 @@ Show #highEnd
     SetFontSize 39 #normal
     SetBorderColor 136 136 255 255 #8888FF
 
+Show #highEnd
+    ItemLevel >= 81
+    Class == "Body Armours"
+    BaseType == "Soldier Cuirass" "Slipstrike Vest" "Vile Robe" "Death Mail" "Wolfskin Mantle" "Sleek Jacket"
+    Rarity == Magic
+    SetFontSize 42 #magic
+    SetBorderColor 136 136 255 255 #8888FF
+
 # 일반. 고정 속성이 있는 갑옷
 Show #highEnd
     ItemLevel >= 81
@@ -4525,6 +5100,15 @@ Show #highEnd
     SetFontSize 39 #normal
     SetBorderColor 136 136 255 255 #8888FF
 
+Show #highEnd
+    ItemLevel >= 81
+    DropLevel >= 65
+    HasImplicitMod True
+    Class == "Body Armours"
+    Rarity == Magic
+    SetFontSize 42 #magic
+    SetBorderColor 136 136 255 255 #8888FF
+
 # ——————————————————————————————
 # ▶ end
 # ▶▶ 일반. 고정 속성은 없지만 방어력 수치가 높은 갑옷이 보입니다.
@@ -4533,14 +5117,14 @@ Show #highEnd
 
 # 전문 철 흉갑, 전문 징 박힌 조끼, 전문 사술사의 로브, 전문 미늘 갑옷, 전문 가죽모 외투, 전문 밀랍재질 재킷
 # 일반. 고정 속성은 없지만 방어력 수치가 높은 갑옷
-Hide #end
+Show #end
     Class == "Body Armours"
     BaseType == "Soldier Cuirass" "Slipstrike Vest" "Vile Robe" "Death Mail" "Wolfskin Mantle" "Sleek Jacket"
     Rarity == Normal
     SetFontSize 39 #normal
 
 # 일반. 요구사항 레벨 65 이상. 고정 속성이 있는 갑옷
-Hide #end
+Show #end
     DropLevel >= 65
     HasImplicitMod True
     Class == "Body Armours"
@@ -4629,6 +5213,7 @@ Hide #starter
 
 # 황혼 목걸이, 석양 목걸이, 음영 목걸이, 어둑한 목걸이
 Show
+    Corrupted False
     Class == "Amulets"
 	BaseType == "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet"
     Rarity == Normal Magic Rare
@@ -4647,6 +5232,7 @@ Show
 
 # 일반. 태양의 목걸이, 황금 목걸이
 Show #uber
+    Corrupted False
     ItemLevel >= 81
     Class == "Amulets"
 	BaseType == "Solar Amulet" "Gold Amulet"
@@ -4658,6 +5244,8 @@ Show #uber
 
 # 마법. 태양의 목걸이, 황금 목걸이
 Show #uber
+    Identified False
+    Corrupted False
     ItemLevel >= 81
     Class == "Amulets"
 	BaseType == "Solar Amulet" "Gold Amulet"
@@ -4668,6 +5256,8 @@ Show #uber
 
 # 희귀. 담청색 목걸이, 호박 목걸이, 비취 목걸이, 청금석 목걸이, 달의 목걸이, 혈석 목걸이, 별의 목걸이, 태양의 목걸이, 황금 목걸이
 Show #uber
+    Identified False
+    Corrupted False
     Class == "Amulets"
 	BaseType == "Azure Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Solar Amulet" "Gold Amulet"
     Rarity == Rare
@@ -4683,6 +5273,7 @@ Show #uber
 
 # 일반. 태양의 목걸이, 황금 목걸이, 청금석 목걸이, 비취 목걸이, 호박 목걸이
 Show #highEnd
+    Corrupted False
     Class == "Amulets"
 	BaseType == "Solar Amulet" "Gold Amulet" "Lapis Amulet" "Jade Amulet" "Amber Amulet"
     Rarity == Normal
@@ -4692,6 +5283,8 @@ Show #highEnd
 
 # 마법. 태양의 목걸이, 황금 목걸이
 Show #highEnd
+    Identified False
+    Corrupted False
     Class == "Amulets"
 	BaseType == "Solar Amulet" "Gold Amulet"
     Rarity == Magic
@@ -4705,7 +5298,9 @@ Show #highEnd
 # ——————————————————————————————
 
 # 마법. 청금석 목걸이, 비취 목걸이, 호박 목걸이
-Hide #end
+Show #end
+    Identified False
+    Corrupted False
     Class == "Amulets"
 	BaseType == "Lapis Amulet" "Jade Amulet" "Amber Amulet"
     Rarity == Magic
@@ -4719,8 +5314,18 @@ Hide #end
 # ——————————————————————————————
 
 Hide #starter
+    Corrupted False
     Class == "Amulets"
-    Rarity == Normal Magic Rare
+    Rarity == Normal
+    SetFontSize 45 #rare
+    SetBorderColor 52 77 101 255 #344D65
+    SetBackgroundColor 17 26 34 255 #111A22
+
+Hide #starter
+    Identified False
+    Corrupted False
+    Class == "Amulets"
+    Rarity == Magic Rare
     SetFontSize 45 #rare
     SetBorderColor 52 77 101 255 #344D65
     SetBackgroundColor 17 26 34 255 #111A22
@@ -4733,6 +5338,7 @@ Hide #starter
 
 # 황혼 반지, 석양 반지, 음영 반지, 어둑한 반지
 Show
+    Corrupted False
     Class == "Rings" 
 	BaseType == "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring"
     Rarity == Normal Magic Rare
@@ -4751,6 +5357,7 @@ Show
 
 # 일반. 루비 반지, 사파이어 반지, 토파즈 반지, 자수정 반지, 진주 반지, 분광 반지, 황금 반지, 무보석 반지
 Show #uber
+    Corrupted False
     Class == "Rings" 
     ItemLevel >= 81
 	BaseType == "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Pearl Ring" "Prismatic Ring" "Gold Ring" "Unset Ring" 
@@ -4761,6 +5368,8 @@ Show #uber
 
 # 마법. 루비 반지, 사파이어 반지, 토파즈 반지, 자수정 반지, 진주 반지, 분광 반지, 황금 반지, 무보석 반지
 Show #uber
+    Identified False
+    Corrupted False
     Class == "Rings" 
     ItemLevel >= 81
 	BaseType == "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Pearl Ring" "Prismatic Ring" "Gold Ring" "Unset Ring"
@@ -4771,6 +5380,8 @@ Show #uber
 
 # 희귀. 루비 반지, 사파이어 반지, 토파즈 반지, 자수정 반지, 에메랄드 반지, 진주 반지, 분광 반지, 황금 반지, 무보석 반지
 Show #uber
+    Identified False
+    Corrupted False
     Class == "Rings" 
 	BaseType == "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Emerald Ring" "Pearl Ring" "Prismatic Ring" "Gold Ring" "Unset Ring"
     Rarity == Rare
@@ -4786,6 +5397,7 @@ Show #uber
 
 # 일반. 루비 반지, 사파이어 반지, 토파즈 반지, 자수정 반지, 에메랄드 반지, 진주 반지, 분광 반지, 황금 반지, 무보석 반지
 Show #highEnd
+    Corrupted False
     Class == "Rings" 
 	BaseType == "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Emerald Ring" "Pearl Ring" "Prismatic Ring" "Gold Ring" "Unset Ring"
     Rarity == Normal
@@ -4795,6 +5407,8 @@ Show #highEnd
 
 # 마법. 자수정 반지, 에메랄드 반지, 진주 반지, 분광 반지, 황금 반지
 Show #highEnd
+    Identified False
+    Corrupted False
     Class == "Rings" 
 	BaseType == "Amethyst Ring" "Emerald Ring" "Pearl Ring" "Prismatic Ring" "Gold Ring"
     Rarity == Magic
@@ -4808,11 +5422,24 @@ Show #highEnd
 # ——————————————————————————————
 
 # 마법. 루비 반지, 사파이어 반지, 토파즈 반지, 무보석 반지
-Hide #end
+Show #end
+    Identified False
+    Corrupted False
     Class == "Rings" 
 	BaseType == "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Unset Ring"
     Rarity == Magic
     SetFontSize 42 #magic
+    SetBorderColor 52 77 101 255 #344D65
+    SetBackgroundColor 17 26 34 255 #111A22
+
+# 희귀 철제 반지, 청금석 반지
+Show #end
+    Identified False
+    Corrupted False
+    Class == "Rings" 
+	BaseType == "Iron Ring" "Lazuli Ring"
+    Rarity == Rare
+    SetFontSize 45 #rare
     SetBorderColor 52 77 101 255 #344D65
     SetBackgroundColor 17 26 34 255 #111A22
 
@@ -4823,9 +5450,21 @@ Hide #end
 
 # 철제 반지, 청금석 반지
 Hide #starter
+    Corrupted False
     Class == "Rings"
     BaseType == "Iron Ring" "Lazuli Ring"
-    Rarity == Normal Magic Rare
+    Rarity == Normal
+    SetFontSize 45 #rare
+    SetBorderColor 52 77 101 255 #344D65
+    SetBackgroundColor 17 26 34 255 #111A22
+
+# 철제 반지, 청금석 반지
+Hide #starter
+    Identified False
+    Corrupted False
+    Class == "Rings"
+    BaseType == "Iron Ring" "Lazuli Ring"
+    Rarity == Magic Rare
     SetFontSize 45 #rare
     SetBorderColor 52 77 101 255 #344D65
     SetBackgroundColor 17 26 34 255 #111A22
@@ -4842,6 +5481,7 @@ Hide #starter
 
 # 일반. 섬세한 허리띠, 특수 허리띠, 사슬 허리띠, 판금 허리띠, 넓은 허리띠
 Show #uber
+    Corrupted False
     ItemLevel >= 81
 	Class == "Belts"
     BaseType == "Fine Belt" "Utility Belt" "Mail Belt" "Plate Belt" "Wide Belt" "Heavy Belt"
@@ -4852,6 +5492,8 @@ Show #uber
 
 # 마법. 섬세한 허리띠, 특수 허리띠, 사슬 허리띠, 판금 허리띠, 넓은 허리띠
 Show #uber
+    Identified False
+    Corrupted False
     ItemLevel >= 81
 	Class == "Belts"
     BaseType == "Fine Belt" "Utility Belt" "Mail Belt" "Plate Belt" "Wide Belt" "Heavy Belt"
@@ -4862,6 +5504,8 @@ Show #uber
 
 # 희귀. 섬세한 허리띠, 특수 허리띠, 사슬 허리띠, 판금 허리띠, 넓은 허리띠
 Show #uber
+    Identified False
+    Corrupted False
 	Class == "Belts"
     BaseType == "Fine Belt" "Utility Belt" "Mail Belt" "Plate Belt" "Wide Belt" "Heavy Belt"
     Rarity == Rare
@@ -4876,6 +5520,7 @@ Show #uber
 
 # 일반. 섬세한 허리띠, 특수 허리띠, 사슬 허리띠, 판금 허리띠, 넓은 허리띠
 Show #highEnd
+    Corrupted False
 	Class == "Belts"
     BaseType == "Fine Belt" "Utility Belt" "Mail Belt" "Plate Belt" "Wide Belt" "Heavy Belt"
     Rarity == Normal
@@ -4889,11 +5534,24 @@ Show #highEnd
 # ——————————————————————————————
 
 # 마법. 섬세한 허리띠, 특수 허리띠, 사슬 허리띠, 판금 허리띠, 넓은 허리띠
-Hide #end
+Show #end
+    Identified False
+    Corrupted False
 	Class == "Belts"
     BaseType == "Fine Belt" "Utility Belt" "Mail Belt" "Plate Belt" "Wide Belt" "Heavy Belt"
     Rarity == Magic
     SetFontSize 42 #magic
+    SetBorderColor 52 77 101 255 #344D65
+    SetBackgroundColor 17 26 34 255 #111A22
+
+# 희귀. 무거운, 이중, 화려한, 긴 허리띠, 리넨, 생가죽
+Show #end
+    Identified False
+    Corrupted False
+	Class == "Belts"
+    BaseType == "Heavy Belt" "Double Belt" "Ornate Belt" "Long Belt" "Linen Belt" "Rawhide Belt"
+    Rarity == Rare
+    SetFontSize 45 #rare
     SetBorderColor 52 77 101 255 #344D65
     SetBackgroundColor 17 26 34 255 #111A22
 
@@ -4903,8 +5561,18 @@ Hide #end
 # ——————————————————————————————
 
 Hide #starter
+    Corrupted False
 	Class == "Belts"
-    Rarity == Normal Magic Rare
+    Rarity == Normal
+    SetFontSize 45 #rare
+    SetBorderColor 52 77 101 255 #344D65
+    SetBackgroundColor 17 26 34 255 #111A22
+
+Hide #starter
+    Identified False
+    Corrupted False
+	Class == "Belts"
+    Rarity == Magic Rare
     SetFontSize 45 #rare
     SetBorderColor 52 77 101 255 #344D65
     SetBackgroundColor 17 26 34 255 #111A22
@@ -4968,7 +5636,7 @@ Show #highEnd
 # ——————————————————————————————
 
 # 일반. 아이템 레벨 82 이상. 극한의 생명력 플라스크
-Hide #end
+Show #end
     ItemLevel >= 82
     Class == "Life Flasks"
     BaseType == "Ultimate Life Flask"
@@ -5080,7 +5748,7 @@ Show #highEnd
 # ——————————————————————————————
 
 # 일반. 아이템 레벨 82 이상. 극한의 마나 플라스크
-Hide #end
+Show #end
     ItemLevel >= 82
     Class == "Mana Flasks"
     BaseType == "Ultimate Mana Flask"
@@ -5191,184 +5859,6 @@ Hide #starter
     Class == "Charms"
     Rarity == Normal Magic
     SetFontSize 45
-
-
-
-
-# ▶ ======================================
-# ▶ 홈에 장착가능한 아이템(부적)
-# ======================================
-
-# 도깨비불 부적(추후 티어 재작업)
-Show
-    Class == "Socketable"
-    BaseType == "Serpent Talisman" "Primate Talisman" "Owl Talisman" "Cat Talisman" "Wolf Talisman" "Stag Talisman" "Boar Talisman" "Bear Talisman" "Ox Talisman" "Rabbit Talisman" "Fox Talisman"
-    SetFontSize 45
-    SetTextColor 6 17 20 255 #061114
-    SetBorderColor 48 136 156 255 #30889C
-    SetBackgroundColor 216 238 243 255 #D8EEF3
-    PlayAlertSound 1 300
-    PlayEffect Cyan
-    MinimapIcon 1 Cyan Star
-
-# ▶ ======================================
-# ▶ 홈에 장착가능한 아이템(룬)
-# ======================================
-
-# 0.2 업데이트 상위 룬(추후 티어 재작업)
-Show
-    Class == "Socketable"
-    BaseType == "Greater Desert Rune" "Greater Glacial Rune" "Greater Storm Rune" "Greater Iron Rune" "Greater Body Rune" "Greater Mind Rune" "Greater Rebirth Rune" "Greater Inspiration Rune" "Greater Stone Rune" "Greater Vision Rune" "Greater Rune of Leadership" "Greater Rune of Tithing" "Greater Rune of Alacrity" "Greater Rune of Nobility"
-    SetFontSize 45
-    SetTextColor 6 17 20 255 #061114
-    SetBorderColor 48 136 156 255 #30889C
-    SetBackgroundColor 216 238 243 255 #D8EEF3
-    PlayAlertSound 2 300
-    PlayEffect Cyan
-    MinimapIcon 1 Cyan Cross
-
-# ——————————————————————————————
-# ▶ highEnd
-# ▶▶ 철 룬이 보입니다.
-# ——————————————————————————————
-
-# 철 룬(무기 물리 피해)
-Show #highEnd
-    Class == "Socketable"
-    BaseType == "Iron Rune"
-    SetFontSize 45
-    SetTextColor 237 244 246 255 #EDF4F6
-    SetBorderColor 237 244 246 255 #EDF4F6
-    SetBackgroundColor 42 76 85 255 #2A4C55
-    PlayAlertSound 3 300 #highEnd
-    PlayEffect Cyan Temp #highEnd
-    MinimapIcon 1 Cyan Circle #highEnd
-
-# ——————————————————————————————
-# ▶ end
-# ▶▶ 사막 룬, 빙하 룬, 폭풍 룬(방어구 원소 저항)이 보입니다.
-# ——————————————————————————————
-
-# 사막 룬, 빙하 룬, 폭풍 룬(방어구 원소 저항)
-Hide #end
-    Class == "Socketable"
-    BaseType == "Desert Rune" "Glacial Rune" "Storm Rune" 
-    SetFontSize 45
-    SetTextColor 237 244 246 255 #EDF4F6
-    SetBorderColor 237 244 246 255 #EDF4F6
-    SetBackgroundColor 42 76 85 255 #2A4C55
-    #PlayAlertSound 3 300 #end
-    #PlayEffect Cyan Temp #end
-    #MinimapIcon 1 Cyan Circle #end
-
-# 하위 철 룬
-Hide #end
-    Class == "Socketable"
-    BaseType == "Lesser Iron Rune"
-    SetFontSize 45
-    SetTextColor 237 244 246 255 #EDF4F6
-    SetBorderColor 237 244 246 255 #EDF4F6
-    SetBackgroundColor 42 76 85 255 #2A4C55
-    #PlayAlertSound 3 300 #end
-    #PlayEffect Cyan Temp #end
-    #MinimapIcon 2 Cyan Circle #end
-
-# 하위 사막 룬, 빙하 룬, 폭풍 룬(방어구 원소 저항)
-Hide #end
-    Class == "Socketable"
-    BaseType == "Lesser Desert Rune" "Lesser Glacial Rune" "Lesser Storm Rune"
-    SetFontSize 45
-    SetTextColor 247 247 247 255 #F7F7F7
-    SetBorderColor 58 168 193 255 #3AA8C1
-    SetBackgroundColor 17 30 34 255 #111E22
-    #PlayAlertSound 3 300 #end
-    #PlayEffect Cyan Temp #end
-    #MinimapIcon 2 Cyan Circle #end
-
-# ——————————————————————————————
-# ▶ mid
-# ▶▶ 기타 나머지 룬이 보입니다.
-# ——————————————————————————————
-
-# 기타 나머지 하위 룬
-Hide #mid
-    Class == "Socketable"
-    BaseType == "Lesser Body Rune" "Lesser Mind Rune" "Lesser Rebirth Rune" "Lesser Inspiration Rune" "Lesser Stone Rune" "Lesser Vision Rune"
-    SetFontSize 45
-    SetTextColor 247 247 247 255 #F7F7F7
-    SetBorderColor 58 168 193 255 #3AA8C1
-    SetBackgroundColor 17 30 34 255 #111E22
-    #PlayAlertSound 3 300 #mid
-    #PlayEffect Cyan Temp #mid
-    #MinimapIcon 2 Cyan Circle #mid
-
-# 기타 나머지 룬
-Hide #mid
-    Class == "Socketable"
-    BaseType "Rune"
-    SetFontSize 45
-    SetTextColor 247 247 247 255 #F7F7F7
-    SetBorderColor 58 168 193 255 #3AA8C1
-    SetBackgroundColor 37 67 75 255 #25434B
-    #PlayAlertSound 3 300 #mid
-    #PlayEffect Cyan Temp #mid
-    #MinimapIcon 0 Cyan Circle #mid
-
-# ▶ ======================================
-# ▶ 홈에 장착가능한 아이템(영혼 핵)
-# ▶▶ 아즈카파의 영혼 핵, 잘라틀의 영혼 핵은 강조되어 보입니다.
-# ======================================
-
-# 비싼 영혼 핵(소울 코어)
-Show #default
-    Class == "Socketable"
-    BaseType == "Soul Core of Azcapa" "Soul Core of Zalatl" 
-    SetFontSize 45
-    SetTextColor 0 51 26 255 #00331A
-    SetBorderColor 58 168 193 255 #3AA8C1
-    SetBackgroundColor 243 230 216 255 #F3E6D8
-    PlayAlertSound 6 300
-    PlayEffect Red
-    MinimapIcon 0 Red Star
-
-# 모든 영혼 핵(소울 코어)
-Show #default
-    Class == "Socketable"
-    BaseType "Soul Core of"
-    SetFontSize 45
-    SetTextColor 191 255 224 255 #BFFFE0
-    SetBorderColor 58 168 193 255 #3AA8C1
-    SetBackgroundColor 192 127 57 255 #C07F39
-    PlayAlertSound 12 300
-    PlayEffect Cyan Temp
-    MinimapIcon 0 Cyan Circle
-
-# ▶ ======================================
-# ▶ 금고실 열쇠(성유물 보관실 열쇠)
-# ======================================
-
-
-# 자로크의 성유물 보관실 열쇠 관련 오류가 있어서 BaseType 우선 제거(추후 재확인 필요)
-# BaseType == "Twilight Reliquary Key" "Xesht's Reliquary Key" "The Trialmaster's Reliquary Key" "Ritualistic Reliquary Key" "Tangmazu's Reliquary Key" "Olroth's Reliquary Key" "The Arbiter's Reliquary Key" "Zarokh's Reliquary Key (Against the Darkness)" "Zarokh's Reliquary Key (Sandstorm Visage)" "Zarokh's Reliquary Key (Blessed Bonds)" "Zarokh's Reliquary Key (Sekhema's Resolve)" "Zarokh's Reliquary Key (Temporalis)"
-
-Show #default
-    Class == "Vault Keys"
-    SetFontSize 45
-    SetTextColor 227 11 92 255 #E30B5C
-    SetBorderColor 227 11 92 255 #E30B5C
-    SetBackgroundColor 254 237 243 255 #FEEDF3
-    PlayAlertSound 6 300
-    PlayEffect Pink
-    MinimapIcon 0 Pink Star
-    CustomAlertSoundOptional "./CustomSound/currency-t0.mp3" 300
-    CustomAlertSoundOptional "./CustomSound/currency-t0.wav" 300
-
-
-
-
-
-
-
 
 
 
@@ -5530,7 +6020,7 @@ Show #highEnd
 # ——————————————————————————————
 
 # 경로석 13등급 이상
-Hide #end
+Show #end
     Class == "Waystones"
     AnyEnchantment False
     WaystoneTier >= 13
@@ -5539,14 +6029,14 @@ Hide #end
     # SetTextColor 253 226 233 255 #FDE2E9
     SetBorderColor 219 215 210 255 #DBD7D2
     SetBackgroundColor 70 5 22 255 #460516
-    #PlayAlertSound 5 300 #end
-    #PlayEffect Red #end
-    #MinimapIcon 2 Red Square #end
-    #CustomAlertSoundOptional "./CustomSound/waystone-high.mp3" 300 #end
-    #CustomAlertSoundOptional "./CustomSound/waystone-high.wav" 300 #end
+    PlayAlertSound 5 300 #end
+    PlayEffect Red #end
+    MinimapIcon 2 Red Square #end
+    CustomAlertSoundOptional "./CustomSound/waystone-high.mp3" 300 #end
+    CustomAlertSoundOptional "./CustomSound/waystone-high.wav" 300 #end
 
 # 인챈트된 경로석 10등급 이상(희귀)(ex. 환영)
-Hide #end
+Show #end
     Class == "Waystones"
     AnyEnchantment True
     WaystoneTier >= 10
@@ -5555,14 +6045,14 @@ Hide #end
     SetTextColor 255 239 0 255 #FFEF00
     SetBorderColor 158 219 255 255 #9EDBFF
     SetBackgroundColor 48 3 43 255 #30032B
-    #PlayAlertSound 3 300 #end
-    #PlayEffect White #end
-    #MinimapIcon 1 White Square #end
-    #CustomAlertSoundOptional "./CustomSound/waystone-medium.mp3" 300 #end
-    #CustomAlertSoundOptional "./CustomSound/waystone-medium.wav" 300 #end
+    PlayAlertSound 3 300 #end
+    PlayEffect White #end
+    MinimapIcon 1 White Square #end
+    CustomAlertSoundOptional "./CustomSound/waystone-medium.mp3" 300 #end
+    CustomAlertSoundOptional "./CustomSound/waystone-medium.wav" 300 #end
 
 # 인챈트된 경로석 10등급 이상(일반, 마법)(ex. 환영)
-Hide #end
+Show #end
     Class == "Waystones"
     AnyEnchantment True
     WaystoneTier >= 10
@@ -5571,11 +6061,11 @@ Hide #end
     # SetTextColor 158 255 226 255 #9EFFE2
     SetBorderColor 158 219 255 255 #9EDBFF
     SetBackgroundColor 48 3 43 255 #30032B
-    #PlayAlertSound 3 300 #end
-    #PlayEffect White #end
-    #MinimapIcon 1 White Square #end
-    #CustomAlertSoundOptional "./CustomSound/waystone-medium.mp3" 300 #end
-    #CustomAlertSoundOptional "./CustomSound/waystone-medium.wav" 300 #end
+    PlayAlertSound 3 300 #end
+    PlayEffect White #end
+    MinimapIcon 1 White Square #end
+    CustomAlertSoundOptional "./CustomSound/waystone-medium.mp3" 300 #end
+    CustomAlertSoundOptional "./CustomSound/waystone-medium.wav" 300 #end
 
 # ——————————————————————————————
 # ▶ mid
@@ -5830,6 +6320,18 @@ Show #default
     PlayEffect Cyan Temp
     MinimapIcon 2 Cyan Triangle
 
+# 14레벨 미가공 정신력 젬
+Show #default
+    ItemLevel == 14
+    BaseType == "Uncut Spirit Gem"
+    SetFontSize 40
+    SetTextColor 233 251 250 255 #E9FBFA
+    SetBorderColor 9 62 60 255 #093E3C
+    SetBackgroundColor 12 74 71 255 #0C4A47
+    PlayAlertSound 3 300
+    PlayEffect Cyan Temp
+    MinimapIcon 2 Cyan Triangle
+
 # ——————————————————————————————
 # ▶ highEnd
 # ▶▶ 19레벨 이상 미가공 스킬 젬이 보입니다.
@@ -5850,14 +6352,55 @@ Show #highEnd
 # ——————————————————————————————
 # ▶ end
 # ▶▶ 18레벨 이상 미가공 스킬 젬이 보입니다.
+# ▶▶ 지역 레벨이 높아질 수록 18레벨 미가공 스킬 젬은 잘 보이지 않습니다.
 # ——————————————————————————————
 
+# 15등급 경로석 이상의 지역에선 18레벨 이하의 미가공 스킬 젬 작게 표시
 # 18레벨 미가공 스킬 젬
-Hide #end
+Show #end
+    AreaLevel == 79
     ItemLevel == 18
-    BaseType == "Uncut Skill Gem" "Uncut Spirit Gem"
+    BaseType == "Uncut Skill Gem"
+    SetFontSize 30
+    SetTextColor 27 162 155 255 #1BA29B 
+    # SetBorderColor 9 62 60 255 #093E3C
+    SetBackgroundColor 3 17 17 180 #031111
+
+Hide #end
+    AreaLevel == 79
+    ItemLevel <= 17
+    BaseType == "Uncut Skill Gem"
     SetFontSize 40
     SetTextColor 27 162 155 255 #1BA29B 
+    SetBorderColor 9 62 60 255 #093E3C
+    SetBackgroundColor 3 17 17 255 #031111
+
+# 14등급 이하 경로석에선 18레벨 미가공 스킬 젬 제대로 표시
+# 18레벨 미가공 스킬 젬
+Show #end
+    AreaLevel <= 78
+    ItemLevel == 18
+    BaseType == "Uncut Skill Gem"
+    SetFontSize 40
+    SetTextColor 27 162 155 255 #1BA29B 
+    SetBorderColor 9 62 60 255 #093E3C
+    SetBackgroundColor 3 17 17 255 #031111
+
+# 18레벨 미가공 정신력 젬
+Show #end
+    ItemLevel == 18
+    BaseType == "Uncut Spirit Gem"
+    SetFontSize 40
+    SetTextColor 27 162 155 255 #1BA29B 
+    SetBorderColor 9 62 60 255 #093E3C
+    SetBackgroundColor 3 17 17 255 #031111
+
+# 3레벨 미가공 보조 젬
+Show #end
+    ItemLevel == 3
+    BaseType == "Uncut Support Gem"
+    SetFontSize 40
+    SetTextColor 27 162 155 255 #1BA29B
     SetBorderColor 9 62 60 255 #093E3C
     SetBackgroundColor 3 17 17 255 #031111
 
@@ -5871,15 +6414,6 @@ Hide #end
 Hide #mid
     ItemLevel <= 17
     BaseType == "Uncut Skill Gem" "Uncut Spirit Gem"
-    SetFontSize 40
-    SetTextColor 27 162 155 255 #1BA29B
-    SetBorderColor 9 62 60 255 #093E3C
-    SetBackgroundColor 3 17 17 255 #031111
-
-# 3레벨 미가공 보조 젬
-Hide #mid
-    ItemLevel == 3
-    BaseType == "Uncut Support Gem"
     SetFontSize 40
     SetTextColor 27 162 155 255 #1BA29B
     SetBorderColor 9 62 60 255 #093E3C
@@ -5912,235 +6446,71 @@ Show #default
     #PlayAlertSound 3 300 #starter
     #MinimapIcon 1 Cyan Triangle #starter
 
-# ▶ ======================================
-# ▶ 각종 특수 아이템(ex.시련, 결전 입장템)
-# ▶ ======================================
 
-######### ======================================
-# ▶ 진 바리야(시련)
-######### ======================================
 
-# ——————————————————————————————
-# ▶ uber
-# ▶▶ 지역 레벨 80 이상. 진 바리야(시련 입장템(성역))입니다.
-# ——————————————————————————————
 
-# 지역 레벨 80레벨 이상. 진 바리야(시련 입장템(성역))
-Show #uber
-    ItemLevel >= 80
-    Class == "Trial Coins"
-    SetFontSize 45
-    SetTextColor 172 225 175 255 #ACE1AF
-    SetBorderColor 172 225 175 255 #ACE1AF
-    SetBackgroundColor 21 42 37 255 #152A25
-    PlayEffect Green #highEnd
-    PlayAlertSound 3 300 #highEnd
-    MinimapIcon 1 Green Circle #highEnd
+# ======================================
+# 타락 아이템
+# ======================================
 
-# ——————————————————————————————
-# ▶ highEnd
-# ▶▶ 지역 레벨 75. 진 바리야가 보입니다.
-# ——————————————————————————————
-
-# 75렙 시련 입장템이 비싸다는 이야기가 있습니다.
-# 진 바리야(시련 입장템(성역))
-Show #highEnd
-    ItemLevel == 75
-    Class == "Trial Coins"
-    SetFontSize 45
-    SetTextColor 172 225 175 255 #ACE1AF
-    SetBorderColor 172 225 175 255 #ACE1AF
-    SetBackgroundColor 21 42 37 255 #152A25
-    PlayEffect Green #highEnd
-    PlayAlertSound 3 300 #highEnd
-    MinimapIcon 1 Green Circle #highEnd
-
-# ——————————————————————————————
-# ▶ end
-# ▶▶ 지역 레벨 75 이상. 진 바리야가 보입니다.
-# ——————————————————————————————
-
-# 진 바리야(75레벨 이상. 75이상부터 시련 수 4)
-Hide #end
-    ItemLevel >= 75
-    Class == "Trial Coins"
-    SetFontSize 45
-    SetTextColor 172 225 175 255 #ACE1AF
-    SetBorderColor 172 225 175 255 #ACE1AF
-    SetBackgroundColor 21 42 37 255 #152A25
-    #PlayEffect Green #end
-    #PlayAlertSound 3 300 #end
-    #MinimapIcon 1 Green Circle #end
-
-# ——————————————————————————————
-# ▶ mid
-# ▶▶ 지역 레벨 75 이하. 진 바리야가 보입니다.
-# ——————————————————————————————
-
-# 진 바리야(75레벨 미만 처리)
-Hide #mid
-    ItemLevel < 75
-    Class == "Trial Coins"
-    SetFontSize 45
-    SetTextColor 172 225 175 255 #ACE1AF
-    SetBorderColor 172 225 175 255 #ACE1AF
-    SetBackgroundColor 21 42 37 255 #152A25
-    #PlayEffect Green #mid
-    #PlayAlertSound 3 300 #mid
-    #MinimapIcon 1 Green Circle #mid
-
-######### ======================================
-# ▶ 새겨진 결전
-######### ======================================
-
-# ——————————————————————————————
-# ▶ uber
-# ▶▶ 타락. 마법. 새겨진 결전이 강조되어 보입니다.
-# ▶▶ 지역 레벨 80 이상. 새겨진 결전이 보입니다.
-# ——————————————————————————————
-
-# 타락. 마법. 새겨진 결전
-Show #default
+# 타락 인챈트가 부여된 일반 아이템
+Show
     Corrupted True
-    Class == "Inscribed Ultimatum"
+    AnyEnchantment True
+    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts" "Charms" "Bucklers"
+    Rarity == Normal
+    SetFontSize 39 #normal
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 213 36 95 255 #D5245F
+    SetBackgroundColor 100 36 95 255 #64245F
+
+Show
+    Corrupted True
+    AnyEnchantment True
+    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts" "Charms" "Bucklers"
     Rarity == Magic
-    SetFontSize 45
-    SetTextColor 0 0 0 255 #000000
-    SetBorderColor 0 0 0 255 #000000
-    SetBackgroundColor 172 225 175 255 #ACE1AF
-    PlayAlertSound 12 300 #default
-    PlayEffect Green #default
-    MinimapIcon 0 Green Cross #default
-
-# 새겨진 결전
-Show #uber
-    ItemLevel >= 80
-    Class == "Inscribed Ultimatum"
-    SetFontSize 45
-    SetTextColor 172 225 175 255 #ACE1AF
-    SetBorderColor 172 225 175 255 #ACE1AF
-    SetBackgroundColor 21 42 37 255 #152A25
-    PlayAlertSound 3 300 #uber
-    PlayEffect Green #uber
-    MinimapIcon 1 Green Circle #uber
-
-# ——————————————————————————————
-# ▶ highEnd
-# ▶▶ 지역 레벨 75 이상. 새겨진 결전이 보입니다.
-# ——————————————————————————————
-
-# 새겨진 결전(10라운드)
-Show #highEnd
-    ItemLevel >= 75
-    Class == "Inscribed Ultimatum"
-    SetFontSize 45
-    SetTextColor 172 225 175 255 #ACE1AF
-    SetBorderColor 172 225 175 255 #ACE1AF
-    SetBackgroundColor 21 42 37 255 #152A25
-    PlayEffect Green #highEnd
-    PlayAlertSound 3 300 #highEnd
-    MinimapIcon 1 Green Circle #highEnd
-
-# ——————————————————————————————
-# ▶ end
-# ▶▶ 지역 레벨 60~74 사이. 새겨진 결전이 보입니다.
-# ——————————————————————————————
-
-# 새겨진 결전(7라운드)
-Hide #end
-    ItemLevel >= 60
-    ItemLevel <= 74
-    Class == "Inscribed Ultimatum"
-    SetFontSize 45
-    SetTextColor 172 225 175 255 #ACE1AF
-    SetBorderColor 172 225 175 255 #ACE1AF
-    SetBackgroundColor 21 42 37 255 #152A25
-    #PlayEffect Green #end
-    #PlayAlertSound 3 300 #end
-    #MinimapIcon 1 Green Circle #end
-
-# ——————————————————————————————
-# ▶ mid
-# ▶▶ 지역 레벨 73 이하. 새겨진 결전이 보입니다.
-# ——————————————————————————————
-
-Hide #mid
-    ItemLevel <= 73
-    Class == "Inscribed Ultimatum"
-    SetFontSize 45
-    SetTextColor 172 225 175 255 #ACE1AF
-    SetBorderColor 172 225 175 255 #ACE1AF
-    SetBackgroundColor 21 42 37 255 #152A25
-    #PlayEffect Green #mid
-    #PlayAlertSound 3 300 #mid
-    #MinimapIcon 1 Green Circle #mid
-
-######### ======================================
-# ▶ 시련 유물과 시련 보상 키
-# ▶▶ 모든 단계에서 시련 유물과, 시련 보상 키가 보입니다.
-######### ======================================
-
-# 시련 유물
-Show #default
-    Class == "Relics"
-    SetFontSize 45
+    SetFontSize 42 #magic
     # SetTextColor 0 0 0 255 #000000
-    SetBorderColor 255 248 231 255 #FFF8E7
-    SetBackgroundColor 27 0 104 255 #1B0068
-    PlayEffect Blue
-    PlayAlertSound 3 300
-    MinimapIcon 1 Blue Circle
+    SetBorderColor 213 36 95 255 #D5245F
+    SetBackgroundColor 100 36 95 255 #64245F
 
-# 시련 보상 키
-Show #default
-    BaseType == "Gold Key" "Silver Key" "Bronze Key"
-    SetFontSize 45
-    SetTextColor 73 230 58 255 #49E63A
-    SetBorderColor 73 230 58 255 #49E63A
-    SetBackgroundColor 5 34 2 245 #052202
-    PlayEffect Green
-    PlayAlertSound 3 300
-    MinimapIcon 1 Green Circle
-
-# ======================================
-# 희귀 아이템 처리
-# ======================================
-
-######### ======================================
-######### 미감정 방어코드
-######### ======================================
 Show
-    Identified False
+    Corrupted True
+    AnyEnchantment True
+    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts" "Charms" "Bucklers"
     Rarity == Rare
-    SetFontSize 35
-    SetTextColor 114 0 0 255 #720000
-    SetBorderColor 114 0 0 255 #720000
-    SetBackgroundColor 255 255 255 255 #FFFFFF
-    PlayAlertSound 2 300
-    PlayEffect Yellow
-    MinimapIcon 2 Yellow UpsideDownHouse
-
-# 감정된 아이템
-Show
-    Identified True
-    Rarity == Rare
-    SetFontSize 35
-    PlayAlertSound 2 300
-    PlayEffect Yellow
-    MinimapIcon 2 Yellow UpsideDownHouse
-    SetTextColor 0 0 0 255 #000000
-    SetBackgroundColor 251 192 45 255 #FBC02D
-# ======================================
-# 아직 미구현된 아이템 방어 코드
-# ======================================
-
-Show #default
-    Class == "Claws" "Daggers" "One Hand Swords" "One Hand Axes" "Flails" "Two Hand Swords" "Two Hand Axes" "Traps" "Fishing Rods"
-    SetFontSize 40
+    SetFontSize 45 #rare
     # SetTextColor 0 0 0 255 #000000
-    # SetBorderColor 0 0 0 255 #000000
-    SetBackgroundColor 24 9 112 255 #180970
-    PlayEffect Yellow Temp
+    SetBorderColor 213 36 95 255 #D5245F
+    SetBackgroundColor 100 36 95 255 #64245F
+
+# 타락만 된 아이템
+Show
+    Corrupted True
+    AnyEnchantment False
+    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts" "Charms" "Bucklers"
+    Rarity == Normal
+    SetFontSize 39 #normal
+    SetBorderColor 213 36 95 255 #D5245F
+
+Show
+    Corrupted True
+    AnyEnchantment False
+    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts" "Charms" "Bucklers"
+    Rarity == Magic
+    SetFontSize 42 #magic
+    SetBorderColor 213 36 95 255 #D5245F
+
+
+Show
+    Corrupted True
+    AnyEnchantment False
+    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts" "Charms" "Bucklers"
+    Rarity == Rare
+    SetFontSize 45 #rare
+    SetBorderColor 213 36 95 255 #D5245F
+
+
 
 # ======================================
 # 크래프팅에 사용되지 않는
@@ -6179,6 +6549,48 @@ Hide
     Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts" "Charms" "Bucklers"
     Rarity == Normal
     SetFontSize 39 #normal
+# ======================================
+# 희귀 아이템 처리
+# ======================================
+
+######### ======================================
+######### 미감정 방어코드
+######### ======================================
+# Show
+#     Identified False
+#     Rarity == Rare
+#     SetFontSize 35
+#     SetTextColor 114 0 0 255 #720000
+#     SetBorderColor 114 0 0 255 #720000
+#     SetBackgroundColor 255 255 255 255 #FFFFFF
+#     PlayAlertSound 2 300
+#     PlayEffect Yellow
+#     MinimapIcon 2 Yellow UpsideDownHouse
+
+# 작업 중
+# Hide
+#     Identified True
+#     Class == "Boots" "Flasks"
+#     Rarity == Magic Rare
+#     SetFontSize 45 #rare
+
+# 감정된 아이템
+Show
+    Identified True
+    Rarity == Magic Rare
+    SetFontSize 45 #rare
+
+# ======================================
+# 아직 미구현된 아이템 방어 코드
+# ======================================
+
+Show #default
+    Class == "Claws" "Daggers" "One Hand Swords" "One Hand Axes" "Flails" "Two Hand Swords" "Two Hand Axes" "Traps" "Fishing Rods"
+    SetFontSize 40
+    # SetTextColor 0 0 0 255 #000000
+    # SetBorderColor 0 0 0 255 #000000
+    SetBackgroundColor 24 9 112 255 #180970
+    PlayEffect Yellow Temp
 
 # ▶ ==== 방어 코드 ==============================
 # ▶▶ 이 코드에 필터링 되어선 안됩니다.
