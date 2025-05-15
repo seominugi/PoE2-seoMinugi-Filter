@@ -3,7 +3,7 @@
 
 
 # ======================================
-# 필터 버전: 0.2.5 1-starter seoMinugi
+# 필터 버전: 0.2.7 2-early seoMinugi (업데이트 시간: 2025-05-15 14:31:43)
 
 # 안녕하세요. 서미누기입니다.
 # 모든 코드는 제가 직접 작성해서 만들고 있습니다.
@@ -116,7 +116,8 @@
 # ▶ ======================================
 # ▶ 식별된 생명력 플라스크
 # ▶ 식별된 마나 플라스크
-# ▶ 식별된 무도 무기
+# ▶ 식별된 석궁
+# ▶ 식별된 무도 무기(양손철퇴, 육척봉)
 # ▶ 식별된 활
 # ▶ 식별된 마법봉
 # ▶ 식별된 장화
@@ -133,6 +134,8 @@
 # ▶     20% 4개, 13% 이상 3개, 9% 이상 2개, 1% 이상 1개
 # ▶ 분해 아이템(플라스크)
 # ▶ 분해 아이템(소켓 아이템)
+# ▶ ======================================
+# ▶ 액트
 # ▶ ======================================
 # ▶ 루팅 무기
 # ▶ 활 ——————————————————————————————
@@ -337,10 +340,10 @@
 # ▶ 루팅 방어구
 # ▶ 장갑 ——————————————————————————————
 # ▶ uber
-#      아이템 레벨 82 이상. 일반. 요구사항 레벨 75 이상. 장갑이 보입니다.
+#      아이템 레벨 82 이상. 일반, 마법. 요구사항 레벨 75 이상. 장갑이 보입니다.
 #      희귀. 요구사항 레벨 75 이상. 장갑이 보입니다.
 # ▶ highEnd
-#      아이템 레벨 81 이상. 일반. 요구사항 레벨 75 이상. 장갑이 보입니다.
+#      아이템 레벨 81 이상. 일반, 마법. 요구사항 레벨 75 이상. 장갑이 보입니다.
 #      희귀. 요구사항 레벨 70 이상 장갑이 보입니다.
 # ▶ end
 #      일반. 요구사항 레벨 75 이상 장갑이 보입니다.
@@ -363,7 +366,7 @@
 #      이속 35%를 위해 일반, 마법 장화 필터링
 #      회피, 에쉴 관련된 장화만 필터링.
 # ▶ highEnd
-#      아이템 레벨 81 이상. 일반. 요구사항 레벨 65 이상. 장화가 보입니다.
+#      아이템 레벨 81 이상. 일반, 마법. 요구사항 레벨 65 이상. 장화가 보입니다.
 #      희귀. 요구사항 레벨 70 이상 장화가 보입니다.
 # ▶ end
 #      일반. 요구사항 레벨 75 이상 장화가 보입니다.
@@ -381,10 +384,10 @@
 #      액트 구간에서 모든 장화가 보입니다.
 # ▶ 베이스 투구
 # ▶ uber
-#      아이템 레벨 82 이상. 일반. 요구사항 레벨 75 이상. 투구가 보입니다.
+#      아이템 레벨 82 이상. 일반, 마법. 요구사항 레벨 75 이상. 투구가 보입니다.
 #      희귀. 요구사항 레벨 75 이상. 투구가 보입니다.
 # ▶ highEnd
-#      아이템 레벨 81 이상. 일반. 요구사항 레벨 75 이상. 투구가 보입니다.
+#      아이템 레벨 81 이상. 일반, 마법. 요구사항 레벨 75 이상. 투구가 보입니다.
 #      희귀. 요구사항 레벨 70 이상. 투구가 보입니다.
 # ▶ end
 #      일반. 요구사항 레벨 75 이상. 투구가 보입니다.
@@ -400,8 +403,8 @@
 #      갑옷의 경우, 요구 사항 레벨이 65레벨 이상이라면 고정 속성이 부여되어 있거나,
 #      고정 속성이 부여되어 있지 않다면 갑옷의 방어 속성 수치가 가장 높다.
 # ▶ uber
-#      일반. 아이템 레벨이 82 이상. 고정 속성은 없지만 방어력 수치가 높은 갑옷이 보입니다.
-#      일반. 아이템 레벨이 82 이상. 고정 속성이 있는 갑옷이 보입니다.
+#      일반, 마법. 아이템 레벨이 82 이상. 고정 속성은 없지만 방어력 수치가 높은 갑옷이 보입니다.
+#      일반, 마법. 아이템 레벨이 82 이상. 고정 속성이 있는 갑옷이 보입니다.
 #      희귀. 고정 속성은 없지만 방어력 수치가 높은 갑옷이 보입니다.
 #      희귀. 고정 속성이 있는 갑옷이 보입니다.
 # ▶ highEnd
@@ -593,7 +596,7 @@ Show #early
     SetBackgroundColor 0 0 0 200 #000000
 
 # 엔드게임부터 100골드 이상만
-Show #starter
+Hide #starter
     AreaLevel >= 65
     StackSize >= 100
     Class == "Stackable Currency"
@@ -613,7 +616,7 @@ Hide
     SetBorderColor 0 0 0 200 #000000
     SetBackgroundColor 0 0 0 200 #000000
 
-Show #starter
+Hide #starter
     AreaLevel < 65
     StackSize >= 10
     Class == "Stackable Currency"
@@ -633,7 +636,6 @@ Hide #starter
     SetTextColor 255 183 197 255 #FFB7C5
     SetBorderColor 0 0 0 200 #000000
     SetBackgroundColor 0 0 0 200 #000000
-
 
 # ▶ ======================================
 # ▶ 퀘스트 아이템
@@ -1009,7 +1011,7 @@ Show #end
     SetBackgroundColor 0 0 0 255 #000000
 
 # 진화의 파편
-Show #starter
+Hide #starter
     Class == "Stackable Currency"
     BaseType == "Transmutation Shard"
     SetFontSize 35
@@ -1756,7 +1758,7 @@ Show #default
     MinimapIcon 0 Orange Star
 
 # ——————————————————————————————
-# 서판
+# 고유 서판
 # ——————————————————————————————
 
 # 1티어(신념의 자유)
@@ -1790,7 +1792,19 @@ Show #default
     SetFontSize 45
     SetTextColor 0 0 0 255 #000000
     SetBorderColor 0 0 0 255 #000000
-    SetBackgroundColor 175 96 37 255 #AF6025
+    SetBackgroundColor 228 171 129 255 #E4AB81
+    PlayAlertSound 2 300
+    PlayEffect Orange
+    MinimapIcon 1 Orange Cross
+
+# 서판 방어코드.(되도록 잘 보이도록...)
+Show #default
+    Rarity == Unique
+    BaseType "Tablet"
+    SetFontSize 45
+    SetTextColor 0 0 0 255 #000000
+    SetBorderColor 0 0 0 255 #000000
+    SetBackgroundColor 228 171 129 255 #E4AB81
     PlayAlertSound 2 300
     PlayEffect Orange
     MinimapIcon 1 Orange Cross
@@ -2169,9 +2183,9 @@ Show #default
 # ▶▶ 0.2 업데이트에 맞춰서 재작업 필요
 ##### ======================================
 
-# 별의 목걸이, 사파이어 반지, 리슬라사의 감개, 꼬인혀, 헤드헌터, 쌍죔쇠
+# 별의 보석, 꿈의 조각, 리슬라사의 감개, 꼬인혀, 헤드헌터, 우두머리의 울부짖음, 래스피스의 구체, 체르노보그의 기둥
 Show
-    BaseType == "Stellar Amulet" "Sapphire Ring" "Ornate Belt" "Forked Spear" "Heavy Belt" "Double Belt"
+    BaseType == "Stellar Amulet" "Sapphire Ring" "Ornate Belt" "Forked Spear" "Heavy Belt" "Armoured Cap" "Sacred Focus" "Blacksteel Tower Shield"
     Rarity == Normal
     SetFontSize 45
     SetTextColor 0 0 0 255 #000000
@@ -2281,13 +2295,95 @@ Show #highEnd
     PlayEffect Yellow #highEnd
 
 ######### ======================================
-# ▶ 식별된 무도 무기
+# ▶ 식별된 석궁
+######### ======================================
+
+# 물리 피해 석궁(4티어 이상 물리 접두 3개)
+Show
+    Identified True
+    Class == "Crossbows"
+    HasExplicitMod >=3 "Annealed" "Razor-sharp" "Tempered" "Flaring" "Bloodthirsty" "Cruel" "Tyrannical" "Merciless" "Champion's" "Conqueror's" "Emperor's" "Dictator's"
+    Rarity == Magic Rare
+    SetFontSize 45
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 255 240 245 255 #FFF0F5
+    SetBackgroundColor 121 50 121 255 #793279
+    PlayAlertSound 6 300
+    PlayEffect Red
+
+# 물리 피해 석궁(물리 접두 3개)
+Show
+    Identified True
+    Class == "Crossbows"
+    HasExplicitMod >=3 "Glinting" "Burnished" "Polished" "Honed" "Gleaming" "Annealed" "Razor-sharp" "Tempered" "Flaring" "Heavy" "Serrated" "Wicked" "Vicious" "Bloodthirsty" "Cruel" "Tyrannical" "Merciless" "Squire's" "Journeyman's" "Reaver's" "Mercenary's" "Champion's" "Conqueror's" "Emperor's" "Dictator's"
+    Rarity == Magic Rare
+    SetFontSize 45
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 255 240 245 255 #FFF0F5
+    SetBackgroundColor 121 50 121 255 #793279
+    PlayAlertSound 1 300
+    PlayEffect Red
+
+# 화염 피해 석궁(화염 피해 추가, 공격 스킬의 원소 피해 증가)
+Show
+    Identified True
+    Class == "Crossbows"
+    HasExplicitMod >=3 "Incinerating" "Blasting" "Cremating" "Carbonising" "Unleashed" "Overpowering" "Devastating"
+    Rarity == Magic Rare
+    SetFontSize 45
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 255 240 245 255 #FFF0F5
+    SetBackgroundColor 121 50 121 255 #793279
+    PlayAlertSound 6 300
+    PlayEffect Red
+
+# 냉기 피해 석궁(냉기 피해 추가, 공격 스킬의 원소 피해 증가)
+Show
+    Identified True
+    Class == "Crossbows"
+    HasExplicitMod >=2 "Glaciated" "Polar" "Entombing" "Crystalising" "Unleashed" "Overpowering" "Devastating"
+    Rarity == Magic Rare
+    SetFontSize 45
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 255 240 245 255 #FFF0F5
+    SetBackgroundColor 121 50 121 255 #793279
+    PlayAlertSound 6 300
+    PlayEffect Red
+
+# 번개 피해 석궁(번개 피해 추가, 공격 스킬의 원소 피해 증가)
+Show
+    Identified True
+    Class == "Crossbows"
+    HasExplicitMod >=2 "Shocking" "Discharging" "Electrocuting" "Vapourising" "Unleashed" "Overpowering" "Devastating"
+    Rarity == Magic Rare
+    SetFontSize 45
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 255 240 245 255 #FFF0F5
+    SetBackgroundColor 121 50 121 255 #793279
+    PlayAlertSound 6 300
+    PlayEffect Red
+
+# 물리, 원소 피해 속성 티어가 높은 석궁
+Show
+    Identified True
+    Class == "Crossbows"
+    HasExplicitMod >=1 "Tempered" "Flaring" "Cremating" "Carbonising" "Entombing" "Crystalising" "Electrocuting" "Vapourising" "Tyrannical" "Merciless" "Emperor's" "Dictator's" "Amazon's" "Valkyrie's" "Overpowering" "Devastating"
+    Rarity == Magic Rare
+    SetFontSize 45
+    SetTextColor 230 230 250 255 #E6E6FA
+    SetBorderColor 255 240 245 255 #FFF0F5
+    SetBackgroundColor 121 50 121 255 #793279
+    PlayAlertSound 1 300
+    PlayEffect Red
+
+######### ======================================
+# ▶ 식별된 무도 무기(양손철퇴, 육척봉)
 ######### ======================================
 
 # 물리 양손 무기(4티어 이상 물리 피해 관련 유효 속성 3개 이상)
 Show
     Identified True
-    Class == "Two Hand Maces" "Quarterstaves" "Crossbows"
+    Class == "Two Hand Maces" "Quarterstaves"
     HasExplicitMod >=3 "Annealed" "Razor-sharp" "Tempered" "Flaring" "Bloodthirsty" "Cruel" "Tyrannical" "Merciless" "Champion's" "Conqueror's" "Emperor's" "Dictator's"
     Rarity == Magic Rare
     SetFontSize 45
@@ -2300,7 +2396,7 @@ Show
 # 물리 양손 무기(4티어 이상 물리 피해 관련 유효 속성 2개 이상)
 Show
     Identified True
-    Class == "Two Hand Maces" "Quarterstaves" "Crossbows"
+    Class == "Two Hand Maces" "Quarterstaves"
     HasExplicitMod >=2 "Annealed" "Razor-sharp" "Tempered" "Flaring" "Bloodthirsty" "Cruel" "Tyrannical" "Merciless" "Champion's" "Conqueror's" "Emperor's" "Dictator's"
     Rarity == Magic Rare
     SetFontSize 45
@@ -2313,7 +2409,7 @@ Show
 # 물리 양손 무기(4티어 이상 물리 피해 관련 유효 속성 1개 이상)
 Show
     Identified True
-    Class == "Two Hand Maces" "Quarterstaves" "Crossbows"
+    Class == "Two Hand Maces" "Quarterstaves"
     HasExplicitMod >=1 "Annealed" "Razor-sharp" "Tempered" "Flaring" "Bloodthirsty" "Cruel" "Tyrannical" "Merciless" "Champion's" "Conqueror's" "Emperor's" "Dictator's"
     Rarity == Magic Rare
     SetFontSize 45
@@ -2466,6 +2562,69 @@ Show
 
 
 
+
+
+# ======================================
+# 미확인 등급 아이템
+# ======================================
+
+# 미확인 5등급
+Show
+    Identified False
+    UnidentifiedItemTier >= 5
+    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts" "Charms" "Bucklers" "Tablet"
+    SetFontSize 45 #rare
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 36 15 36 255 #240F24
+    SetBackgroundColor 36 15 36 255 #240F24
+    PlayAlertSound 1 300
+    PlayEffect Purple
+    MinimapIcon 0 Purple UpsideDownHouse
+
+# 미확인 4등급
+Show
+    Identified False
+    UnidentifiedItemTier == 4
+    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts" "Charms" "Bucklers" "Tablet"
+    SetFontSize 45 #rare
+    # SetTextColor 0 0 0 255 #000000
+    SetBorderColor 36 15 36 255 #240F24
+    SetBackgroundColor 36 15 36 255 #240F24
+    PlayAlertSound 2 300
+    PlayEffect Purple
+    MinimapIcon 1 Purple UpsideDownHouse
+
+# 미확인 3등급
+Show
+    Identified False
+    UnidentifiedItemTier == 3
+    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts" "Charms" "Bucklers" "Tablet"
+    SetFontSize 45 #rare
+    PlayAlertSound 2 300
+    PlayEffect Grey
+    MinimapIcon 2 Grey UpsideDownHouse
+
+# 미확인 2등급
+Show
+    Identified False
+    UnidentifiedItemTier == 2
+    Class == "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Helmets" "Body Armours" "Amulets" "Rings" "Belts" "Charms" "Bucklers" "Tablet"
+    SetFontSize 45 #rare
+    PlayAlertSound 2 300
+    PlayEffect Grey Temp
+    MinimapIcon 2 Grey UpsideDownHouse
+
+# 미확인 2등급 이상(방어 코드) 
+Show
+    Identified False
+    UnidentifiedItemTier >= 2
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 255 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Grey
+    MinimapIcon 2 Grey Star
 
 # ▶ ======================================
 # ▶ 퀄리티, 소켓 아이템(홈 아이템)
@@ -2620,6 +2779,16 @@ Show #disable-in-early
 
 
 # ▶ ======================================
+# ▶ 액트
+##### ======================================
+
+Show
+    AreaLevel == 1
+    DropLevel == 1
+    # Rarity == Normal
+    SetFontSize 45 #normal
+
+    # ▶ ======================================
 # ▶ 루팅 무기
 ##### ======================================
 
@@ -2797,7 +2966,7 @@ Show #early
 # ——————————————————————————————
 
 # 일반. 전문 단궁
-Show #starter
+Hide #starter
     AreaLevel >= 65
     BaseType == "Ironwood Shortbow"
     Class == "Bows"
@@ -2805,7 +2974,7 @@ Show #starter
     SetFontSize 39 #normal
 
 # 마법. 전문 단궁
-Show #starter
+Hide #starter
     AreaLevel >= 65
     BaseType == "Ironwood Shortbow"
     Class == "Bows"
@@ -2814,7 +2983,7 @@ Show #starter
 
 # 엔드 게임부터는 고급 이중시위 활을 기준으로
 # 요구사항 레벨 55 이상 희귀 활
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 55
     Class == "Bows"
@@ -2830,7 +2999,7 @@ Hide
     SetFontSize 45 #rare
 
 # 액트 구간에서 이중시위 활은 항상 보이기
-Show #starter
+Hide #starter
     AreaLevel < 65
     Class == "Bows"
     BaseType "Dualstring Bow"
@@ -2838,7 +3007,7 @@ Show #starter
     SetFontSize 45 #rare
 
 # 액트 구간에서 모든 활 보이기
-Show #starter
+Hide #starter
     AreaLevel < 65
     Class == "Bows"
     Rarity == Normal Magic Rare
@@ -2987,7 +3156,7 @@ Show #early
 # ——————————————————————————————
 
 # 일반. 요구사항 레벨 65 이상 석궁
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Crossbows"
@@ -2995,7 +3164,7 @@ Show #starter
     SetFontSize 39 #normal
 
 # 마법. 요구사항 레벨 65 이상 석궁
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Crossbows"
@@ -3004,7 +3173,7 @@ Show #starter
 
 # 엔드 게임부터는 고급 이중 석궁을 기준으로
 # 요구사항 레벨 55 이상 희귀 석궁
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 55
     Class == "Crossbows"
@@ -3020,7 +3189,7 @@ Hide
     SetFontSize 45 #rare
 
 # 액트 구간에서 모든 이중 석궁, 포격 석궁
-Show #starter
+Hide #starter
     AreaLevel < 65
     Class == "Crossbows"
     BaseType "Dyad Crossbow" "Bombard Crossbow"
@@ -3028,7 +3197,7 @@ Show #starter
     SetFontSize 45
 
 # 액트 구간에서 모든 석공
-Show #starter
+Hide #starter
     AreaLevel < 65
     Class == "Crossbows"
     Rarity == Normal Magic Rare
@@ -3137,7 +3306,7 @@ Show #early
 # ——————————————————————————————
 
 # 일반. 요구사항 레벨 65 이상 육척봉
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Quarterstaves"
@@ -3145,7 +3314,7 @@ Show #starter
     SetFontSize 39 #normal
 
 # 마법. 요구사항 레벨 65 이상 육척봉
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Quarterstaves"
@@ -3154,7 +3323,7 @@ Show #starter
 
 # 엔드 게임부터는
 # 요구사항 레벨 55 이상 희귀 육척봉
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 55
     Class == "Quarterstaves"
@@ -3170,7 +3339,7 @@ Hide
     SetFontSize 45 #rare
 
 # 액트 구간 모든 육척봉
-Show #starter
+Hide #starter
     AreaLevel < 65
     Class == "Quarterstaves"
     Rarity == Normal Magic Rare
@@ -3287,7 +3456,7 @@ Show #early
 # ——————————————————————————————
 
 # 일반. 요구사항 레벨 59 이상 양손 철퇴
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 59
     Class == "Two Hand Maces"
@@ -3295,7 +3464,7 @@ Show #starter
     SetFontSize 39 #normal
 
 # 마법. 요구사항 레벨 59 이상 양손 철퇴
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 59
     Class == "Two Hand Maces"
@@ -3304,7 +3473,7 @@ Show #starter
 
 # 엔드 게임부터는
 # 요구사항 레벨 50 이상 희귀 양손 철퇴
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 50
     Class == "Two Hand Maces"
@@ -3320,7 +3489,7 @@ Hide
     SetFontSize 45 #rare
 
 # 액트 구간 모든 양손 철퇴
-Show #starter
+Hide #starter
     AreaLevel < 65
     Class == "Two Hand Maces"
     Rarity == Normal Magic Rare
@@ -3425,7 +3594,7 @@ Show #early
 # ——————————————————————————————
 
 # 일반. 요구사항 레벨 65 이상 한손 철퇴
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "One Hand Maces"
@@ -3433,7 +3602,7 @@ Show #starter
     SetFontSize 39 #normal
 
 # 마법. 요구사항 레벨 65 이상 한손 철퇴
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "One Hand Maces"
@@ -3442,7 +3611,7 @@ Show #starter
 
 # 엔드 게임부터는
 # 요구사항 레벨 55 이상 희귀 한손 철퇴
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 55
     Class == "One Hand Maces"
@@ -3458,7 +3627,7 @@ Hide
     SetFontSize 45 #rare
 
 # 액트 구간 모든 한손 철퇴
-Show #starter
+Hide #starter
     AreaLevel < 65
     Class == "One Hand Maces"
     Rarity == Normal Magic Rare
@@ -3560,7 +3729,7 @@ Show #early
 # ——————————————————————————————
 
 # 일반. 요구사항 레벨 65 이상 한손 창
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Spears"
@@ -3568,7 +3737,7 @@ Show #starter
     SetFontSize 39 #normal
 
 # 마법. 요구사항 레벨 65 이상 한손 창
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Spears"
@@ -3577,7 +3746,7 @@ Show #starter
 
 # 엔드 게임부터는
 # 요구사항 레벨 55 이상 희귀 한손 창
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 55
     Class == "Spears"
@@ -3593,7 +3762,7 @@ Hide
     SetFontSize 45 #rare
 
 # 액트 구간 모든 한손 창
-Show #starter
+Hide #starter
     AreaLevel < 65
     Class == "Spears"
     Rarity == Normal Magic Rare
@@ -3947,7 +4116,7 @@ Show #mid
 # ——————————————————————————————
 
 # 모든 화살통
-Show #starter
+Hide #starter
 	Class == "Quivers"
     Rarity == Normal Magic Rare
     SetFontSize 45 #rare
@@ -4021,7 +4190,7 @@ Show #mid
 # ——————————————————————————————
 
 # 희귀 집중구는 6단계까지 모두 보임
-Show #starter
+Hide #starter
     Class == "Foci"
     Rarity == Normal Magic
     SetFontSize 45 #rare
@@ -4116,7 +4285,7 @@ Show #early
 # ——————————————————————————————
 
 # 일반. 요구사항 레벨 65 이상
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Bucklers"
@@ -4124,7 +4293,7 @@ Show #starter
     SetFontSize 39 #normal
 
 # 마법. 요구사항 레벨 65 이상
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Bucklers"
@@ -4133,7 +4302,7 @@ Show #starter
 
 # 엔드 게임부터는
 # 요구사항 레벨 55 이상 희귀
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 55
     Class == "Bucklers"
@@ -4349,7 +4518,7 @@ Show #early
 # ——————————————————————————————
 
 # 일반. 마법. 요구사항 레벨 65 이상 방어도 방패
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Shields"
@@ -4361,7 +4530,7 @@ Show #starter
     SetBackgroundColor 77 0 0 240 #4D0000
 
 # 희귀. 요구사항 레벨 55 이상 방어도 방패
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 55
     Class == "Shields"
@@ -4373,7 +4542,7 @@ Show #starter
     SetBackgroundColor 77 0 0 240 #4D0000
 
 # 희귀. 요구사항 레벨 55 이상. 모든 방패
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 55
     Class == "Shields"
@@ -4401,7 +4570,7 @@ Hide
     SetFontSize 45 #rare
 
 # 액트 구간에서 모든 방어도 방패가 보입니다.
-Show #starter
+Hide #starter
     AreaLevel < 65
     Class == "Shields"
     BaseArmour >= 1
@@ -4412,7 +4581,7 @@ Show #starter
     SetBackgroundColor 77 0 0 240 #4D0000
 
 # 액트 구간에서는 모든 방패가 보임
-Show #starter
+Hide #starter
     AreaLevel < 65
     Class == "Shields"
     Rarity == Normal Magic Rare
@@ -4429,17 +4598,17 @@ Show #starter
 
 # ——————————————————————————————
 # ▶ uber
-# ▶▶ 아이템 레벨 82 이상. 일반. 요구사항 레벨 75 이상. 장갑이 보입니다.
+# ▶▶ 아이템 레벨 82 이상. 일반, 마법. 요구사항 레벨 75 이상. 장갑이 보입니다.
 # ▶▶ 희귀. 요구사항 레벨 75 이상. 장갑이 보입니다.
 # ——————————————————————————————
 
-# 일반. 요구사항 레벨 75 이상 장갑
+# 일반, 마법. 요구사항 레벨 75 이상 장갑
 Show #uber
     ItemLevel >= 82
     DropLevel >= 75
     Class == "Gloves"
-    Rarity == Normal
-    SetFontSize 39 #normal
+    Rarity == Normal Magic
+    SetFontSize 42 #magic
     SetBorderColor 178 255 255 255 #B2FFFF
     PlayEffect Grey Temp
 
@@ -4453,7 +4622,7 @@ Show #uber
 
 # ——————————————————————————————
 # ▶ highEnd
-# ▶▶ 아이템 레벨 81 이상. 일반. 요구사항 레벨 75 이상. 장갑이 보입니다.
+# ▶▶ 아이템 레벨 81 이상. 일반, 마법. 요구사항 레벨 75 이상. 장갑이 보입니다.
 # ▶▶ 희귀. 요구사항 레벨 70 이상 장갑이 보입니다.
 # ——————————————————————————————
 
@@ -4462,8 +4631,8 @@ Show #highEnd
     ItemLevel >= 81
     DropLevel >= 75
     Class == "Gloves"
-    Rarity == Normal
-    SetFontSize 39 #normal
+    Rarity == Normal Magic
+    SetFontSize 42 #magic
     SetBorderColor 136 136 255 255 #8888FF
 
 # 희귀. 요구사항 레벨 70 이상 장갑
@@ -4555,7 +4724,7 @@ Show #early
 # ——————————————————————————————
 
 # 일반. 요구사항 레벨 65 이상 장갑
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Gloves"
@@ -4563,7 +4732,7 @@ Show #starter
     SetFontSize 39 #normal
 
 # 마법. 요구사항 레벨 65 이상 장갑
-Show #starter
+Hide #starter
     Identified False
     AreaLevel >= 65
     DropLevel >= 65
@@ -4572,7 +4741,7 @@ Show #starter
     SetFontSize 42 #magic
     
 # 희귀. 요구사항 레벨 51 이상 장갑
-Show #starter
+Hide #starter
     Identified False
     AreaLevel >= 65
     DropLevel >= 51
@@ -4590,13 +4759,13 @@ Hide
     SetFontSize 45 #rare
 
 # 액트 구간 모든 장갑
-Show #starter
+Hide #starter
     AreaLevel < 65
     Class == "Gloves"
     Rarity == Normal
     SetFontSize 45 #rare
 
-Show #starter
+Hide #starter
     Identified False
     AreaLevel < 65
     Class == "Gloves"
@@ -4619,24 +4788,15 @@ Show #starter
 # ▶▶ 이속 35%를 위해 일반, 마법 장화 필터링
 # ▶▶ 회피, 에쉴 관련된 장화만 필터링.
 
-# 일반. 요구사항 레벨 65 이상 장화
+# 일반, 마법. 요구사항 레벨 65 이상 장화
 Show #uber
     ItemLevel >= 82
     DropLevel >= 65
     Class == "Boots"
-    Rarity == Normal
-    SetFontSize 39 #normal
+    Rarity == Normal Magic
+    SetFontSize 42 #magic
     SetBorderColor 178 255 255 255 #B2FFFF
     PlayEffect Grey Temp
-
-# 마법. 요구사항 레벨 65 이상 장화
-Show #uber
-    Identified False
-    ItemLevel >= 82
-    DropLevel >= 65
-    Class == "Boots"
-    Rarity == Magic
-    SetFontSize 42 #magic
 
 # 희귀. 요구사항 레벨 75 이상 장화
 Show #uber
@@ -4648,27 +4808,18 @@ Show #uber
 
 # ——————————————————————————————
 # ▶ highEnd
-# ▶▶ 아이템 레벨 81 이상. 일반. 요구사항 레벨 65 이상. 장화가 보입니다.
+# ▶▶ 아이템 레벨 81 이상. 일반, 마법. 요구사항 레벨 65 이상. 장화가 보입니다.
 # ▶▶ 희귀. 요구사항 레벨 70 이상 장화가 보입니다.
 # ——————————————————————————————
 
-# 일반. 요구사항 레벨 65 이상 장화
+# 일반, 마법. 요구사항 레벨 65 이상 장화
 Show #highEnd
     ItemLevel >= 81
     DropLevel >= 65
     Class == "Boots"
-    Rarity == Normal
-    SetFontSize 39 #normal
-    SetBorderColor 136 136 255 255 #8888FF
-
-# 마법. 요구사항 레벨 65 이상 장화
-Show #uber
-    Identified False
-    ItemLevel >= 81
-    DropLevel >= 65
-    Class == "Boots"
-    Rarity == Magic
+    Rarity == Normal Magic
     SetFontSize 42 #magic
+    SetBorderColor 136 136 255 255 #8888FF
 
 # 희귀. 요구사항 레벨 70 이상 장화
 Show #highEnd
@@ -4759,7 +4910,7 @@ Show #early
 # ——————————————————————————————
 
 # 엔드 게임. 일반. 요구사항 레벨 55 이상 장화
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 55
     Class == "Boots"
@@ -4767,7 +4918,7 @@ Show #starter
     SetFontSize 39 #normal
 
 # 엔드 게임. 마법. 요구사항 레벨 55 이상 장화
-Show #starter
+Hide #starter
     Identified False
     AreaLevel >= 65
     DropLevel >= 55
@@ -4776,7 +4927,7 @@ Show #starter
     SetFontSize 42 #magic
 
 # 엔드 게임. 희귀. 요구사항 레벨 45 이상 장화
-Show #starter
+Hide #starter
     Identified False
     AreaLevel >= 65
     DropLevel >= 45
@@ -4794,13 +4945,13 @@ Hide
     SetFontSize 45 #rare
 
 # 액트 구간. 모든 장화
-Show #starter
+Hide #starter
     AreaLevel < 65
     Class == "Boots"
     Rarity == Normal
     SetFontSize 45 #rare
 
-Show #starter
+Hide #starter
     Identified False
     AreaLevel < 65
     Class == "Boots"
@@ -4814,7 +4965,7 @@ Show #starter
 
 # ——————————————————————————————
 # ▶ uber
-# ▶▶ 아이템 레벨 82 이상. 일반. 요구사항 레벨 75 이상. 투구가 보입니다.
+# ▶▶ 아이템 레벨 82 이상. 일반, 마법. 요구사항 레벨 75 이상. 투구가 보입니다.
 # ▶▶ 희귀. 요구사항 레벨 75 이상. 투구가 보입니다.
 # ——————————————————————————————
 
@@ -4823,8 +4974,8 @@ Show #uber
     ItemLevel >= 82
     DropLevel >= 75
     Class == "Helmets"
-    Rarity == Normal
-    SetFontSize 39 #normal
+    Rarity == Normal Magic
+    SetFontSize 42 #magic
     SetBorderColor 178 255 255 255 #B2FFFF
     PlayEffect Grey Temp
 
@@ -4838,7 +4989,7 @@ Show #uber
 
 # ——————————————————————————————
 # ▶ highEnd 
-# ▶▶ 아이템 레벨 81 이상. 일반. 요구사항 레벨 75 이상. 투구가 보입니다.
+# ▶▶ 아이템 레벨 81 이상. 일반, 마법. 요구사항 레벨 75 이상. 투구가 보입니다.
 # ▶▶ 희귀. 요구사항 레벨 70 이상. 투구가 보입니다.
 # ——————————————————————————————
 
@@ -4847,8 +4998,8 @@ Show #highEnd
     ItemLevel >= 81
     DropLevel >= 75
     Class == "Helmets"
-    Rarity == Normal
-    SetFontSize 39 #normal
+    Rarity == Normal Magic
+    SetFontSize 42 #magic
     SetBorderColor 136 136 255 255 #8888FF
 
 # 희귀. 요구사항 레벨 70 이상 투구
@@ -4940,7 +5091,7 @@ Show #early
 # ——————————————————————————————
 
 # 엔드 게임. 일반. 요구사항 레벨 65 이상 투구
-Show #starter
+Hide #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Helmets"
@@ -4948,7 +5099,7 @@ Show #starter
     SetFontSize 39 #normal
 
 # 엔드 게임. 마법. 요구사항 레벨 65 이상 투구
-Show #starter
+Hide #starter
     Identified False
     AreaLevel >= 65
     DropLevel >= 65
@@ -4957,7 +5108,7 @@ Show #starter
     SetFontSize 42 #magic
 
 # 엔드 게임. 희귀. 요구사항 레벨 55 이상 투구
-Show #starter
+Hide #starter
     Identified False
     AreaLevel >= 65
     DropLevel >= 55
@@ -4975,13 +5126,13 @@ Hide
     SetFontSize 45 #rare 
 
 # 액트 구간. 모든 투구
-Show #starter
+Hide #starter
     AreaLevel < 65
     Class == "Helmets"
     Rarity == Normal
     SetFontSize 45 #rare
 
-Show #starter
+Hide #starter
     Identified False
     AreaLevel < 65
     Class == "Helmets"
@@ -5001,44 +5152,95 @@ Show #starter
 # ——————————————————————————————
 
 Show
+    Corrupted False
     Class == "Body Armours"
     BaseType == "Ornate Plate" "Utzaal Cuirass" "Soldier Cuirass"
     Rarity == Normal
-    SetFontSize 39 #normal
+    SetFontSize 45 #rare
+    SetBackgroundColor 77 0 0 240 #4D0000
+
+Show #mid
+    Corrupted False
+    AreaLevel >= 65
+    DropLevel >= 55
+    Class == "Body Armours"
+    BaseArmour > 0
+    BaseEvasion 0
+    BaseEnergyShield 0
+    Rarity == Normal
+    SetFontSize 45 #rare
+    SetBackgroundColor 77 0 0 240 #4D0000
+
+# 액트 구간 방어도 갑옷
+Show
+    Corrupted False
+    AreaLevel < 65
+    Class == "Body Armours"
+    BaseArmour > 0
+    BaseEvasion 0
+    BaseEnergyShield 0
+    Rarity == Normal
+    SetFontSize 45 #rare
     SetBackgroundColor 77 0 0 240 #4D0000
 
 # ——————————————————————————————
 # ▶ uber
-# ▶▶ 일반. 아이템 레벨이 82 이상. 고정 속성은 없지만 방어력 수치가 높은 갑옷이 보입니다.
-# ▶▶ 일반. 아이템 레벨이 82 이상. 고정 속성이 있는 갑옷이 보입니다.
+# ▶▶ 일반, 마법. 아이템 레벨이 82 이상. 고정 속성은 없지만 방어력 수치가 높은 갑옷이 보입니다.
+# ▶▶ 일반, 마법. 아이템 레벨이 82 이상. 고정 속성이 있는 갑옷이 보입니다.
 # ▶▶ 희귀. 고정 속성은 없지만 방어력 수치가 높은 갑옷이 보입니다.
 # ▶▶ 희귀. 고정 속성이 있는 갑옷이 보입니다.
 # ——————————————————————————————
 
 # 일반. 아이템 레벨이 82 이상. 고정 속성은 없지만 방어력 수치가 높은 갑옷
 Show #uber
+    Corrupted False
     ItemLevel >= 82
     Class == "Body Armours"
     BaseType == "Soldier Cuirass" "Slipstrike Vest" "Vile Robe" "Death Mail" "Wolfskin Mantle" "Sleek Jacket"
     Rarity == Normal
-    SetFontSize 39 #normal
+    SetFontSize 42 #magic
+    SetBorderColor 178 255 255 255 #B2FFFF
+    PlayEffect Grey Temp
+
+Show #uber
+    Identified False
+    Corrupted False
+    ItemLevel >= 82
+    Class == "Body Armours"
+    BaseType == "Soldier Cuirass" "Slipstrike Vest" "Vile Robe" "Death Mail" "Wolfskin Mantle" "Sleek Jacket"
+    Rarity == Magic
+    SetFontSize 42 #magic
     SetBorderColor 178 255 255 255 #B2FFFF
     PlayEffect Grey Temp
 
 # 일반. 아이템 레벨이 82 이상. 고정 속성이 있는 갑옷
 Show #uber
+    Corrupted False
     ItemLevel >= 82
     DropLevel >= 65
     HasImplicitMod True
     Class == "Body Armours"
     Rarity == Normal
-    SetFontSize 39 #normal
+    SetFontSize 42 #magic
+    SetBorderColor 178 255 255 255 #B2FFFF
+    PlayEffect Grey Temp
+
+Show #uber
+    Identified False
+    Corrupted False
+    ItemLevel >= 82
+    DropLevel >= 65
+    HasImplicitMod True
+    Class == "Body Armours"
+    Rarity == Magic
+    SetFontSize 42 #magic
     SetBorderColor 178 255 255 255 #B2FFFF
     PlayEffect Grey Temp
 
 # 희귀. 고정 속성은 없지만 방어력 수치가 높은 갑옷
 Show #uber
     Identified False
+    Corrupted False
     Class == "Body Armours"
     BaseType == "Soldier Cuirass" "Slipstrike Vest" "Vile Robe" "Death Mail" "Wolfskin Mantle" "Sleek Jacket"
     Rarity == Rare
@@ -5047,6 +5249,7 @@ Show #uber
 # 희귀. 고정 속성이 있는 갑옷
 Show #uber
     Identified False
+    Corrupted False
     DropLevel >= 65
     HasImplicitMod True
     Class == "Body Armours"
@@ -5061,15 +5264,17 @@ Show #uber
 
 # 일반. 고정 속성은 없지만 방어력 수치가 높은 갑옷
 Show #highEnd
+    Corrupted False
     ItemLevel >= 81
     Class == "Body Armours"
     BaseType == "Soldier Cuirass" "Slipstrike Vest" "Vile Robe" "Death Mail" "Wolfskin Mantle" "Sleek Jacket"
     Rarity == Normal
-    SetFontSize 39 #normal
+    SetFontSize 42 #magic
     SetBorderColor 136 136 255 255 #8888FF
 
 Show #highEnd
     Identified False
+    Corrupted False
     ItemLevel >= 81
     Class == "Body Armours"
     BaseType == "Soldier Cuirass" "Slipstrike Vest" "Vile Robe" "Death Mail" "Wolfskin Mantle" "Sleek Jacket"
@@ -5079,16 +5284,18 @@ Show #highEnd
 
 # 일반. 고정 속성이 있는 갑옷
 Show #highEnd
+    Corrupted False
     ItemLevel >= 81
     DropLevel >= 65
     HasImplicitMod True
     Class == "Body Armours"
     Rarity == Normal
-    SetFontSize 39 #normal
+    SetFontSize 42 #magic
     SetBorderColor 136 136 255 255 #8888FF
 
 Show #highEnd
     Identified False
+    Corrupted False
     ItemLevel >= 81
     DropLevel >= 65
     HasImplicitMod True
@@ -5106,6 +5313,7 @@ Show #highEnd
 # 전문 철 흉갑, 전문 징 박힌 조끼, 전문 사술사의 로브, 전문 미늘 갑옷, 전문 가죽모 외투, 전문 밀랍재질 재킷
 # 일반. 고정 속성은 없지만 방어력 수치가 높은 갑옷
 Show #end
+    Corrupted False
     Class == "Body Armours"
     BaseType == "Soldier Cuirass" "Slipstrike Vest" "Vile Robe" "Death Mail" "Wolfskin Mantle" "Sleek Jacket"
     Rarity == Normal
@@ -5113,6 +5321,7 @@ Show #end
 
 # 일반. 요구사항 레벨 65 이상. 고정 속성이 있는 갑옷
 Show #end
+    Corrupted False
     DropLevel >= 65
     HasImplicitMod True
     Class == "Body Armours"
@@ -5129,6 +5338,7 @@ Show #end
 # 마법. 고정 속성은 없지만 방어력 수치가 높은 갑옷
 Show #mid
     Identified False
+    Corrupted False
     Class == "Body Armours"
     BaseType == "Soldier Cuirass" "Slipstrike Vest" "Vile Robe" "Death Mail" "Wolfskin Mantle" "Sleek Jacket"
     Rarity == Magic
@@ -5137,6 +5347,7 @@ Show #mid
 # 마법. 요구사항 레벨 65 이상. 고정 속성이 있는 갑옷
 Show #mid
     Identified False
+    Corrupted False
     DropLevel >= 65
     HasImplicitMod True
     Class == "Body Armours"
@@ -5152,7 +5363,8 @@ Show #mid
 # ——————————————————————————————
 
 # 엔드 게임. 일반. 요구 사항 레벨 55 이상. 모든 갑옷
-Show #starter
+Hide #starter
+    Corrupted False
     AreaLevel >= 65
     DropLevel >= 55
     Class == "Body Armours"
@@ -5160,8 +5372,9 @@ Show #starter
     SetFontSize 39 #normal
 
 # 엔드 게임. 마법. 요구 사항 레벨 55 이상. 모든 갑옷
-Show #starter
+Hide #starter
     Identified False
+    Corrupted False
     AreaLevel >= 65
     DropLevel >= 55
     Class == "Body Armours"
@@ -5169,8 +5382,9 @@ Show #starter
     SetFontSize 42 #magic
 
 # 엔드 게임. 희귀. 요구 사항 레벨 51 이상. 모든 갑옷
-Show #starter
+Hide #starter
     Identified False
+    Corrupted False
     AreaLevel >= 65
     DropLevel >= 51
     Class == "Body Armours"
@@ -5180,6 +5394,7 @@ Show #starter
 # 엔드 게임. 희귀. 요구 사항 레벨 51 미만. 모든 갑옷 숨김
 Hide
     Identified False
+    Corrupted False
     AreaLevel >= 65
     DropLevel < 51
     Class == "Body Armours"
@@ -5187,14 +5402,16 @@ Hide
     SetFontSize 45 #rare 
 
 # 액트 구간. 모든 갑옷
-Show #starter
+Hide #starter
+    Corrupted False
     AreaLevel < 65
     Class == "Body Armours"
     Rarity == Normal
     SetFontSize 45 #rare
 
-Show #starter
+Hide #starter
     Identified False
+    Corrupted False
     AreaLevel < 65
     Class == "Body Armours"
     Rarity == Magic Rare
@@ -5315,7 +5532,7 @@ Show #end
 # ▶▶ 모든 목걸이가 보입니다.
 # ——————————————————————————————
 
-Show #starter
+Hide #starter
     Corrupted False
     Class == "Amulets"
     Rarity == Normal
@@ -5323,7 +5540,7 @@ Show #starter
     SetBorderColor 52 77 101 255 #344D65
     SetBackgroundColor 17 26 34 255 #111A22
 
-Show #starter
+Hide #starter
     Identified False
     Corrupted False
     Class == "Amulets"
@@ -5451,7 +5668,7 @@ Show #end
 # ——————————————————————————————
 
 # 철제 반지, 청금석 반지
-Show #starter
+Hide #starter
     Corrupted False
     Class == "Rings"
     BaseType == "Iron Ring" "Lazuli Ring"
@@ -5461,7 +5678,7 @@ Show #starter
     SetBackgroundColor 17 26 34 255 #111A22
 
 # 철제 반지, 청금석 반지
-Show #starter
+Hide #starter
     Identified False
     Corrupted False
     Class == "Rings"
@@ -5562,7 +5779,7 @@ Show #end
 # ▶▶ 모든 허리띠가 보입니다.
 # ——————————————————————————————
 
-Show #starter
+Hide #starter
     Corrupted False
 	Class == "Belts"
     Rarity == Normal
@@ -5570,7 +5787,7 @@ Show #starter
     SetBorderColor 52 77 101 255 #344D65
     SetBackgroundColor 17 26 34 255 #111A22
 
-Show #starter
+Hide #starter
     Identified False
     Corrupted False
 	Class == "Belts"
@@ -5598,22 +5815,18 @@ Show #uber
     Class == "Life Flasks"
     BaseType == "Ultimate Life Flask"
     Rarity == Normal
-    SetFontSize 35
-    # SetTextColor 0 0 0 255 #000000
-    # SetBorderColor 102 6 22 255 #660616
+    SetFontSize 39 #normal
     SetBorderColor 178 255 255 255 #B2FFFF
     SetBackgroundColor 72 4 15 255 #48040F
 
-# 마법. 아이템 레벨 83 이상. 극한의 생명력 플라스크
 Show #uber
     Identified False
     ItemLevel >= 83
     Class == "Life Flasks"
     BaseType == "Ultimate Life Flask"
     Rarity == Magic
-    SetFontSize 38
-    # SetTextColor 0 0 0 255 #000000
-    SetBorderColor 102 6 22 255 #660616
+    SetFontSize 42 #magic
+    SetBorderColor 178 255 255 255 #B2FFFF
     SetBackgroundColor 72 4 15 255 #48040F
 
 # ——————————————————————————————
@@ -5622,14 +5835,22 @@ Show #uber
 # ——————————————————————————————
 
 Show #highEnd
+    ItemLevel >= 82
+    Class == "Life Flasks"
+    BaseType == "Ultimate Life Flask"
+    Rarity == Normal
+    SetFontSize 39 #normal
+    SetBorderColor 136 136 255 255 #8888FF
+    SetBackgroundColor 72 4 15 255 #48040F
+
+Show #highEnd
     Identified False
     ItemLevel >= 82
     Class == "Life Flasks"
     BaseType == "Ultimate Life Flask"
     Rarity == Magic
-    SetFontSize 38
-    # SetTextColor 0 0 0 255 #000000
-    SetBorderColor 102 6 22 255 #660616
+    SetFontSize 42 #magic
+    SetBorderColor 136 136 255 255 #8888FF
     SetBackgroundColor 72 4 15 255 #48040F
 
 # ——————————————————————————————
@@ -5637,16 +5858,22 @@ Show #highEnd
 # ▶▶ 일반. 아이템 레벨 82 이상. 극한의 생명력 플라스크가 보입니다.
 # ——————————————————————————————
 
-# 일반. 아이템 레벨 82 이상. 극한의 생명력 플라스크
+# 일반. 아이템 레벨 80 이상. 극한의 생명력 플라스크
 Show #end
-    ItemLevel >= 82
+    ItemLevel >= 80
     Class == "Life Flasks"
     BaseType == "Ultimate Life Flask"
     Rarity == Normal
-    SetFontSize 35
-    # SetTextColor 0 0 0 255 #000000
-    # SetBorderColor 102 6 22 255 #660616
-    SetBorderColor 136 136 255 255 #8888FF
+    SetFontSize 39 #normal
+    SetBackgroundColor 72 4 15 255 #48040F
+
+Show #end
+    Identified False
+    ItemLevel >= 80
+    Class == "Life Flasks"
+    BaseType == "Ultimate Life Flask"
+    Rarity == Magic
+    SetFontSize 42 #magic
     SetBackgroundColor 72 4 15 255 #48040F
 
 # ——————————————————————————————
@@ -5659,8 +5886,7 @@ Show #mid
     Class == "Life Flasks"
     BaseType == "Ultimate Life Flask"
     Rarity == Normal
-    SetFontSize 35
-    # SetTextColor 0 0 0 255 #000000
+    SetFontSize 39 #normal
     SetBorderColor 102 6 22 255 #660616
     SetBackgroundColor 72 4 15 255 #48040F
 
@@ -5675,8 +5901,7 @@ Show #early
     Class == "Life Flasks"
     BaseType == "Ultimate Life Flask"
     Rarity == Magic
-    SetFontSize 38
-    # SetTextColor 0 0 0 255 #000000
+    SetFontSize 42 #magic
     SetBorderColor 102 6 22 255 #660616
     SetBackgroundColor 72 4 15 255 #48040F
 
@@ -5686,10 +5911,10 @@ Show #early
 # ——————————————————————————————
 
 # 모든 생명력 플라스크 
-Show #starter
+Hide #starter
     Class == "Life Flasks"
     Rarity == Normal Magic
-    SetFontSize 38
+    SetFontSize 42 #magic
     # SetTextColor 0 0 0 255 #000000
     SetBorderColor 102 6 22 255 #660616
     SetBackgroundColor 72 4 15 255 #48040F
@@ -5703,28 +5928,24 @@ Show #starter
 # ▶▶ 일반. 마법. 아이템 레벨 83 이상. 극한의 마나 플라스크가 보입니다.
 # ——————————————————————————————
 
-# 일반. 아이템 레벨 83 이상. 극한의 마나 플라스크
+# 일반, 마법. 아이템 레벨 83 이상. 극한의 마나 플라스크
 Show #uber
     ItemLevel >= 83
     Class == "Mana Flasks"
     BaseType == "Ultimate Mana Flask"
     Rarity == Normal
-    SetFontSize 35
-    # SetTextColor 0 0 0 255 #000000
-    # SetBorderColor 7 52 100 255 #073464
+    SetFontSize 39 #normal
     SetBorderColor 178 255 255 255 #B2FFFF
     SetBackgroundColor 5 37 71 255 #052547
 
-# 마법. 아이템 레벨 83 이상. 극한의 마나 플라스크
 Show #uber
     Identified False
     ItemLevel >= 83
     Class == "Mana Flasks"
     BaseType == "Ultimate Mana Flask"
     Rarity == Magic
-    SetFontSize 38
-    # SetTextColor 0 0 0 255 #000000
-    SetBorderColor 7 52 100 255 #073464
+    SetFontSize 42 #magic
+    SetBorderColor 178 255 255 255 #B2FFFF
     SetBackgroundColor 5 37 71 255 #052547
 
 # ——————————————————————————————
@@ -5734,14 +5955,23 @@ Show #uber
 
 # 마법. 아이템 레벨 82 이상. 극한의 마나 플라스크
 Show #highEnd
+    ItemLevel >= 82
+    Class == "Mana Flasks"
+    BaseType == "Ultimate Mana Flask"
+    Rarity == Normal
+    SetFontSize 39 #normal
+    SetBorderColor 136 136 255 255 #8888FF
+    SetBackgroundColor 5 37 71 255 #052547
+
+Show #highEnd
     Identified False
     ItemLevel >= 82
     Class == "Mana Flasks"
     BaseType == "Ultimate Mana Flask"
     Rarity == Magic
-    SetFontSize 38
+    SetFontSize 42 #magic
     # SetTextColor 0 0 0 255 #000000
-    SetBorderColor 7 52 100 255 #073464
+    SetBorderColor 136 136 255 255 #8888FF
     SetBackgroundColor 5 37 71 255 #052547
 
 # ——————————————————————————————
@@ -5751,14 +5981,20 @@ Show #highEnd
 
 # 일반. 아이템 레벨 82 이상. 극한의 마나 플라스크
 Show #end
-    ItemLevel >= 82
+    ItemLevel >= 80
     Class == "Mana Flasks"
     BaseType == "Ultimate Mana Flask"
     Rarity == Normal
-    SetFontSize 35
-    # SetTextColor 0 0 0 255 #000000
-    # SetBorderColor 7 52 100 255 #073464
-    SetBorderColor 136 136 255 255 #8888FF
+    SetFontSize 39 #normal
+    SetBackgroundColor 5 37 71 255 #052547
+
+Show #end
+    Identified False
+    ItemLevel >= 80
+    Class == "Mana Flasks"
+    BaseType == "Ultimate Mana Flask"
+    Rarity == Magic
+    SetFontSize 42 #magic
     SetBackgroundColor 5 37 71 255 #052547
 
 # ——————————————————————————————
@@ -5771,8 +6007,7 @@ Show #mid
     Class == "Mana Flasks"
     BaseType == "Ultimate Mana Flask"
     Rarity == Normal
-    SetFontSize 35
-    # SetTextColor 0 0 0 255 #000000
+    SetFontSize 39 #normal
     SetBorderColor 7 52 100 255 #073464
     SetBackgroundColor 5 37 71 255 #052547
 
@@ -5787,7 +6022,7 @@ Show #early
     Class == "Mana Flasks"
     BaseType == "Ultimate Mana Flask"
     Rarity == Magic
-    SetFontSize 38
+    SetFontSize 42 #magic
     # SetTextColor 0 0 0 255 #000000
     SetBorderColor 7 52 100 255 #073464
     SetBackgroundColor 5 37 71 255 #052547
@@ -5798,10 +6033,10 @@ Show #early
 # ——————————————————————————————
 
 # 마나 플라스크
-Show #starter
+Hide #starter
     Class == "Mana Flasks"
     Rarity == Normal Magic
-    SetFontSize 38
+    SetFontSize 42 #magic
     # SetTextColor 0 0 0 255 #000000
     SetBorderColor 7 52 100 255 #073464
     SetBackgroundColor 5 37 71 255 #052547
@@ -5857,7 +6092,7 @@ Hide
     Rarity == Normal Magic
     SetFontSize 45
 
-Show #starter
+Hide #starter
     Class == "Charms"
     Rarity == Normal Magic
     SetFontSize 45
@@ -6443,8 +6678,8 @@ Show #default
     SetTextColor 27 162 155 255 #1BA29B
     SetBorderColor 9 62 60 255 #093E3C
     SetBackgroundColor 3 17 17 255 #031111
-    PlayAlertSound 3 300 #starter
-    MinimapIcon 1 Cyan Triangle #starter
+    #PlayAlertSound 3 300 #starter
+    #MinimapIcon 1 Cyan Triangle #starter
 
 
 
