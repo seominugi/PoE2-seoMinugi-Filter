@@ -3,7 +3,7 @@
 
 
 # ======================================
-# 필터 버전: 0.2.7e 4-end seoMinugi (업데이트 시간: 2025-06-06 08:32:59)
+# 필터 버전: 0.2.7f 4-end seoMinugi (업데이트 시간: 2025-06-08 02:43:48)
 
 # 안녕하세요. 서미누기입니다.
 # 모든 코드는 제가 직접 작성해서 만들고 있습니다.
@@ -2024,10 +2024,22 @@ Show #default
 # ▶ 홈에 장착가능한 아이템(부적)
 # ======================================
 
+# 0티어 도깨비불 부적
+Show
+    Class == "Socketable"
+    BaseType == "Talisman of Sirrius" "Talisman of Thruldana" "Talisman of Ralakesh" "Talisman of Egrin" "Talisman of Eeshta" "Talisman of Grold"
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 255 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+
 # 1티어 도깨비불 부적 
 Show
     Class == "Socketable"
-    BaseType == "Rabbit Talisman" "Fox Talisman"
+    BaseType == "Rabbit Talisman" "Fox Talisman" "Talisman of Maxarius"
     SetFontSize 45
     SetTextColor 227 11 92 255 #E30B5C
     SetBorderColor 227 11 92 255 #E30B5C
@@ -2051,6 +2063,30 @@ Show
 # ▶ ======================================
 # ▶ 홈에 장착가능한 아이템(룬)
 # ======================================
+
+# 0티어 특수 룬
+Show
+    Class == "Socketable"
+    BaseType == "Countess Seske's Rune of Archery" "Farrul's Rune of the Chase" "Hedgewitch Assandra's Rune of Wisdom" "Saqawal's Rune of Memory" "Thane Girt's Rune of Wildness" "Courtesan Mannan's Rune of Cruelty" "Farrul's Rune of Grace" "Thane Myrk's Rune of Summer" "The Greatwolf's Rune of Willpower" "Craiceann's Rune of Warding" "Fenumus' Rune of Draining" "Thane Leld's Rune of Spring" "Saqawal's Rune of the Sky"
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 255 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+
+# 1티어 특수 룬
+Show
+    Class == "Socketable"
+    BaseType == "The Greatwolf's Rune of Claws" "Farrul's Rune of the Hunt" "Saqawal's Rune of Erosion" "Thane Grannell's Rune of Mastery" "Craiceann's Rune of Recovery" "Fenumus' Rune of Spinning" "Lady Hestra's Rune of Winter" "Fenumus' Rune of Agony"
+    SetFontSize 45
+    SetTextColor 6 17 20 255 #061114
+    SetBorderColor 48 136 156 255 #30889C
+    SetBackgroundColor 216 238 243 255 #D8EEF3
+    PlayAlertSound 1 300
+    PlayEffect Cyan
+    MinimapIcon 0 Cyan Star
 
 # 십일조의 상위 룬, 기민성의 상위 룬
 Show
@@ -2160,17 +2196,53 @@ Show
 # ▶ 홈에 장착가능한 아이템(영혼 핵)
 # ======================================
 
+# 0티어 영혼 핵(소울 코어)
+Show #default
+    Class == "Socketable"
+    BaseType == "Tzamoto's Soul Core of Ferocity" "Quipolatl's Soul Core of Flow" "Opiloti's Soul Core of Assault" "Xopec's Soul Core of Power" "Estazunti's Soul Core of Convalescence" "Cholotl's Soul Core of War"
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 255 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+
+# 1티어 영혼 핵(소울 코어)
+Show #default
+    Class == "Socketable"
+    BaseType == "Atmohua's Soul Core of Retreat" "Tacati's Soul Core of Affliction" "Topotante's Soul Core of Dampening" "Uromoti's Soul Core of Attenuation"
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 255 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+
+# 2티어 영혼 핵(소울 코어)
+Show #default
+    Class == "Socketable"
+    BaseType == "Xipocado's Soul Core of Dominion" "Guatelitzi's Soul Core of Endurance" "Citaqualotl's Soul Core of Foulness" "Hayoxi's Soul Core of Heatproofing" "Zalatl's Soul Core of Insulation"
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 255 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+
 # 비싼 영혼 핵(소울 코어)
 Show #default
     Class == "Socketable"
     BaseType == "Soul Core of Azcapa" "Soul Core of Ticaba" "Soul Core of Quipolatl"
     SetFontSize 45
-    SetTextColor 0 51 26 255 #00331A
-    SetBorderColor 58 168 193 255 #3AA8C1
-    SetBackgroundColor 243 230 216 255 #F3E6D8
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 255 #FEEDF3
     PlayAlertSound 6 300
-    PlayEffect Red
-    MinimapIcon 0 Red Star
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
 
 # 모든 영혼 핵(소울 코어)
 Show #default
@@ -2184,7 +2256,7 @@ Show #default
     PlayEffect Cyan Temp
     MinimapIcon 0 Cyan Circle
 
-# 모든 소켓 아이템 0.2.1 대응 코드.
+# 모든 소켓 아이템 백업 코드
 Show #default
     Class == "Socketable"
     SetFontSize 45
@@ -2193,7 +2265,7 @@ Show #default
     SetBackgroundColor 216 238 243 255 #D8EEF3
     PlayAlertSound 12 300
     PlayEffect Pink
-    MinimapIcon 0 Pink Cross
+    MinimapIcon 0 Grey Cross
 
 # ▶ ======================================
 # ▶ 금고실 열쇠(성유물 보관실 열쇠)

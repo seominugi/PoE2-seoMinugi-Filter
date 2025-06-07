@@ -3,7 +3,7 @@
 
 
 # ======================================
-# 필터 버전: 0.2.7e 2-early seoMinugi (업데이트 시간: 2025-06-06 08:32:59)
+# 필터 버전: 0.2.7f 1-starter seoMinugi (업데이트 시간: 2025-06-08 02:43:48)
 
 # 안녕하세요. 서미누기입니다.
 # 모든 코드는 제가 직접 작성해서 만들고 있습니다.
@@ -607,7 +607,7 @@ Show #early
     SetBackgroundColor 0 0 0 200 #000000
 
 # 엔드게임부터 100골드 이상만
-Hide #starter
+Show #starter
     AreaLevel >= 65
     StackSize >= 100
     Class == "Stackable Currency"
@@ -627,7 +627,7 @@ Hide
     SetBorderColor 0 0 0 200 #000000
     SetBackgroundColor 0 0 0 200 #000000
 
-Hide #starter
+Show #starter
     AreaLevel < 65
     StackSize >= 10
     Class == "Stackable Currency"
@@ -1022,7 +1022,7 @@ Show #end
     SetBackgroundColor 0 0 0 255 #000000
 
 # 진화의 파편
-Hide #starter
+Show #starter
     Class == "Stackable Currency"
     BaseType == "Transmutation Shard"
     SetFontSize 35
@@ -2024,10 +2024,22 @@ Show #default
 # ▶ 홈에 장착가능한 아이템(부적)
 # ======================================
 
+# 0티어 도깨비불 부적
+Show
+    Class == "Socketable"
+    BaseType == "Talisman of Sirrius" "Talisman of Thruldana" "Talisman of Ralakesh" "Talisman of Egrin" "Talisman of Eeshta" "Talisman of Grold"
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 255 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+
 # 1티어 도깨비불 부적 
 Show
     Class == "Socketable"
-    BaseType == "Rabbit Talisman" "Fox Talisman"
+    BaseType == "Rabbit Talisman" "Fox Talisman" "Talisman of Maxarius"
     SetFontSize 45
     SetTextColor 227 11 92 255 #E30B5C
     SetBorderColor 227 11 92 255 #E30B5C
@@ -2051,6 +2063,30 @@ Show
 # ▶ ======================================
 # ▶ 홈에 장착가능한 아이템(룬)
 # ======================================
+
+# 0티어 특수 룬
+Show
+    Class == "Socketable"
+    BaseType == "Countess Seske's Rune of Archery" "Farrul's Rune of the Chase" "Hedgewitch Assandra's Rune of Wisdom" "Saqawal's Rune of Memory" "Thane Girt's Rune of Wildness" "Courtesan Mannan's Rune of Cruelty" "Farrul's Rune of Grace" "Thane Myrk's Rune of Summer" "The Greatwolf's Rune of Willpower" "Craiceann's Rune of Warding" "Fenumus' Rune of Draining" "Thane Leld's Rune of Spring" "Saqawal's Rune of the Sky"
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 255 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+
+# 1티어 특수 룬
+Show
+    Class == "Socketable"
+    BaseType == "The Greatwolf's Rune of Claws" "Farrul's Rune of the Hunt" "Saqawal's Rune of Erosion" "Thane Grannell's Rune of Mastery" "Craiceann's Rune of Recovery" "Fenumus' Rune of Spinning" "Lady Hestra's Rune of Winter" "Fenumus' Rune of Agony"
+    SetFontSize 45
+    SetTextColor 6 17 20 255 #061114
+    SetBorderColor 48 136 156 255 #30889C
+    SetBackgroundColor 216 238 243 255 #D8EEF3
+    PlayAlertSound 1 300
+    PlayEffect Cyan
+    MinimapIcon 0 Cyan Star
 
 # 십일조의 상위 룬, 기민성의 상위 룬
 Show
@@ -2160,17 +2196,53 @@ Show
 # ▶ 홈에 장착가능한 아이템(영혼 핵)
 # ======================================
 
+# 0티어 영혼 핵(소울 코어)
+Show #default
+    Class == "Socketable"
+    BaseType == "Tzamoto's Soul Core of Ferocity" "Quipolatl's Soul Core of Flow" "Opiloti's Soul Core of Assault" "Xopec's Soul Core of Power" "Estazunti's Soul Core of Convalescence" "Cholotl's Soul Core of War"
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 255 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+
+# 1티어 영혼 핵(소울 코어)
+Show #default
+    Class == "Socketable"
+    BaseType == "Atmohua's Soul Core of Retreat" "Tacati's Soul Core of Affliction" "Topotante's Soul Core of Dampening" "Uromoti's Soul Core of Attenuation"
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 255 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+
+# 2티어 영혼 핵(소울 코어)
+Show #default
+    Class == "Socketable"
+    BaseType == "Xipocado's Soul Core of Dominion" "Guatelitzi's Soul Core of Endurance" "Citaqualotl's Soul Core of Foulness" "Hayoxi's Soul Core of Heatproofing" "Zalatl's Soul Core of Insulation"
+    SetFontSize 45
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 255 #FEEDF3
+    PlayAlertSound 6 300
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
+
 # 비싼 영혼 핵(소울 코어)
 Show #default
     Class == "Socketable"
     BaseType == "Soul Core of Azcapa" "Soul Core of Ticaba" "Soul Core of Quipolatl"
     SetFontSize 45
-    SetTextColor 0 51 26 255 #00331A
-    SetBorderColor 58 168 193 255 #3AA8C1
-    SetBackgroundColor 243 230 216 255 #F3E6D8
+    SetTextColor 227 11 92 255 #E30B5C
+    SetBorderColor 227 11 92 255 #E30B5C
+    SetBackgroundColor 254 237 243 255 #FEEDF3
     PlayAlertSound 6 300
-    PlayEffect Red
-    MinimapIcon 0 Red Star
+    PlayEffect Pink
+    MinimapIcon 0 Pink Star
 
 # 모든 영혼 핵(소울 코어)
 Show #default
@@ -2184,7 +2256,7 @@ Show #default
     PlayEffect Cyan Temp
     MinimapIcon 0 Cyan Circle
 
-# 모든 소켓 아이템 0.2.1 대응 코드.
+# 모든 소켓 아이템 백업 코드
 Show #default
     Class == "Socketable"
     SetFontSize 45
@@ -2193,7 +2265,7 @@ Show #default
     SetBackgroundColor 216 238 243 255 #D8EEF3
     PlayAlertSound 12 300
     PlayEffect Pink
-    MinimapIcon 0 Pink Cross
+    MinimapIcon 0 Grey Cross
 
 # ▶ ======================================
 # ▶ 금고실 열쇠(성유물 보관실 열쇠)
@@ -3050,7 +3122,7 @@ Show #early
 # ——————————————————————————————
 
 # 일반. 전문 단궁
-Hide #starter
+Show #starter
     AreaLevel >= 65
     BaseType == "Ironwood Shortbow"
     Class == "Bows"
@@ -3058,7 +3130,7 @@ Hide #starter
     SetFontSize 39 #normal
 
 # 마법. 전문 단궁
-Hide #starter
+Show #starter
     AreaLevel >= 65
     BaseType == "Ironwood Shortbow"
     Class == "Bows"
@@ -3067,7 +3139,7 @@ Hide #starter
 
 # 엔드 게임부터는 고급 이중시위 활을 기준으로
 # 요구사항 레벨 55 이상 희귀 활
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 55
     Class == "Bows"
@@ -3083,7 +3155,7 @@ Hide
     SetFontSize 45 #rare
 
 # 액트 구간에서 이중시위 활은 항상 보이기
-Hide #starter
+Show #starter
     AreaLevel < 65
     Class == "Bows"
     BaseType "Dualstring Bow"
@@ -3091,7 +3163,7 @@ Hide #starter
     SetFontSize 45 #rare
 
 # 액트 구간에서 모든 활 보이기
-Hide #starter
+Show #starter
     AreaLevel < 65
     Class == "Bows"
     Rarity == Normal Magic Rare
@@ -3240,7 +3312,7 @@ Show #early
 # ——————————————————————————————
 
 # 일반. 요구사항 레벨 65 이상 석궁
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Crossbows"
@@ -3248,7 +3320,7 @@ Hide #starter
     SetFontSize 39 #normal
 
 # 마법. 요구사항 레벨 65 이상 석궁
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Crossbows"
@@ -3257,7 +3329,7 @@ Hide #starter
 
 # 엔드 게임부터는 고급 이중 석궁을 기준으로
 # 요구사항 레벨 55 이상 희귀 석궁
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 55
     Class == "Crossbows"
@@ -3273,7 +3345,7 @@ Hide
     SetFontSize 45 #rare
 
 # 액트 구간에서 모든 이중 석궁, 포격 석궁
-Hide #starter
+Show #starter
     AreaLevel < 65
     Class == "Crossbows"
     BaseType "Dyad Crossbow" "Bombard Crossbow"
@@ -3281,7 +3353,7 @@ Hide #starter
     SetFontSize 45
 
 # 액트 구간에서 모든 석공
-Hide #starter
+Show #starter
     AreaLevel < 65
     Class == "Crossbows"
     Rarity == Normal Magic Rare
@@ -3390,7 +3462,7 @@ Show #early
 # ——————————————————————————————
 
 # 일반. 요구사항 레벨 65 이상 육척봉
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Quarterstaves"
@@ -3398,7 +3470,7 @@ Hide #starter
     SetFontSize 39 #normal
 
 # 마법. 요구사항 레벨 65 이상 육척봉
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Quarterstaves"
@@ -3407,7 +3479,7 @@ Hide #starter
 
 # 엔드 게임부터는
 # 요구사항 레벨 55 이상 희귀 육척봉
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 55
     Class == "Quarterstaves"
@@ -3423,7 +3495,7 @@ Hide
     SetFontSize 45 #rare
 
 # 액트 구간 모든 육척봉
-Hide #starter
+Show #starter
     AreaLevel < 65
     Class == "Quarterstaves"
     Rarity == Normal Magic Rare
@@ -3540,7 +3612,7 @@ Show #early
 # ——————————————————————————————
 
 # 일반. 요구사항 레벨 59 이상 양손 철퇴
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 59
     Class == "Two Hand Maces"
@@ -3548,7 +3620,7 @@ Hide #starter
     SetFontSize 39 #normal
 
 # 마법. 요구사항 레벨 59 이상 양손 철퇴
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 59
     Class == "Two Hand Maces"
@@ -3557,7 +3629,7 @@ Hide #starter
 
 # 엔드 게임부터는
 # 요구사항 레벨 50 이상 희귀 양손 철퇴
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 50
     Class == "Two Hand Maces"
@@ -3573,7 +3645,7 @@ Hide
     SetFontSize 45 #rare
 
 # 액트 구간 모든 양손 철퇴
-Hide #starter
+Show #starter
     AreaLevel < 65
     Class == "Two Hand Maces"
     Rarity == Normal Magic Rare
@@ -3678,7 +3750,7 @@ Show #early
 # ——————————————————————————————
 
 # 일반. 요구사항 레벨 65 이상 한손 철퇴
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "One Hand Maces"
@@ -3686,7 +3758,7 @@ Hide #starter
     SetFontSize 39 #normal
 
 # 마법. 요구사항 레벨 65 이상 한손 철퇴
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "One Hand Maces"
@@ -3695,7 +3767,7 @@ Hide #starter
 
 # 엔드 게임부터는
 # 요구사항 레벨 55 이상 희귀 한손 철퇴
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 55
     Class == "One Hand Maces"
@@ -3711,7 +3783,7 @@ Hide
     SetFontSize 45 #rare
 
 # 액트 구간 모든 한손 철퇴
-Hide #starter
+Show #starter
     AreaLevel < 65
     Class == "One Hand Maces"
     Rarity == Normal Magic Rare
@@ -3813,7 +3885,7 @@ Show #early
 # ——————————————————————————————
 
 # 일반. 요구사항 레벨 65 이상 한손 창
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Spears"
@@ -3821,7 +3893,7 @@ Hide #starter
     SetFontSize 39 #normal
 
 # 마법. 요구사항 레벨 65 이상 한손 창
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Spears"
@@ -3830,7 +3902,7 @@ Hide #starter
 
 # 엔드 게임부터는
 # 요구사항 레벨 55 이상 희귀 한손 창
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 55
     Class == "Spears"
@@ -3846,7 +3918,7 @@ Hide
     SetFontSize 45 #rare
 
 # 액트 구간 모든 한손 창
-Hide #starter
+Show #starter
     AreaLevel < 65
     Class == "Spears"
     Rarity == Normal Magic Rare
@@ -4200,7 +4272,7 @@ Show #mid
 # ——————————————————————————————
 
 # 모든 화살통
-Hide #starter
+Show #starter
 	Class == "Quivers"
     Rarity == Normal Magic Rare
     SetFontSize 45 #rare
@@ -4274,7 +4346,7 @@ Show #mid
 # ——————————————————————————————
 
 # 희귀 집중구는 6단계까지 모두 보임
-Hide #starter
+Show #starter
     Class == "Foci"
     Rarity == Normal Magic
     SetFontSize 45 #rare
@@ -4369,7 +4441,7 @@ Show #early
 # ——————————————————————————————
 
 # 일반. 요구사항 레벨 65 이상
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Bucklers"
@@ -4377,7 +4449,7 @@ Hide #starter
     SetFontSize 39 #normal
 
 # 마법. 요구사항 레벨 65 이상
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Bucklers"
@@ -4386,7 +4458,7 @@ Hide #starter
 
 # 엔드 게임부터는
 # 요구사항 레벨 55 이상 희귀
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 55
     Class == "Bucklers"
@@ -4602,7 +4674,7 @@ Show #early
 # ——————————————————————————————
 
 # 일반. 마법. 요구사항 레벨 65 이상 방어도 방패
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Shields"
@@ -4614,7 +4686,7 @@ Hide #starter
     SetBackgroundColor 77 0 0 240 #4D0000
 
 # 희귀. 요구사항 레벨 55 이상 방어도 방패
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 55
     Class == "Shields"
@@ -4626,7 +4698,7 @@ Hide #starter
     SetBackgroundColor 77 0 0 240 #4D0000
 
 # 희귀. 요구사항 레벨 55 이상. 모든 방패
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 55
     Class == "Shields"
@@ -4654,7 +4726,7 @@ Hide
     SetFontSize 45 #rare
 
 # 액트 구간에서 모든 방어도 방패가 보입니다.
-Hide #starter
+Show #starter
     AreaLevel < 65
     Class == "Shields"
     BaseArmour >= 1
@@ -4665,7 +4737,7 @@ Hide #starter
     SetBackgroundColor 77 0 0 240 #4D0000
 
 # 액트 구간에서는 모든 방패가 보임
-Hide #starter
+Show #starter
     AreaLevel < 65
     Class == "Shields"
     Rarity == Normal Magic Rare
@@ -4808,7 +4880,7 @@ Show #early
 # ——————————————————————————————
 
 # 일반. 요구사항 레벨 65 이상 장갑
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Gloves"
@@ -4816,7 +4888,7 @@ Hide #starter
     SetFontSize 39 #normal
 
 # 마법. 요구사항 레벨 65 이상 장갑
-Hide #starter
+Show #starter
     Identified False
     AreaLevel >= 65
     DropLevel >= 65
@@ -4825,7 +4897,7 @@ Hide #starter
     SetFontSize 42 #magic
     
 # 희귀. 요구사항 레벨 51 이상 장갑
-Hide #starter
+Show #starter
     Identified False
     AreaLevel >= 65
     DropLevel >= 51
@@ -4843,13 +4915,13 @@ Hide
     SetFontSize 45 #rare
 
 # 액트 구간 모든 장갑
-Hide #starter
+Show #starter
     AreaLevel < 65
     Class == "Gloves"
     Rarity == Normal
     SetFontSize 45 #rare
 
-Hide #starter
+Show #starter
     Identified False
     AreaLevel < 65
     Class == "Gloves"
@@ -4994,7 +5066,7 @@ Show #early
 # ——————————————————————————————
 
 # 엔드 게임. 일반. 요구사항 레벨 55 이상 장화
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 55
     Class == "Boots"
@@ -5002,7 +5074,7 @@ Hide #starter
     SetFontSize 39 #normal
 
 # 엔드 게임. 마법. 요구사항 레벨 55 이상 장화
-Hide #starter
+Show #starter
     Identified False
     AreaLevel >= 65
     DropLevel >= 55
@@ -5011,7 +5083,7 @@ Hide #starter
     SetFontSize 42 #magic
 
 # 엔드 게임. 희귀. 요구사항 레벨 45 이상 장화
-Hide #starter
+Show #starter
     Identified False
     AreaLevel >= 65
     DropLevel >= 45
@@ -5029,13 +5101,13 @@ Hide
     SetFontSize 45 #rare
 
 # 액트 구간. 모든 장화
-Hide #starter
+Show #starter
     AreaLevel < 65
     Class == "Boots"
     Rarity == Normal
     SetFontSize 45 #rare
 
-Hide #starter
+Show #starter
     Identified False
     AreaLevel < 65
     Class == "Boots"
@@ -5175,7 +5247,7 @@ Show #early
 # ——————————————————————————————
 
 # 엔드 게임. 일반. 요구사항 레벨 65 이상 투구
-Hide #starter
+Show #starter
     AreaLevel >= 65
     DropLevel >= 65
     Class == "Helmets"
@@ -5183,7 +5255,7 @@ Hide #starter
     SetFontSize 39 #normal
 
 # 엔드 게임. 마법. 요구사항 레벨 65 이상 투구
-Hide #starter
+Show #starter
     Identified False
     AreaLevel >= 65
     DropLevel >= 65
@@ -5192,7 +5264,7 @@ Hide #starter
     SetFontSize 42 #magic
 
 # 엔드 게임. 희귀. 요구사항 레벨 55 이상 투구
-Hide #starter
+Show #starter
     Identified False
     AreaLevel >= 65
     DropLevel >= 55
@@ -5210,13 +5282,13 @@ Hide
     SetFontSize 45 #rare 
 
 # 액트 구간. 모든 투구
-Hide #starter
+Show #starter
     AreaLevel < 65
     Class == "Helmets"
     Rarity == Normal
     SetFontSize 45 #rare
 
-Hide #starter
+Show #starter
     Identified False
     AreaLevel < 65
     Class == "Helmets"
@@ -5447,7 +5519,7 @@ Show #mid
 # ——————————————————————————————
 
 # 엔드 게임. 일반. 요구 사항 레벨 55 이상. 모든 갑옷
-Hide #starter
+Show #starter
     Corrupted False
     AreaLevel >= 65
     DropLevel >= 55
@@ -5456,7 +5528,7 @@ Hide #starter
     SetFontSize 39 #normal
 
 # 엔드 게임. 마법. 요구 사항 레벨 55 이상. 모든 갑옷
-Hide #starter
+Show #starter
     Identified False
     Corrupted False
     AreaLevel >= 65
@@ -5466,7 +5538,7 @@ Hide #starter
     SetFontSize 42 #magic
 
 # 엔드 게임. 희귀. 요구 사항 레벨 51 이상. 모든 갑옷
-Hide #starter
+Show #starter
     Identified False
     Corrupted False
     AreaLevel >= 65
@@ -5486,14 +5558,14 @@ Hide
     SetFontSize 45 #rare 
 
 # 액트 구간. 모든 갑옷
-Hide #starter
+Show #starter
     Corrupted False
     AreaLevel < 65
     Class == "Body Armours"
     Rarity == Normal
     SetFontSize 45 #rare
 
-Hide #starter
+Show #starter
     Identified False
     Corrupted False
     AreaLevel < 65
@@ -5616,7 +5688,7 @@ Show #end
 # ▶▶ 모든 목걸이가 보입니다.
 # ——————————————————————————————
 
-Hide #starter
+Show #starter
     Corrupted False
     Class == "Amulets"
     Rarity == Normal
@@ -5624,7 +5696,7 @@ Hide #starter
     SetBorderColor 52 77 101 255 #344D65
     SetBackgroundColor 17 26 34 255 #111A22
 
-Hide #starter
+Show #starter
     Identified False
     Corrupted False
     Class == "Amulets"
@@ -5752,7 +5824,7 @@ Show #end
 # ——————————————————————————————
 
 # 철제 반지, 청금석 반지
-Hide #starter
+Show #starter
     Corrupted False
     Class == "Rings"
     BaseType == "Iron Ring" "Lazuli Ring"
@@ -5762,7 +5834,7 @@ Hide #starter
     SetBackgroundColor 17 26 34 255 #111A22
 
 # 철제 반지, 청금석 반지
-Hide #starter
+Show #starter
     Identified False
     Corrupted False
     Class == "Rings"
@@ -5863,7 +5935,7 @@ Show #end
 # ▶▶ 모든 허리띠가 보입니다.
 # ——————————————————————————————
 
-Hide #starter
+Show #starter
     Corrupted False
 	Class == "Belts"
     Rarity == Normal
@@ -5871,7 +5943,7 @@ Hide #starter
     SetBorderColor 52 77 101 255 #344D65
     SetBackgroundColor 17 26 34 255 #111A22
 
-Hide #starter
+Show #starter
     Identified False
     Corrupted False
 	Class == "Belts"
@@ -5995,7 +6067,7 @@ Show #early
 # ——————————————————————————————
 
 # 모든 생명력 플라스크 
-Hide #starter
+Show #starter
     Class == "Life Flasks"
     Rarity == Normal Magic
     SetFontSize 42 #magic
@@ -6117,7 +6189,7 @@ Show #early
 # ——————————————————————————————
 
 # 마나 플라스크
-Hide #starter
+Show #starter
     Class == "Mana Flasks"
     Rarity == Normal Magic
     SetFontSize 42 #magic
@@ -6176,7 +6248,7 @@ Hide
     Rarity == Normal Magic
     SetFontSize 45
 
-Hide #starter
+Show #starter
     Class == "Charms"
     Rarity == Normal Magic
     SetFontSize 45
@@ -6762,8 +6834,8 @@ Show #default
     SetTextColor 27 162 155 255 #1BA29B
     SetBorderColor 9 62 60 255 #093E3C
     SetBackgroundColor 3 17 17 255 #031111
-    #PlayAlertSound 3 300 #starter
-    #MinimapIcon 1 Cyan Triangle #starter
+    PlayAlertSound 3 300 #starter
+    MinimapIcon 1 Cyan Triangle #starter
 
 
 
